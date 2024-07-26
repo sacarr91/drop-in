@@ -72,31 +72,30 @@ A platform to connect sponsors with rising talent in the skateboarding world.
 
 Stephanie Carr
 
-> Developed UI aspects such as font-styling, card layout, and button styling. Contributed to html injection js for card display and dynamic attribute assignments, including dynamic card IDs.
+
 
 ---
 
 Pranith Gunda
 
-> Developed the logic and modal for registration and login. Contributed to the database's back-end development using Postgres and Sequelize.
+
 
 ---
 
 David Rauf
 
-> Developed the landing page, starting with carousel. Helped build out the JS file for the page showing tutors. Built out functions allowing the lists to auto-populate from the databases we have as well as the functions to display cards on the page and filter by the search criteria. Worked with Pete to help build out some of the API routes and models using his framework.
 
 ---
 
 Joseph Ruff
 
-> Helped develop the foundational framework and logic for the tutorcards. I contributed to the back-end development of the APIs and models, assisting in the creation of GET, POST, and DELETE routes.
+
 
 ---
 
 Peter Smith
 
-> Specialized in developing the database, APIs, and routes. Worked alongside team members to finalize the logic for fetching and filtering data to align with each specific search parameter.
+
 
 ## Team Contact
 
