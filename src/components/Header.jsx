@@ -5,7 +5,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import { Link } from "react-router-dom";
 
 import("../utils/header.css")
 import("../utils/fonts.css")
@@ -26,33 +25,33 @@ function Header() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
+                  <Nav.Link href="/">Home</Nav.Link>
                   <NavDropdown title="Skaters" id={`offcanvasNavbarDropdown-expand-${expand}`} >
-                    <NavDropdown.Item href="#action3">
-                      See All Skaters
+                    <NavDropdown.Item href="/AboutSkater">
+                      How to Become a Skater
                     </NavDropdown.Item>
                     <NavDropdown.Item href="#action4">
-                      Another action
+                      See All Sponsors
                     </NavDropdown.Item>
                   </NavDropdown>
                   <NavDropdown title="Sponsors" id={`offcanvasNavbarDropdown-expand-${expand}`} >
-                    <NavDropdown.Item href="#action3">
-                      See All Sponsors
+                    <NavDropdown.Item href="/AboutSponsor">
+                      How to Become a Sponsor
                     </NavDropdown.Item>
                     <NavDropdown.Item href="#action4">
-                      Another action
+                      See All Sponsors
                     </NavDropdown.Item>
                   </NavDropdown>
                   <NavDropdown title="Levels" id={`offcanvasNavbarDropdown-expand-${expand}`} >
-                    <NavDropdown.Item href="#action3">
+                    <NavDropdown.Item href="/SponsorLevels">
                       Levels Description
                     </NavDropdown.Item>
                     <NavDropdown.Item href="#action4">
                       Another action
                     </NavDropdown.Item>
                   </NavDropdown>
-                  <Nav.Link href="#action2">
-                    Other
+                  <Nav.Link href="/Connect">
+                    Connect
                   </Nav.Link>
                 </Nav>
                 <Form className="d-flex">
