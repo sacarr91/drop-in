@@ -8,3 +8,6 @@ const goalSchema = new Schema({
 // Exporting Goals Model to make available
 const Goals = model("goals", goalSchema);
 modoule.exports = Goals;
+
+// Funding goals - helps sponsors make a determination who they would sponsor
+//

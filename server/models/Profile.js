@@ -15,7 +15,6 @@ const profileSchema = new Schema({
   awards: [{ type: Schema.Types.ObjectId, ref: "awards" }],
   levels: {
     type: String,
-    required: true,
     maxlength: 280,
   },
   requireSponsorship: {
@@ -29,9 +28,11 @@ const profileSchema = new Schema({
       type: String,
     },
   ],
-  goals: {
-    type: String,
-  },
+  goals: [
+    {
+      type: String, // Way to attach the goals to the individual profile via userID
+    },
+  ],
 });
 // Initialize my Skateboader  model - this might need to go above SkaterSchema
 const Profile = model("profile", profileSchema);
