@@ -1,0 +1,5 @@
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: #000000 !important;
+    background-image: url("public/images/diHeaderImg.png");
+}
