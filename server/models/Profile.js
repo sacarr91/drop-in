@@ -1,40 +1,49 @@
-const { Schema, model } = require("mongoose");
-// We can include goals as a subdocument as they can have mult. goals
-// Within skateboarder schema: define a profile with a name, age, awards, experience or levels
+const { Schema, model } = require('mongoose');
+const bcrypt = require('bcrypt');
 
 const profileSchema = new Schema({
   name: {
     type: String,
     required: true,
-    maxlength: 280,
+    unique: true,
+    trim: true,
   },
-  age: {
-    type: Number,
-    required: true,
-  },
-  awards: [{ type: Schema.Types.ObjectId, ref: "awards" }],
-  levels: {
+  email: {
     type: String,
-    maxlength: 280,
+    required: true,
+    unique: true,
+    match: [/.+@.+\..+/, 'Must match an email address!'],
   },
-  requireSponsorship: {
-    type: Boolean,
+  password: {
+    type: String,
+    required: true,
+    minlength: 5,
   },
-  bio: {
-    type: Text,
-  },
-  associations: [
-    {
-      type: String,
-    },
-  ],
   goals: [
     {
-      type: String, // Way to attach the goals to the individual profile via userID
+      type: String,
+      trim: true,
     },
   ],
+  role: {
+    type: String,
+    required: true,
+  }
 });
-// Initialize my Skateboader  model - this might need to go above SkaterSchema
-const Profile = model("profile", profileSchema);
+
+profileSchema.pre('save', async function (next) {
+  if (this.isNew || this.isModified('password')) {
+    const saltRounds = 10;
+    this.password = await bcrypt.hash(this.password, saltRounds);
+  }
+
+  next();
+});
+
+profileSchema.methods.isCorrectPassword = async function (password) {
+  return bcrypt.compare(password, this.password);
+};
+
+const Profile = model('Profile', profileSchema);
 
 module.exports = Profile;
