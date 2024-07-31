@@ -29,6 +29,9 @@ function Header() {
                     <NavDropdown.Item href="/AboutSkater">
                       How to Become a Skater
                     </NavDropdown.Item>
+                    <NavDropdown.Item href="/CreateSkater">
+                      Become a Skater
+                    </NavDropdown.Item>
                     <NavDropdown.Item href="#action4">
                       See All Sponsors
                     </NavDropdown.Item>

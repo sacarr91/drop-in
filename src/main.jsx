@@ -12,6 +12,7 @@ import AboutSkater from './pages/AboutSkater';
 import AboutSponsor from './pages/AboutSponsor';
 import Connect from './pages/Connect';
 import SponsorLevels from './pages/SponsorLevels';
+import CreateSkater from './pages/CreateSkater';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: '/AboutSponsor',
         element: <AboutSponsor />,
+      },
+      {
+        path: '/CreateSkater',
+        element: <CreateSkater />,
       },
       {
         path: '/Connect',
