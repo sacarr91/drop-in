@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Tony Hawk",
+    "email": "tony@birdhouse.com",
+    "password": "wordpass123",
+    "goals": ["Tampa Am", "Shoes", "Skateboards"],
+    "role": "Skater"
+  },
+  {
+    "name": "Baker Skateboards",
+    "email": "baker@talent.com",
+    "password": "wordpass123",
+    "goals": [],
+    "role": "Sponsor"
+  },
+  {
+    "name": "Rodney Mullen",
+    "email": "rod@workshop.com",
+    "password": "wordpass123",
+    "goals": ["Trucks", "Wheeles"],
+    "role": "Skater"
+  },
+  {
+    "name": "Birdhouse Skate Team",
+    "email": "alva@birdhouse.com",
+    "password": "wordpass123",
+    "goals": [],
+    "role": "Sponsor"
+  }
+]
