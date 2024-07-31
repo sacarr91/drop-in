@@ -6,8 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-import("../utils/header.css")
-import("../utils/fonts.css")
+import("../utils/style.css")
 
 function Header() {
   return (
@@ -15,7 +14,7 @@ function Header() {
       {[false].map((expand) => (
         <Navbar key={expand} expand={expand} className="bg-body-tertiary bg-img mb-3">
           <Container fluid>
-            <Navbar.Brand href="#" className="bangers homeLink">DROP IN</Navbar.Brand>
+            <Navbar.Brand href="/" className="bangers homeLink">DROP IN</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} className="toggleBtn" />
             <Navbar.Offcanvas id={`offcanvasNavbar-expand-${expand}`} aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`} placement="end" >
               <Offcanvas.Header closeButton>
