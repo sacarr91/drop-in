@@ -15,9 +15,7 @@ function Footer() {
             <Nav.Link href="https://www.linkedin.com/in/stephaniecarr424/" target="_blank"><img src='client/public/images/devteam.png' height={30}></img></Nav.Link>
           </Nav.Item>
         </Nav>
-        <Container>
-          <img src='client/public/images/titanglow.png' height={30} style={{ justifySelf: "right" }}></img>Titan
-        </Container>
+          <img src='client/public/images/titanglow.png' height={30} style={{justifySelf: "end"}}></img>
       </Container>
     </Navbar>
   );

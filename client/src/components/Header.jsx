@@ -1,15 +1,8 @@
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import Auth from '../utils/auth';
 import NavLinks from './NavLinks';
 import LoginLogic from './HeaderLogin';
-
-// import("../utils/style.css")
+import '../App.css';
 
 function Header() {
   return (
@@ -18,9 +11,11 @@ function Header() {
         <Navbar key={expand} expand={expand} className="bg-body-tertiary bg-img mb-3">
           <Container fluid>
             <Navbar.Brand href="/" className="bangers homeLink">DROP IN</Navbar.Brand>
-            <LoginLogic />
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} className="toggleBtn" />
-            <NavLinks />
+            <div style={{justifySelf: "end"}}>
+              <LoginLogic />
+              <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+              <NavLinks />
+            </div>
           </Container>
         </Navbar>
       ))}
