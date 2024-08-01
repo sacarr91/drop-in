@@ -31,14 +31,14 @@ const Profile = () => {
   if (!profile?.name) {
     return (
       <h4>
-        You need to be logged in to see your profile page. Use the navigation
+        🤓 You need to be logged in to see your profile page. Use the navigation
         links above to sign up or log in!
       </h4>
     );
   }
 
   return (
-    <section>
+    <section className='card'>
       <h2 className="">
         {profileId ? `${profile.name}'s` : 'Your'} goals
       </h2>

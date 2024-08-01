@@ -27,31 +27,31 @@ const GoalsList = ({ goals, isLoggedInUser = false }) => {
   }
 
   return (
-    <div>
-      <div className="flex-row justify-space-between my-4">
+    <section>
+      <section className="flex-row justify-space-between my-4">
         {goals &&
           goals.map((goal) => (
-            <div key={goal} className="">
-              <div className="">
+            <section key={goal} className="">
+              <section className="">
                 <h4 className="">
                   <span>{goal}</span>
-                  {isLoggedInUser && (
+                </h4>
+                {isLoggedInUser && (
                     <button
-                      className=""
+                      className="button-link alert"
                       onClick={() => handleRemoveGoal(goal)}
                     >
-                      X
+                      Remove Goal
                     </button>
                   )}
-                </h4>
-              </div>
-            </div>
+              </section>
+            </section>
           ))}
-      </div>
+      </section>
       {error && (
-        <div className="">{error.message}</div>
+        <section className="">{error.message}</section>
       )}
-    </div>
+    </section>
   );
 };
 

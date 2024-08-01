@@ -115,6 +115,7 @@ const resolvers = {
           }
         );
       }
+      throw AuthenticationError;
     },
 
     removeProfile: async (parent, args, context) => {

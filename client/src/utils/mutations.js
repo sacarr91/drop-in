@@ -43,3 +43,13 @@ export const REMOVE_GOAL = gql`
     }
   }
 `;
+
+export const ADD_BIO = gql`
+mutation addBio ($profileId: ID!, $bio: String!) {
+  addBio(profileId: $profileId, bio: $bio) {
+      _id
+      name
+      bio
+  }
+}
+`;
