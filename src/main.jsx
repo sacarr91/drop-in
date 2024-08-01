@@ -1,55 +1,54 @@
-import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './utils/style.css';
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./utils/style.css";
 
+import App from "./App";
+import ErrorPage from "../client/src/pages/ErrorPage";
 
-import App from './App';
-import ErrorPage from './pages/ErrorPage';
-
-import Home from './pages/Home';
-import AboutSkater from './pages/AboutSkater';
-import AboutSponsor from './pages/AboutSponsor';
-import Connect from './pages/Connect';
-import SponsorLevels from './pages/SponsorLevels';
-import CreateSkater from './pages/CreateSkater';
+import Home from "../client/src/pages/Home";
+import AboutSkater from "../client/src/pages/AboutSkater";
+import AboutSponsor from "../client/src/pages/AboutSponsor";
+import Connect from "../client/src/pages/Connect";
+import SponsorLevels from "../client/src/pages/SponsorLevels";
+import CreateSkater from "../client/src/pages/CreateSkater";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
         index: true,
-        path: '/',
+        path: "/",
         element: <Home />,
       },
       {
-        path: '/AboutSkater',
+        path: "/AboutSkater",
         element: <AboutSkater />,
       },
       {
-        path: '/AboutSponsor',
+        path: "/AboutSponsor",
         element: <AboutSponsor />,
       },
       {
-        path: '/CreateSkater',
+        path: "/CreateSkater",
         element: <CreateSkater />,
       },
       {
-        path: '/Connect',
+        path: "/Connect",
         element: <Connect />,
       },
       {
-        path: '/SponsorLevels',
+        path: "/SponsorLevels",
         element: <SponsorLevels />,
-      }
+      },
     ],
   },
 ]);
 
 // Render the RouterProvider component
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
 );

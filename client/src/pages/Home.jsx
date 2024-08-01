@@ -1,29 +1,15 @@
-import { useQuery } from '@apollo/client';
+import Container from 'react-bootstrap/esm/Container';
 
-import ProfileList from '../components/ProfileList';
+function Home() {
 
-import { QUERY_PROFILES } from '../utils/queries';
-
-const Home = () => {
-  const { loading, data } = useQuery(QUERY_PROFILES);
-  const profiles = data?.profiles || [];
-
-  return (
-    <main>
-      <section className="">
-        <section className="">
-          {loading ? (
-            <section>Loading...</section>
-          ) : (
-            <ProfileList
-              profiles={profiles}
-              title="Main Page Data"
-            />
-          )}
-        </section>
-      </section>
-    </main>
-  );
+    return (
+        <div className='homepageImg'><Container className="py-5">
+            <center>
+                <h1>Welcome!</h1>
+            </center>
+        </Container>
+        </div>
+    )
 };
 
 export default Home;
