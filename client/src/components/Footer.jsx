@@ -18,7 +18,7 @@ function Footer() {
             <Nav.Link href="https://stackoverflow.com/users/23317680/stephcarr" target="_blank"><img src='/images/stack-logo.png' height={30}></img></Nav.Link>
           </Nav.Item>
         </Nav>
-        est. 2024
+        <img src='/titan.svg'>Titan</img>
       </Container>
     </Navbar>
   );

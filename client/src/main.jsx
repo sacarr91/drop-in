@@ -1,12 +1,14 @@
-import ReactDOM from "react-dom/client";
+import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./utils/style.css";
 
-import App from "./App";
-import ErrorPage from "../src/pages/ErrorPage"
+import App from './App.jsx';
 
-import Home from "../src/pages/Home";
+import Home from './pages/Home';
+import Profile from './pages/Profile';
+import Signup from './pages/Signup';
+import Login from './pages/Login';
+import ErrorPage from './pages/ErrorPage';
+
 import AboutSkater from "../src/pages/AboutSkater";
 import AboutSponsor from "../src/pages/AboutSponsor";
 import Connect from "../src/pages/Connect";
@@ -22,8 +24,23 @@ const router = createBrowserRouter([
       {
         index: true,
         path: "/",
-        element: <Home />,
+        element: <Home />
+      }, {
+        path: '/login',
+        element: <Login />
+      }, {
+        path: '/signup',
+        element: <Signup />
+      }, {
+        path: '/profiles/:profileId',
+        element: <Profile />
+      }, {
+        path: '/me',
+        element: <Profile />
       },
+
+      // ----------------------------------
+      
       {
         path: "/AboutSkater",
         element: <AboutSkater />,
@@ -43,12 +60,11 @@ const router = createBrowserRouter([
       {
         path: "/SponsorLevels",
         element: <SponsorLevels />,
-      },
-    ],
+      }
+    ]
   },
 ]);
 
-// Render the RouterProvider component
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
-);
+)

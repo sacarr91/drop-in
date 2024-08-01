@@ -1,7 +1,7 @@
 import { useMutation } from '@apollo/client';
 
-import { REMOVE_GOAL } from '../../utils/mutations';
-import { QUERY_ME } from '../../utils/queries';
+import { REMOVE_GOAL } from '../utils/mutations';
+import { QUERY_ME } from '../utils/queries';
 
 const GoalsList = ({ goals, isLoggedInUser = false }) => {
   const [removeGoal, { error }] = useMutation
