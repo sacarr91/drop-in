@@ -19,7 +19,7 @@ function LoginLogic(){
           </>
         ) : (
           <>
-            <Link to="/">
+            <Link to="/Login">
               Login
             </Link>
             <Link to="/">
