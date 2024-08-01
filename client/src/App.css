@@ -26,3 +26,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.footer-style {
+  background-image: url("/client/public/images/footerbgnd.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
