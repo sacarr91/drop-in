@@ -4,6 +4,10 @@
     "email": "tony@birdhouse.com",
     "password": "wordpass123",
     "goals": ["Tampa Am", "Shoes", "Skateboards"],
+    "awards": [],
+    "age": 19,
+    "level": "Amature",
+    "bio": "Hi I am Tony Hawk from Burnside California. I have been skating and surfing since I was just a kid in Sacremento. I am looking to get sponsored so that I can qualify to skate in the TampaAM contest 2024.",
     "role": "Skater"
   },
   {
@@ -11,6 +15,10 @@
     "email": "baker@talent.com",
     "password": "wordpass123",
     "goals": [],
+    "awards": [],
+    "age": null,
+    "level": "Professional",
+    "bio":"This is BAKER skateboards, checkout our videos and content @ BAKERSKATEBOARDS.COM BAKER BAKER BAKER",
     "role": "Sponsor"
   },
   {
@@ -18,6 +26,10 @@
     "email": "rod@workshop.com",
     "password": "wordpass123",
     "goals": ["Trucks", "Wheeles"],
+    "awards": [],
+    "age": 22,
+    "level": "Flow",
+    "bio": null,
     "role": "Skater"
   },
   {
@@ -25,6 +37,10 @@
     "email": "alva@birdhouse.com",
     "password": "wordpass123",
     "goals": [],
+    "awards": [],
+    "age": null,
+    "level": "Professional",
+    "bio": null,
     "role": "Sponsor"
   }
 ]
