@@ -14,6 +14,7 @@ import AboutSponsor from "../src/pages/AboutSponsor";
 import Connect from "../src/pages/Connect";
 import SponsorLevels from "../src/pages/SponsorLevels";
 import CreateSkater from "../src/pages/CreateSkater";
+import Login from "./pages/Login";
 
 const router = createBrowserRouter([
   {
@@ -60,8 +61,12 @@ const router = createBrowserRouter([
       {
         path: "/SponsorLevels",
         element: <SponsorLevels />,
-      }
-    ]
+      },
+      {
+        path: "/Login",
+        element: <Login />
+      },
+    ],
   },
 ]);
 
