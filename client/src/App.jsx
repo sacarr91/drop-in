@@ -12,7 +12,6 @@ import { setContext } from '@apollo/client/link/context';
 import { Outlet } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import { StrictMode } from 'react';
 
 // imports for app styling
 import 'bootstrap/dist/css/bootstrap.min.css';
