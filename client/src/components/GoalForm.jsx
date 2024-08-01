@@ -4,7 +4,7 @@ import { useMutation } from '@apollo/client';
 
 import { ADD_GOAL } from '../utils/mutations';
 
-import Auth from '../utils/auth';
+import Auth from '../utils/auth-client';
 
 const GoalForm = ({ profileId }) => {
   const [goal, setGoal] = useState('');

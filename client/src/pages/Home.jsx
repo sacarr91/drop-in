@@ -9,7 +9,7 @@ const Home = () => {
   const profiles = data?.profiles || [];
 
   return (
-    <main className='homepageImg'>
+    <main>
       <section className="">
         <section className="">
           {loading ? (

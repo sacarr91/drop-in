@@ -6,7 +6,7 @@ import GaolForm from '../components/GoalForm';
 
 import { QUERY_SINGLE_PROFILE, QUERY_ME } from '../utils/queries';
 
-import Auth from '../utils/auth';
+import Auth from '../utils/auth-client';
 
 const Profile = () => {
   const { profileId } = useParams();
