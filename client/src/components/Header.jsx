@@ -5,6 +5,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import Auth from '../utils/auth';
+import NavLinks from './NavLinks';
+import LoginLogic from './HeaderLogin';
 
 import("../utils/style.css")
 
@@ -15,8 +18,21 @@ function Header() {
         <Navbar key={expand} expand={expand} className="bg-body-tertiary bg-img mb-3">
           <Container fluid>
             <Navbar.Brand href="/" className="bangers homeLink">DROP IN</Navbar.Brand>
+            <LoginLogic />
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} className="toggleBtn" />
-            <Navbar.Offcanvas id={`offcanvasNavbar-expand-${expand}`} aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`} placement="end" >
+            <NavLinks />
+          </Container>
+        </Navbar>
+      ))}
+    </>
+  );
+}
+
+export default Header;
+
+
+
+{/* <Navbar.Offcanvas id={`offcanvasNavbar-expand-${expand}`} aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`} placement="end" >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
                   Site Navigation
@@ -66,13 +82,5 @@ function Header() {
                   <Button variant="outline-success">Search</Button>
                 </Form>
               </Offcanvas.Body>
-            </Navbar.Offcanvas>
-          </Container>
-        </Navbar>
-      ))}
-    </>
-  );
-}
-
-export default Header;
+            </Navbar.Offcanvas> */}
 
