@@ -7,7 +7,6 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Auth from '../utils/auth';
 
-import("../utils/style.css")
 
 function NavLinks({ expand }) {
     return (
