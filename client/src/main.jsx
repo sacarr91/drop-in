@@ -42,29 +42,33 @@ const router = createBrowserRouter([
       // ----------------------------------
       
       {
-        path: "/AboutSkater",
+        path: "/about-skater",
         element: <AboutSkater />,
       },
       {
-        path: "/AboutSponsor",
+        path: "/about-sponsor",
         element: <AboutSponsor />,
       },
       {
-        path: "/CreateSkater",
+        path: "/create-skater",
         element: <CreateSkater />,
       },
       {
-        path: "/Connect",
+        path: "/all-skaters",
+        element: <AllSkaters />,
+      },
+      {
+        path: "/all-sponsors",
+        element: <AllSponsors />,
+      },
+      {
+        path: "/connect",
         element: <Connect />,
       },
       {
-        path: "/SponsorLevels",
+        path: "/sponsor-levels",
         element: <SponsorLevels />,
-      },
-      {
-        path: "/Login",
-        element: <Login />
-      },
+      }
     ],
   },
 ]);

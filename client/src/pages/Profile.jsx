@@ -2,7 +2,7 @@ import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
 import GoalsList from '../components/GoalsList';
-import GaolForm from '../components/GoalForm';
+import GoalForm from '../components/GoalForm';
 
 import { QUERY_SINGLE_PROFILE, QUERY_ME } from '../utils/queries';
 
@@ -51,7 +51,7 @@ const Profile = () => {
       )}
 
       <section className="" style={{ border: '1px dotted #1a1a1a' }}>
-        <GaolForm profileId={profile._id} />
+        <GoalForm profileId={profile._id} />
       </section>
     </section>
   );
