@@ -25,3 +25,12 @@
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 370px; /* Footer height */
+}
+
