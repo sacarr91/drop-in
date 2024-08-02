@@ -35,8 +35,8 @@ function NavLinks({ expand }) {
                 <NavDropdown.Item href="/CreateSkater">
                   Become a Skater
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  See All Sponsors
+                <NavDropdown.Item href="/SkaterList">
+                  See All Skaters
                 </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown

@@ -13,6 +13,7 @@ import Connect from "../src/pages/Connect";
 import SponsorLevels from "../src/pages/SponsorLevels";
 import CreateSkater from "../src/pages/CreateSkater";
 import Login from "./pages/Login";
+import AllSkater from "./pages/AllSkaters";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
         path: "/Login",
         element: <Login />
       },
+      {
+        path: "/SkaterList",
+        element: <AllSkater />
+      }
     ],
   },
 ]);
