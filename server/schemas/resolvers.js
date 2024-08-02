@@ -1,5 +1,5 @@
-const { Profile } = require('../models');
-const { signToken, AuthenticationError } = require('../utils/auth');
+const { Profile } = require("../models");
+const { signToken, AuthenticationError } = require("../utils/auth");
 
 const resolvers = {
   Query: {
@@ -21,7 +21,12 @@ const resolvers = {
 
   Mutation: {
     addProfile: async (parent, { name, email, password, role }) => {
-      const profile = await Profile.create({ name, email, password, role });
+      const profile = await Profile.create({
+        name,
+        email,
+        password,
+        role,
+      });
       const token = signToken(profile);
 
       return { token, profile };
@@ -50,6 +55,32 @@ const resolvers = {
           {
             $addToSet: { goals: goal },
           },
+          {
+            new: true,
+            runValidators: true,
+          }
+        );
+      }
+      throw AuthenticationError;
+    },
+    addAge: async (parent, { profileId, age }, context) => {
+      if (context.user) {
+        return Profile.findOneAndUpdate(
+          { _id: profileId },
+          { $set: { age: age } },
+          {
+            new: true,
+            runValidators: true,
+          }
+        );
+      }
+      throw AuthenticationError;
+    },
+    addLevels: async (parent, { profileId, levels }, context) => {
+      if (context.user) {
+        return Profile.findOneAndUpdate(
+          { _id: profileId },
+          { $set: { levels: levels } },
           {
             new: true,
             runValidators: true,
