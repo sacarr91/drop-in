@@ -1,16 +1,23 @@
-import { Outlet } from 'react-router-dom';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import { StrictMode } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './utils/style.css';
+// Imports to provide JWT token system behavior
 import {
   ApolloClient,
   InMemoryCache,
   ApolloProvider,
   createHttpLink,
 } from '@apollo/client';
+
 import { setContext } from '@apollo/client/link/context';
+
+// Imports for app UI features
+import { Outlet } from 'react-router-dom';
+import Footer from './components/Footer';
+import Header from './components/Header';
+
+// imports for app styling
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './utils/style.css';
+import './App.css'
+
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -40,7 +47,7 @@ function App() {
   return (
     <>
       <ApolloProvider client={client}>
-        <div className='bg-style'>
+        <div className=''>
           <Header />
           <main className="mx-3 p-3">
             <Outlet />
