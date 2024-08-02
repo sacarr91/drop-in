@@ -1,4 +1,9 @@
+<<<<<<< HEAD
+import './App.css';
+
+=======
 // Imports to provide JWT token system behavior
+>>>>>>> 6adeb933788dded8135fc9e8b918a97308c3cb0f
 import {
   ApolloClient,
   InMemoryCache,
@@ -7,6 +12,10 @@ import {
 } from '@apollo/client';
 
 import { setContext } from '@apollo/client/link/context';
+import { Outlet } from 'react-router-dom';
+
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 // Imports for app UI features
 import { Outlet } from 'react-router-dom';
@@ -43,17 +52,14 @@ const client = new ApolloClient({
 
 
 function App() {
-
   return (
     <>
       <ApolloProvider client={client}>
-        <div className=''>
           <Header />
           <main className="mx-3 p-3">
             <Outlet />
           </main>
           <Footer />
-        </div>
       </ApolloProvider>
     </>
   )

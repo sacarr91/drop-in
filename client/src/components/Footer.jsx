@@ -5,13 +5,11 @@ import skateboardgif from '../../public/images/skateboardgif.gif';
 
 function Footer() {
   return (
-    <Navbar fixed="bottom" expand="lg" className="bg-body-tertiary">
-      <Container className="d-flex justify-content-between align-items-center">
-        <Nav className="d-flex align-items-center">
-          <Nav.Item className="me-4">
-            <Nav.Link href="/home">
-              <img src={skateboardgif} height={80} alt="Skateboard" />
-            </Nav.Link>
+    <Navbar fixed="bottom" expand="lg" className="footer-style">
+      <Container>
+        <Nav variant="underline" style={{ flexDirection: "row" }}>
+          <Nav.Item>
+            <Nav.Link href="https://github.com/sacarr91" target="_blank"><img src='client/public/images/coderepo.png' height={30}></img></Nav.Link>
           </Nav.Item>
           <Nav.Item className="me-4">
             <Nav.Link href="https://www.linkedin.com/in/stephaniecarr424/" target="_blank">
@@ -24,7 +22,7 @@ function Footer() {
             </Nav.Link>
           </Nav.Item>
         </Nav>
-        <span>est. 2024</span>
+          <img src='client/public/images/titanglow.png' height={30} style={{justifySelf: "end"}}></img>
       </Container>
     </Navbar>
   );
