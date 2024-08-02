@@ -39,13 +39,11 @@ function App() {
   return (
     <>
       <ApolloProvider client={client}>
-        <div className='bg-style'>
           <Header />
           <main className="mx-3 p-3">
             <Outlet />
           </main>
           <Footer />
-        </div>
       </ApolloProvider>
     </>
   )

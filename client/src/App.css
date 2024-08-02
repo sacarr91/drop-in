@@ -7,7 +7,7 @@
 
 .bg-img {
   --bs-bg-opacity: 1;
-  background-image: url("/client/public/images/diHeaderImgLongNoText.png");
+  background-image: url("/client/public/images/headerBgnd.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -36,25 +36,19 @@
 }
 
 .homeLink:hover {
-  color: white;
+  color: #ffffffe5;
   text-shadow: 0 0 20px #6653a4;
 }
 
-.bg-style {
-  background-image: url("/client/public/images/homepage.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .footer-style {
-  background-image: url("/client/public/images/footerbgnd.png");
+  background-image: url("/client/public/images/footerBgnd.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 a.headerbtn {
   background-color: #6653a4;
-  color: rgba(255, 255, 255, 0.897);
+  color: #ffffffe5;
   --bs-btn-hover-border-color: rgb(101, 189, 71);
 }
 
@@ -62,4 +56,11 @@ a.headerbtn:hover {
   color: rgb(101, 189, 71);
   --box-shadow-color: rgb(101, 189, 71);
   box-shadow: 0 0 30px var(--box-shadow-color);
+}
+
+body {
+  color: #ffffffe5;
+  background-image: url("/client/public/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
