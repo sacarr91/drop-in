@@ -58,7 +58,6 @@ const resolvers = {
     },
 
     // TO DO: add levels
-    // TO DO: add age
 
     // add awards
     addAward: async (parent, { profileId, awards }, context) => {
@@ -102,6 +101,30 @@ const resolvers = {
         return updatedProfile;
       }
       throw new AuthenticationError;
+    },
+
+    // add sponsor
+    addSponsor: async(parent, { profileId, friendId }, context) => {
+      if(context.user){
+        const updatedProfile = await Profile.findOneAndUpdate(
+          {_id: profileId },
+          {
+            $addToSet: { weSponsor: friendId },
+          },
+          {
+            new: true,
+            runValidators: true,
+          }
+        );
+          const friendProfile = await Profile.findByIdAndUpdate(
+            { _id: friendId },
+            {
+              $addToSet: { ourSponsors: profileId }
+            }
+          );
+          return updatedProfile;
+      }
+      throw AuthenticationError;
     },
 
 

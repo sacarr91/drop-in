@@ -11,6 +11,8 @@ const typeDefs = `
     bio: String
     awards: [Award]!
     friends: [Profile]!
+    ourSopnsors:[Profile]!
+    weSponsor:[Profile]!
   }
 
   type Auth {
@@ -43,6 +45,8 @@ type Mutation {
 
   addAward(profileId: ID!, awards: CreateAwardInput!): Profile
   addFriend(profileId: ID!, friendId: ID!): Profile
+
+  addSponsor(profileId: ID!, friendId: ID!): Profile
 
   addGoal(profileId: ID!, goal: String!): Profile
   addBio(profileId: ID!, bio: String!): Profile
