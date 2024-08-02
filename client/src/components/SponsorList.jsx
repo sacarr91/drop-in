@@ -1,20 +1,19 @@
 import { Link } from 'react-router-dom';
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 
-const SkaterList = ({ profiles, title }) => {
+const SponsorList = ({ profiles, title }) => {
   // Filter profiles to only include those with the role "skater"
-  console.log(profiles)
-  const skaterProfiles = profiles.filter(profile => profile.role === 'Skater');
+  const sponsorProfiles = profiles.filter(profile => profile.role === 'Sponsor');
 
-  if (!skaterProfiles.length) {
-    return <h3>No Skater Profiles Yet</h3>;
+  if (!sponsorProfiles.length) {
+    return <h3>No Sponsor Profiles Yet</h3>;
   }
 
   return (
     <Container>
       <h3 className="my-4">{title}</h3>
       <Row>
-        {skaterProfiles.map((profile) => (
+        {sponsorProfiles.map((profile) => (
           <Col key={profile._id} sm={12} md={6} lg={4} className="mb-4">
             <Card>
               <Card.Body>
@@ -41,4 +40,4 @@ const SkaterList = ({ profiles, title }) => {
   );
 };
 
-export default SkaterList;
+export default SponsorList;
