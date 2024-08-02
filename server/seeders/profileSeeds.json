@@ -6,6 +6,11 @@
     "age": 50,
     "levels": "Professional",
     "goals": ["Tampa Am", "Shoes", "Skateboards"],
+    "awards": [],
+    "friends": [],
+    "age": 19,
+    "level": "Amature",
+    "bio": "Hi I am Tony Hawk from Burnside California. I have been skating and surfing since I was just a kid in Sacremento. I am looking to get sponsored so that I can qualify to skate in the TampaAM contest 2024.",
     "role": "Skater"
   },
   {
@@ -15,6 +20,11 @@
     "age": 30,
     "levels": "Professional",
     "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "level": "Professional",
+    "bio":"This is BAKER skateboards, checkout our videos and content @ BAKERSKATEBOARDS.COM BAKER BAKER BAKER",
     "role": "Sponsor"
   },
   {
@@ -24,6 +34,11 @@
     "age": 35,
     "levels": "Professional",
     "goals": ["Trucks", "Wheeles"],
+    "awards": [],
+    "friends": [],
+    "age": 22,
+    "level": "Flow",
+    "bio": null,
     "role": "Skater"
   },
   {
@@ -33,6 +48,11 @@
     "age": 40,
     "levels": "Professional",
     "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "level": "Professional",
+    "bio": null,
     "role": "Sponsor"
   }
 ]

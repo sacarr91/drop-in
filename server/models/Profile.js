@@ -1,3 +1,6 @@
+const { Schema, model } = require('mongoose');
+const Award = require('./Awards');
+const bcrypt = require('bcrypt');
 const { Schema, model } = require("mongoose");
 const bcrypt = require("bcrypt");
 
@@ -7,6 +10,16 @@ const profileSchema = new Schema({
     required: true,
     unique: true,
     trim: true,
+  },
+  age: {
+    type: Number,
+  },
+  level: {
+    type: String,
+    maxlength: 280,
+  },
+  bio: {
+    type: String,
   },
   email: {
     type: String,
@@ -19,6 +32,16 @@ const profileSchema = new Schema({
     required: true,
     minlength: 5,
   },
+
+  friends: [ 
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Profile'
+    }
+  ],
+  
+  awards: [ Award ],
+
   age: {
     type: Number,
     trim: true,
