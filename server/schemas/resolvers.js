@@ -101,7 +101,7 @@ const resolvers = {
         );
         return updatedProfile;
       }
-      throw AuthenticationError;
+      throw new AuthenticationError;
     },
 
 

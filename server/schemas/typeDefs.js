@@ -37,20 +37,20 @@ const typeDefs = `
     me: Profile
   }
 
-  type Mutation {
-    addProfile(name: String!, email: String!, password: String!, role: String!, age: Int, levels: String!): Auth
-    login(email: String!, password: String!): Auth
+type Mutation {
+  addProfile(name: String!, email: String!, password: String!, role: String!): Auth
+  login(email: String!, password: String!): Auth
 
-    addAward(profileId: ID!, awards: CreateAwardInput!): Profile
-    addFriend(profileId: ID!, friends: ID!): Profile
-    
-    addGoal(profileId: ID!, goal: String!): Profile
-    addBio(profileId: ID!, bio: String!): Profile
-    addAge(profileId: ID!, age: Int!): Profile
-    addLevels(profileId: ID!, levels: String!): Profile
-    removeProfile: Profile
-    removeGoal(goal: String!): Profile
-  }
+  addAward(profileId: ID!, awards: CreateAwardInput!): Profile
+  addFriend(profileId: ID!, friendId: ID!): Profile
+
+  addGoal(profileId: ID!, goal: String!): Profile
+  addBio(profileId: ID!, bio: String!): Profile
+  addAge(profileId: ID!, age: Int!): Profile
+  addLevels(profileId: ID!, levels: String!): Profile
+  removeProfile: Profile
+  removeGoal(goal: String!): Profile
+}
 `;
 
 module.exports = typeDefs;
