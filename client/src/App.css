@@ -14,16 +14,30 @@
 
 .navbar-toggler {
   background-color: #6653a4;
-  --bs-navbar-toggler-icon-bg: url("/client/public/images/menuBtn.png")
+  --bs-navbar-toggler-icon-bg: url("/client/public/images/menuBtn.png");
+}
+
+.navbar-toggler:hover {
+  --box-shadow-color: rgb(101, 189, 71);
+  box-shadow: 0 0 30px var(--box-shadow-color);
+  --bs-navbar-toggler-border-color: rgb(101, 189, 71);
+  background-color: transparent;
+
 }
 
 .homeLink {
-  color: white;
+  color: rgb(101, 189, 71);
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 12rem;
   font-size: xx-large;
+  text-shadow: 0 0 20px #6653a4;
+}
+
+.homeLink:hover {
+  color: white;
+  text-shadow: 0 0 20px #6653a4;
 }
 
 .bg-style {
