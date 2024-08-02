@@ -10,19 +10,19 @@ function LoginLogic(){
         <>
         {Auth.loggedIn() ? (
           <>
-            <Link to="/">
+            <Link to="/" className='me-4 btn headerbtn'>
               View My Profile
             </Link>
-            <button onClick={logout}>
+            <button onClick={logout} className='me-4 btn headerbtn'>
               Logout
             </button>
           </>
         ) : (
           <>
-            <Link to="/Login">
+            <Link to="/Login" className='me-4 btn headerbtn'>
               Login
             </Link>
-            <Link to="/">
+            <Link to="/" className='me-4 btn headerbtn'>
               Signup
             </Link>
           </>
