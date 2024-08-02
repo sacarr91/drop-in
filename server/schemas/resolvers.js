@@ -1,7 +1,11 @@
-const { Profile } = require("../models");
-const { signToken, AuthenticationError } = require("../utils/auth");
+const { Profile, Award } = require('../models');
+const { signToken, AuthenticationError } = require('../utils/auth');
 
+
+// resolvers will be leveraged to run queries and mutations. 
 const resolvers = {
+
+  // queries block
   Query: {
     profiles: async () => {
       return Profile.find();
@@ -19,7 +23,11 @@ const resolvers = {
     },
   },
 
+
+// mutations block
   Mutation: {
+
+    // add profile
     addProfile: async (parent, { name, email, password, role }) => {
       const profile = await Profile.create({
         name,
@@ -31,6 +39,8 @@ const resolvers = {
 
       return { token, profile };
     },
+
+    // login 
     login: async (parent, { email, password }) => {
       const profile = await Profile.findOne({ email });
 
@@ -39,7 +49,6 @@ const resolvers = {
       }
 
       const correctPw = await profile.isCorrectPassword(password);
-
       if (!correctPw) {
         throw AuthenticationError;
       }
@@ -48,6 +57,55 @@ const resolvers = {
       return { token, profile };
     },
 
+    // TO DO: add levels
+    // TO DO: add age
+
+    // add awards
+    addAward: async (parent, { profileId, awards }, context) => {
+      if (context.user) {
+        try {
+          // Create award
+          const updatedProfile = await Profile.findByIdAndUpdate(
+            profileId,
+            {
+              $addToSet: { awards: awards },
+            },
+            {
+              new: true,
+              runValidators: true,
+            }
+          );
+          if (!updatedProfile) {
+            throw new Error('Profile not found');
+          }
+          return updatedProfile;
+        } catch (error) {
+          throw new Error(error.message);
+        }
+      }
+      throw new AuthenticationError;
+    },
+  
+    // add friends
+    addFriend: async(parent, { profileId, friendId }, context) => {
+      if(context.user){
+        const updatedProfile = await Profile.findOneAndUpdate(
+          { _id: profileId },
+          {
+            $addToSet: { friends: friendId },
+          },
+          {
+            new: true,
+            runValidators: true,
+          }
+        );
+        return updatedProfile;
+      }
+      throw new AuthenticationError;
+    },
+
+
+    // add goals
     addGoal: async (parent, { profileId, goal }, context) => {
       if (context.user) {
         return Profile.findOneAndUpdate(
@@ -63,6 +121,24 @@ const resolvers = {
       }
       throw AuthenticationError;
     },
+
+    // add and update bio
+    addBio: async (parent, { profileId, bio }, context) => {
+      if(context.user) {
+        return Profile.findOneAndUpdate(
+          { _id: profileId },
+          {
+            $set: { bio: bio },
+          },
+          {
+            new: true,
+            runValidators: true,
+          }
+        );
+      }
+      throw AuthenticationError;
+    },
+
     addAge: async (parent, { profileId, age }, context) => {
       if (context.user) {
         return Profile.findOneAndUpdate(

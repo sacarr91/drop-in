@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import { ADD_PROFILE } from '../utils/mutations';
 
+<<<<<<< HEAD
 import Auth from '../utils/auth-client';
+=======
+import Auth from '../utils/auth';
+>>>>>>> 6adeb933788dded8135fc9e8b918a97308c3cb0f
 
 const Signup = () => {
   const [formState, setFormState] = useState({

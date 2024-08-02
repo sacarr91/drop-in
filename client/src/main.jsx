@@ -16,6 +16,12 @@ import AllSponsors from '../src/pages/AllSponsors.jsx';
 import Connect from "../src/pages/Connect";
 import SponsorLevels from "../src/pages/SponsorLevels";
 import CreateSkater from "../src/pages/CreateSkater";
+<<<<<<< HEAD
+=======
+import Login from "./pages/Login";
+import Profile from "./pages/Profile";
+import Signup from "./pages/Signup";
+>>>>>>> 6adeb933788dded8135fc9e8b918a97308c3cb0f
 
 const router = createBrowserRouter([
   {
@@ -70,7 +76,28 @@ const router = createBrowserRouter([
       {
         path: "/sponsor-levels",
         element: <SponsorLevels />,
+<<<<<<< HEAD
       }
+=======
+      },
+      {
+        path: '/login',
+        element: <Login />
+      }, 
+      {
+        path: '/signup',
+        element: <Signup />
+      }, 
+      {
+        path: '/profiles/:profileId',
+        element: <Profile />
+      }, 
+      {
+        path: '/me',
+        element: <Profile />
+      }
+
+>>>>>>> 6adeb933788dded8135fc9e8b918a97308c3cb0f
     ],
   },
 ]);

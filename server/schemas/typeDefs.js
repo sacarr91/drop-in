@@ -7,12 +7,29 @@ const typeDefs = `
     age: Int
     levels: String!
     goals: [String]!
+    level: String
+    bio: String
+    awards: [Award]!
+    friends: [Profile]!
   }
 
   type Auth {
     token: ID!
     profile: Profile
   }
+  
+   type Award {
+    _id: ID
+    title: String
+    competition: String
+    awardedDate: String
+  }
+
+  input CreateAwardInput {
+  title: String
+  competition: String
+  awardedDate: String
+}
 
   type Query {
     profiles: [Profile]!
@@ -20,16 +37,20 @@ const typeDefs = `
     me: Profile
   }
 
-  type Mutation {
-    addProfile(name: String!, email: String!, password: String!, role: String!, age: Int, levels: String!): Auth
-    login(email: String!, password: String!): Auth
+type Mutation {
+  addProfile(name: String!, email: String!, password: String!, role: String!): Auth
+  login(email: String!, password: String!): Auth
 
-    addGoal(profileId: ID!, goal: String!): Profile
-    addAge(profileId: ID!, age: Int!): Profile
-    addLevels(profileId: ID!, levels: String!): Profile
-    removeProfile: Profile
-    removeGoal(goal: String!): Profile
-  }
+  addAward(profileId: ID!, awards: CreateAwardInput!): Profile
+  addFriend(profileId: ID!, friendId: ID!): Profile
+
+  addGoal(profileId: ID!, goal: String!): Profile
+  addBio(profileId: ID!, bio: String!): Profile
+  addAge(profileId: ID!, age: Int!): Profile
+  addLevels(profileId: ID!, levels: String!): Profile
+  removeProfile: Profile
+  removeGoal(goal: String!): Profile
+}
 `;
 
 module.exports = typeDefs;
