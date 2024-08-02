@@ -11,6 +11,8 @@ import ErrorPage from './pages/ErrorPage';
 
 import AboutSkater from "../src/pages/AboutSkater";
 import AboutSponsor from "../src/pages/AboutSponsor";
+import AllSkaters from './pages/AllSkaters.jsx';
+import AllSponsors from './pages/AllSponsors.jsx';
 import Connect from "../src/pages/Connect";
 import SponsorLevels from "../src/pages/SponsorLevels";
 import CreateSkater from "../src/pages/CreateSkater";
