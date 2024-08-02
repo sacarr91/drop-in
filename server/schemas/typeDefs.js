@@ -7,7 +7,6 @@ const typeDefs = `
     age: Int
     levels: String!
     goals: [String]!
-    age: String
     level: String
     bio: String
     awards: [Award]!

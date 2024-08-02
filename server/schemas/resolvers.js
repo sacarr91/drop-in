@@ -1,8 +1,6 @@
 const { Profile, Award } = require('../models');
-
 const { signToken, AuthenticationError } = require('../utils/auth');
-const { Profile } = require("../models");
-const { signToken, AuthenticationError } = require("../utils/auth");
+
 
 // resolvers will be leveraged to run queries and mutations. 
 const resolvers = {

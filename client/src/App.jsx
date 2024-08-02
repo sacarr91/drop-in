@@ -16,13 +16,8 @@ import Header from './components/Header';
 // imports for app styling
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './utils/style.css';
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-  createHttpLink,
-} from '@apollo/client';
-import { setContext } from '@apollo/client/link/context';
+import './App.css'
+
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -52,7 +47,6 @@ function App() {
   return (
     <>
       <ApolloProvider client={client}>
-      <ApolloProvider client={client}>
         <div className='bg-style'>
           <Header />
           <main className="mx-3 p-3">
@@ -60,7 +54,6 @@ function App() {
           </main>
           <Footer />
         </div>
-      </ApolloProvider>
       </ApolloProvider>
     </>
   )
