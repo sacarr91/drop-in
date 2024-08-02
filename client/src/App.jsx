@@ -47,7 +47,7 @@ function App() {
   return (
     <>
       <ApolloProvider client={client}>
-        <div className='bg-style'>
+        <div className=''>
           <Header />
           <main className="mx-3 p-3">
             <Outlet />
