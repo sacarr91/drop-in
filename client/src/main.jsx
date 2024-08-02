@@ -19,6 +19,8 @@ import CreateSkater from "../src/pages/CreateSkater";
 <<<<<<< HEAD
 =======
 import Login from "./pages/Login";
+import AllSkater from "./pages/AllSkaters";
+import AllSponsors from "./pages/AllSponsors";
 import Profile from "./pages/Profile";
 import Signup from "./pages/Signup";
 >>>>>>> 6adeb933788dded8135fc9e8b918a97308c3cb0f
@@ -84,6 +86,14 @@ const router = createBrowserRouter([
         path: '/login',
         element: <Login />
       }, 
+      {
+        path: "/SkaterList",
+        element: <AllSkater />
+      },
+      {
+        path: "/SponsorList",
+        element: <AllSponsors />
+      },
       {
         path: '/signup',
         element: <Signup />

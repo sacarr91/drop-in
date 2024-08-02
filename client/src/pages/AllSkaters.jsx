@@ -1,18 +1,29 @@
-import Container from 'react-bootstrap/esm/Container';
-import ProfileList from '../components/ProfileList';
+import { useQuery } from '@apollo/client';
 
-function AllSkaters() {
+import SkaterList from '../components/SkaterList';
 
-    return (
-        <><Container className="py-5">
-            <center>
-                <h1>AllSkaters</h1>
-                <h5>**filter for skaters only**</h5>
-            </center>
-            <ProfileList />
-        </Container>
-        </>
-    )
+import { QUERY_PROFILES } from '../utils/queries';
+
+const AllSkater = () => {
+  const { loading, data } = useQuery(QUERY_PROFILES);
+  const profiles = data?.profiles || [];
+
+  return (
+    <main>
+      <section className="">
+        <section className="">
+          {loading ? (
+            <section>Loading...</section>
+          ) : (
+            <SkaterList
+              profiles={profiles}
+              title="All Skaters"
+            />
+          )}
+        </section>
+      </section>
+    </main>
+  );
 };
 
-export default AllSkaters;
+export default AllSkater;

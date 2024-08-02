@@ -1,18 +1,29 @@
-import Container from 'react-bootstrap/esm/Container';
-import ProfileList from '../components/ProfileList';
+import { useQuery } from '@apollo/client';
 
-function AllSponsors() {
+import SponsorList from '../components/SponsorList';
 
-    return (
-        <><Container className="py-5">
-            <center>
-                <h1>AllSponsors</h1>
-                <h5>**filter for sponsors only**</h5>
-            </center>
-            <ProfileList />
-        </Container>
-        </>
-    )
+import { QUERY_PROFILES } from '../utils/queries';
+
+const AllSponsor = () => {
+  const { loading, data } = useQuery(QUERY_PROFILES);
+  const profiles = data?.profiles || [];
+
+  return (
+    <main>
+      <section className="">
+        <section className="">
+          {loading ? (
+            <section>Loading...</section>
+          ) : (
+            <SponsorList
+              profiles={profiles}
+              title="All Skaters"
+            />
+          )}
+        </section>
+      </section>
+    </main>
+  );
 };
 
-export default AllSponsors;
+export default AllSponsor;
