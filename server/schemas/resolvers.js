@@ -81,7 +81,23 @@ const resolvers = {
       throw new AuthenticationError;
     },
   
-
+    // add friends
+    addFriend: async(parent, { profileId, friendId }, context) => {
+      if(context.user){
+        const updatedProfile = await Profile.findOneAndUpdate(
+          { _id: profileId },
+          {
+            $addToSet: { friends: friendId },
+          },
+          {
+            new: true,
+            runValidators: true,
+          }
+        );
+        return updatedProfile;
+      }
+      throw AuthenticationError;
+    },
 
 
     // add goals

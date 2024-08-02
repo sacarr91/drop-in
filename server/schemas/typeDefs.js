@@ -9,6 +9,7 @@ const typeDefs = `
     level: String
     bio: String
     awards: [Award]!
+    friends: [Profile]!
   }
 
   type Auth {
@@ -40,6 +41,7 @@ const typeDefs = `
     login(email: String!, password: String!): Auth
 
     addAward(profileId: ID!, awards: CreateAwardInput!): Profile
+    addFriend(profileId: ID!, friends: ID!): Profile
     
     addGoal(profileId: ID!, goal: String!): Profile
     addBio(profileId: ID!, bio: String!): Profile
