@@ -52,7 +52,7 @@ const router = createBrowserRouter([
         element: <AboutSponsor />,
       },
       {
-        path: "/create-skater",
+        path: "/new-skater",
         element: <CreateSkater />,
       },
       {
