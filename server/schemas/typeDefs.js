@@ -4,6 +4,8 @@ const typeDefs = `
     name: String
     email: String
     password: String
+    age: Int
+    levels: String!
     goals: [String]!
   }
 
@@ -19,10 +21,12 @@ const typeDefs = `
   }
 
   type Mutation {
-    addProfile(name: String!, email: String!, password: String!, role: String!): Auth
+    addProfile(name: String!, email: String!, password: String!, role: String!, age: Int, levels: String!): Auth
     login(email: String!, password: String!): Auth
 
     addGoal(profileId: ID!, goal: String!): Profile
+    addAge(profileId: ID!, age: Int!): Profile
+    addLevels(profileId: ID!, levels: String!): Profile
     removeProfile: Profile
     removeGoal(goal: String!): Profile
   }

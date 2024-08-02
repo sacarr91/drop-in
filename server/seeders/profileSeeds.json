@@ -3,6 +3,8 @@
     "name": "Tony Hawk",
     "email": "tony@birdhouse.com",
     "password": "wordpass123",
+    "age": 50,
+    "levels": "Professional",
     "goals": ["Tampa Am", "Shoes", "Skateboards"],
     "role": "Skater"
   },
@@ -10,6 +12,8 @@
     "name": "Baker Skateboards",
     "email": "baker@talent.com",
     "password": "wordpass123",
+    "age": 30,
+    "levels": "Professional",
     "goals": [],
     "role": "Sponsor"
   },
@@ -17,6 +21,8 @@
     "name": "Rodney Mullen",
     "email": "rod@workshop.com",
     "password": "wordpass123",
+    "age": 35,
+    "levels": "Professional",
     "goals": ["Trucks", "Wheeles"],
     "role": "Skater"
   },
@@ -24,6 +30,8 @@
     "name": "Birdhouse Skate Team",
     "email": "alva@birdhouse.com",
     "password": "wordpass123",
+    "age": 40,
+    "levels": "Professional",
     "goals": [],
     "role": "Sponsor"
   }
