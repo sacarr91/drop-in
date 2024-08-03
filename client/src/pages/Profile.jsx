@@ -1,12 +1,14 @@
-import { Navigate, useParams } from 'react-router-dom';
-import { useQuery } from '@apollo/client';
+import { Navigate, useParams } from "react-router-dom";
+import { useQuery } from "@apollo/client";
 
-import GoalsList from '../components/GoalsList';
-import GaolForm from '../components/GoalForm';
+import GoalsList from "../components/GoalsList";
+import GoalForm from "../components/GoalForm";
+import AgeList from "../components/AgeList";
+import AgeForm from "../components/AgeForm";
 
-import { QUERY_SINGLE_PROFILE, QUERY_ME } from '../utils/queries';
+import { QUERY_SINGLE_PROFILE, QUERY_ME } from "../utils/queries";
 
-import Auth from '../utils/auth';
+import Auth from "../utils/auth";
 
 const Profile = () => {
   const { profileId } = useParams();
@@ -38,22 +40,34 @@ const Profile = () => {
   }
 
   return (
-    <section className='card'>
-      <h2 className="">
-        {profileId ? `${profile.name}'s` : 'Your'} goals
-      </h2>
+    <>
+      <section className="card">
+        <h2 className="">{profileId ? `${profile.name}'s` : "Your"} goals</h2>
 
-      {profile.goals?.length > 0 && (
-        <GoalsList
-          goals={profile.goals}
-          isLoggedInUser={!profileId && true}
-        />
-      )}
+        {profile.goals?.length > 0 && (
+          <GoalsList
+            goals={profile.goals}
+            isLoggedInUser={!profileId && true}
+          />
+        )}
 
-      <section className="" style={{ border: '1px dotted #1a1a1a' }}>
-        <GaolForm profileId={profile._id} />
+        <section className="" style={{ border: "1px dotted #1a1a1a" }}>
+          <GoalForm profileId={profile._id} />
+        </section>
       </section>
-    </section>
+
+      <section className="card">
+        <h2 className="">{profileId ? `${profile.name}'s` : "Your"} age</h2>
+
+        {profile.goals?.length > 0 && (
+          <AgeList ages={profile.ages} isLoggedInUser={!profileId && true} />
+        )}
+
+        <section className="" style={{ border: "1px dotted #1a1a1a" }}>
+          <AgeForm profileId={profile._id} />
+        </section>
+      </section>
+    </>
   );
 };
 

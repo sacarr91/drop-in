@@ -3,12 +3,14 @@ import { useMutation } from "@apollo/client";
 import { REMOVE_AGE } from "../../utils/mutations";
 import { QUERY_ME } from "../../utils/queries";
 
-const AgeList = ({ age, isLoggedInUser = false }) => {
+const AgeList = ({ ages, isLoggedInUser = false }) => {
+  console.log("Ages prop:", ages);
+  console.log("isLoggedInUser prop:", isLoggedInUser);
   const [removeAge, { error }] = useMutation(REMOVE_AGE, {
     refetchQueries: [QUERY_ME, "me"],
   });
 
-  const handleRemoveAge = async (goal) => {
+  const handleRemoveAge = async (age) => {
     try {
       const { data } = await removeAge({
         variables: { age },
@@ -18,15 +20,15 @@ const AgeList = ({ age, isLoggedInUser = false }) => {
     }
   };
 
-  if (!age.length) {
+  if (!ages.length) {
     return <h3>No Age Listed Yet</h3>;
   }
 
   return (
     <section>
       <section className="flex-row justify-space-between my-4">
-        {age &&
-          age.map((age) => (
+        {ages &&
+          ages.map((age) => (
             <section key={age} className="">
               <section className="">
                 <h4 className="">
