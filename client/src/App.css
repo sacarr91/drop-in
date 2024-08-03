@@ -64,3 +64,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 150px; /* Footer height */
+}
+

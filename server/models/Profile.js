@@ -31,6 +31,20 @@ const profileSchema = new Schema({
       ref: 'Profile'
     }
   ],
+
+  ourSponsors: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Profile'
+    }
+  ],
+
+  weSponsor: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Profile'
+    }
+  ],
   
   awards: [ Award ],
 
