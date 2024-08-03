@@ -1,10 +1,8 @@
-const { Profile, Award } = require('../models');
-const { signToken, AuthenticationError } = require('../utils/auth');
+const { Profile, Award } = require("../models");
+const { signToken, AuthenticationError } = require("../utils/auth");
 
-
-// resolvers will be leveraged to run queries and mutations. 
+// resolvers will be leveraged to run queries and mutations.
 const resolvers = {
-
   // queries block
   Query: {
     profiles: async () => {
@@ -23,10 +21,8 @@ const resolvers = {
     },
   },
 
-
-// mutations block
+  // mutations block
   Mutation: {
-
     // add profile
     addProfile: async (parent, { name, email, password, role }) => {
       const profile = await Profile.create({
@@ -40,7 +36,7 @@ const resolvers = {
       return { token, profile };
     },
 
-    // login 
+    // login
     login: async (parent, { email, password }) => {
       const profile = await Profile.findOne({ email });
 
@@ -75,19 +71,19 @@ const resolvers = {
             }
           );
           if (!updatedProfile) {
-            throw new Error('Profile not found');
+            throw new Error("Profile not found");
           }
           return updatedProfile;
         } catch (error) {
           throw new Error(error.message);
         }
       }
-      throw new AuthenticationError;
+      throw new AuthenticationError();
     },
-  
+
     // add friends
-    addFriend: async(parent, { profileId, friendId }, context) => {
-      if(context.user){
+    addFriend: async (parent, { profileId, friendId }, context) => {
+      if (context.user) {
         const updatedProfile = await Profile.findOneAndUpdate(
           { _id: profileId },
           {
@@ -100,14 +96,14 @@ const resolvers = {
         );
         return updatedProfile;
       }
-      throw new AuthenticationError;
+      throw new AuthenticationError();
     },
 
     // add sponsor
-    addSponsor: async(parent, { profileId, friendId }, context) => {
-      if(context.user){
+    addSponsor: async (parent, { profileId, friendId }, context) => {
+      if (context.user) {
         const updatedProfile = await Profile.findOneAndUpdate(
-          {_id: profileId },
+          { _id: profileId },
           {
             $addToSet: { weSponsor: friendId },
           },
@@ -116,17 +112,16 @@ const resolvers = {
             runValidators: true,
           }
         );
-          const friendProfile = await Profile.findByIdAndUpdate(
-            { _id: friendId },
-            {
-              $addToSet: { ourSponsors: profileId }
-            }
-          );
-          return updatedProfile;
+        const friendProfile = await Profile.findByIdAndUpdate(
+          { _id: friendId },
+          {
+            $addToSet: { ourSponsors: profileId },
+          }
+        );
+        return updatedProfile;
       }
       throw AuthenticationError;
     },
-
 
     // add goals
     addGoal: async (parent, { profileId, goal }, context) => {
@@ -147,7 +142,7 @@ const resolvers = {
 
     // add and update bio
     addBio: async (parent, { profileId, bio }, context) => {
-      if(context.user) {
+      if (context.user) {
         return Profile.findOneAndUpdate(
           { _id: profileId },
           {
@@ -199,6 +194,16 @@ const resolvers = {
         return Profile.findOneAndUpdate(
           { _id: context.user._id },
           { $pull: { goals: goal } },
+          { new: true }
+        );
+      }
+      throw AuthenticationError;
+    },
+    removeAge: async (parent, { age }, context) => {
+      if (context.user) {
+        return Profile.findOneAndUpdate(
+          { _id: context.user._id },
+          { $pull: { age: age } },
           { new: true }
         );
       }
