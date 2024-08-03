@@ -1,20 +1,25 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
-@import url("/client/src/utils/fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@200..700&family=Rock+Salt&display=swap');
 
 :root {
   --bs-btn-focus-shadow-rgb: #65bd47;
 }
 
+
 .bg-img {
   --bs-bg-opacity: 1;
-  background-image: url("/client/public/images/headerBgnd.png");
+  background-image: url("/images/headerBgnd.png");
   background-repeat: no-repeat;
   background-size: cover;
+  height: fit-content;
 }
 
 .navbar-toggler {
   background-color: #6653a4;
-  --bs-navbar-toggler-icon-bg: url("/client/public/images/menuBtn.png");
+  --bs-navbar-toggler-icon-bg: url("/images/menuBtn.png");
+  height: 40px;
+  margin-right: 1rem;
+  font-size: 1rem;
 }
 
 .navbar-toggler:hover {
@@ -32,6 +37,7 @@
   margin-bottom: 0;
   margin-left: 12rem;
   font-size: xx-large;
+  font-family: "Bangers";
   text-shadow: 0 0 20px #6653a4;
 }
 
@@ -41,15 +47,22 @@
 }
 
 .footer-style {
-  background-image: url("/client/public/images/footerBgnd.png");
+  background-image: url("/images/footerBgnd.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.buttonDiv {
+  justify-self: end;
+  align-items: center;
 }
 
 a.headerbtn {
   background-color: #6653a4;
   color: #ffffffe5;
   --bs-btn-hover-border-color: rgb(101, 189, 71);
+  height: 40px;
+  margin-right: 1rem;
 }
 
 a.headerbtn:hover {
@@ -60,7 +73,7 @@ a.headerbtn:hover {
 
 body {
   color: #ffffffe5;
-  background-image: url("/client/public/images/background.png");
+  background-image: url("/images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -71,6 +84,66 @@ body {
 }
 
 #content-wrap {
-  padding-bottom: 150px; /* Footer height */
+  padding-bottom: 150px;
+  /* Footer height */
 }
 
+
+
+
+/* FONTS */
+
+
+.rock-salt {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oswald-light {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.oswald-normal {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.oswald-medium {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oswald-bold {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.oswald-heavy {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.oswald-wide {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bangers {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}

@@ -14,7 +14,6 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 
 // imports for app styling
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
 

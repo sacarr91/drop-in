@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import Footer from "../client/src/components/Footer";
+import Footer from "../client/src/components/Footer/Footer";
 import Header from "../client/src/components/Header";
 import { StrictMode } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
