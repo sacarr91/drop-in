@@ -46,10 +46,18 @@
   text-shadow: 0 0 20px #6653a4;
 }
 
+.footLink {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .footer-style {
   background-image: url("/images/footerBgnd.png");
   background-repeat: no-repeat;
   background-size: cover;
+  align-content: center;
+  max-height: 60px;
 }
 
 .buttonDiv {

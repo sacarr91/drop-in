@@ -6,22 +6,23 @@ function Footer() {
   return (
     <Navbar fixed="bottom" expand="lg" className="footer-style">
       <Container>
-        <Nav variant="underline" style={{ flexDirection: "row" }}>
-          <Nav.Item>
-            <Nav.Link href="https://github.com/sacarr91" target="_blank"><img src='/images/coderepo.png' height={30}></img></Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="me-4">
-            <Nav.Link href="https://www.linkedin.com/in/stephaniecarr424/" target="_blank">
-              <h4>Our Team</h4>
+        <Nav variant="underline">
+        <Nav.Item className='footLink'>
+            <Nav.Link href="https://github.com/sacarr91" target="_blank">
+            <img src='/images/devteam.png' height={40}>
+            </img>
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
-            <Nav.Link href="https://stackoverflow.com/users/23317680/stephcarr" target="_blank">
-              <h4>Our Mission</h4>
+          <Nav.Item className='footLink'>
+            <Nav.Link href="https://github.com/sacarr91" target="_blank">
+            <img src='/images/coderepo.png' height={40}>
+            </img>
             </Nav.Link>
           </Nav.Item>
+          
+          
         </Nav>
-          <img src='/images/titanglow.png' height={30} style={{justifySelf: "end"}}></img>
+          <img src='/images/titanGlowFooter.png' height={30} style={{justifySelf: "end"}}></img>
       </Container>
     </Navbar>
   );
