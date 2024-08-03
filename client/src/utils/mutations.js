@@ -1,7 +1,12 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 export const ADD_PROFILE = gql`
-  mutation addProfile($name: String!, $email: String!, $password: String!, $role: String!) {
+  mutation addProfile(
+    $name: String!
+    $email: String!
+    $password: String!
+    $role: String!
+  ) {
     addProfile(name: $name, email: $email, password: $password, role: $role) {
       token
       profile {
@@ -11,13 +16,22 @@ export const ADD_PROFILE = gql`
     }
   }
 `;
-
+// When view profile is selected this makes an option avail. to add goal
 export const ADD_GOAL = gql`
   mutation addGoal($profileId: ID!, $goal: String!) {
     addGoal(profileId: $profileId, goal: $goal) {
       _id
       name
       goals
+    }
+  }
+`;
+export const ADD_AGE = gql`
+  mutation addAge($profileId: ID!, $age: Int!) {
+    addAge(profileId: $profileId, age: $age) {
+      _id
+      name
+      age
     }
   }
 `;
@@ -40,6 +54,16 @@ export const REMOVE_GOAL = gql`
       _id
       name
       goals
+    }
+  }
+`;
+
+export const REMOVE_AGE = gql`
+  mutation removeAge($goal: Int!) {
+    removeAge(age: $age) {
+      _id
+      name
+      age
     }
   }
 `;

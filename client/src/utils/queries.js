@@ -1,10 +1,11 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 export const QUERY_PROFILES = gql`
   query allProfiles {
     profiles {
       _id
       name
+      age
       goals
       role
     }
@@ -16,6 +17,7 @@ export const QUERY_SINGLE_PROFILE = gql`
     profile(profileId: $profileId) {
       _id
       name
+      age
       goals
     }
   }
@@ -26,6 +28,7 @@ export const QUERY_ME = gql`
     me {
       _id
       name
+      age
       goals
     }
   }
