@@ -11,7 +11,7 @@ const typeDefs = `
     bio: String
     awards: [Award]!
     friends: [Profile]!
-    ourSopnsors:[Profile]!
+    ourSponsors:[Profile]!
     weSponsor:[Profile]!
   }
 
