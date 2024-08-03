@@ -55,6 +55,8 @@ type Mutation {
   addLevels(profileId: ID!, levels: String!): Profile
   removeProfile: Profile
   removeGoal(goal: String!): Profile
+  removeAge(age: Int!): Profile
+  removeLevels(levels: String!): Profile
 }
 `;
 
