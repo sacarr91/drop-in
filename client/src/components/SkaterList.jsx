@@ -30,7 +30,7 @@ const SkaterList = ({ profiles, title }) => {
                   as={Link}
                   to={`/profiles/${profile._id}`}
                 >
-                  View Card Data
+                  View {profile.role} Profile
                 </Button>
               </Card.Body>
             </Card>
