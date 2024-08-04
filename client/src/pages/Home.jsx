@@ -1,7 +1,11 @@
 import { useQuery } from '@apollo/client';
-import ProfileList from '../components/ProfileList';
 import { QUERY_PROFILES } from '../utils/queries';
 import Container from 'react-bootstrap/esm/Container';
+
+import ProfileList from '../components/ProfileList';
+import SkaterList from '../components/SkaterList';
+import SponsorList from '../components/SponsorList';
+
 
 function Home() {
 
@@ -23,12 +27,16 @@ function Home() {
                         {loading ? (
                             <section>Loading...</section>
                         ) : (
-                            <center>
-                                    <ProfileList
-                                        profiles={profiles}
-                                        title="Profile Data"
-                                    />
-                            </center>
+                            <section>
+                                <center>
+                                <h2>Sponsors</h2>
+                                </center>
+                                <SponsorList profiles={profiles}></SponsorList>
+                                <center>
+                                <h2>Skaters</h2>
+                                </center>
+                                <SkaterList profiles={profiles}></SkaterList>
+                            </section>
                         )}
                     </section>
                 </section>
