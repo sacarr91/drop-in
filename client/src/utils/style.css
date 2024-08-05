@@ -25,3 +25,13 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.btn {
+    margin: 5px;
+    background-color: #7C737F;
+    width: 99%;
+}
+
+.bg-card {
+    background-color: #E7DCEB;
+}

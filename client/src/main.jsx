@@ -5,7 +5,7 @@ import "./utils/style.css";
 
 import App from "./App";
 import ErrorPage from "../src/pages/ErrorPage"
-
+import Signup from "./pages/Signup"
 import Home from "../src/pages/Home";
 import AboutSkater from "../src/pages/AboutSkater";
 import AboutSponsor from "../src/pages/AboutSponsor";
@@ -24,6 +24,10 @@ const router = createBrowserRouter([
         index: true,
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/Signup",
+        element: <Signup />
       },
       {
         path: "/AboutSkater",

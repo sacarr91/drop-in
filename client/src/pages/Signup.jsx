@@ -1,15 +1,20 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+
 import { useMutation } from '@apollo/client';
-import { LOGIN_USER } from '../utils/mutations';
+import { ADD_PROFILE } from '../utils/mutations';
 
 import Auth from '../utils/auth';
 
-const Login = (props) => {
-  const [formState, setFormState] = useState({ email: '', password: '' });
-  const [login, { error, data }] = useMutation(LOGIN_USER);
+const Signup = () => {
+  const [formState, setFormState] = useState({
+    name: '',
+    email: '',
+    password: '',
+    role: '',
+  });
+  const [addProfile, { error, data }] = useMutation(ADD_PROFILE);
 
-  // update state based on form input changes
   const handleChange = (event) => {
     const { name, value } = event.target;
 
@@ -19,33 +24,34 @@ const Login = (props) => {
     });
   };
 
-  // submit form
+  const handleRadioChange = (event) => {
+    const { name, value } = event.target;
+
+    setFormState({
+      ...formState,
+      [name]: value,
+    })
+  }
+
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    console.log(formState);
     try {
-      const { data } = await login({
+      const { data } = await addProfile({
         variables: { ...formState },
       });
 
-      Auth.login(data.login.token);
+      Auth.login(data.addProfile.token);
     } catch (e) {
       console.error(e);
     }
-
-    // clear form values
-    setFormState({
-      email: '',
-      password: '',
-    });
   };
 
   return (
     <div className="w-50 mx-auto">
       <div>
         <div className="card bg-card">
-          <h4 className="card-header">Login</h4>
-          <section className="card-body">
+          <h4 className="card-header">Sign Up</h4>
+          <div className="card-body">
             {data ? (
               <p>
                 Success! You may now head{' '}
@@ -54,11 +60,25 @@ const Login = (props) => {
             ) : (
               <form onSubmit={handleFormSubmit}>
                 <label
-                for="email">
+                  for="username">
+                  Username
+                </label>
+                <input
+                  className="form-control"
+                  id="username"
+                  placeholder="Your username"
+                  name="name"
+                  type="text"
+                  value={formState.name}
+                  onChange={handleChange}
+                />
+                <label
+                  for="email">
                   Email
                 </label>
                 <input
                   className="form-control"
+                  id="email"
                   placeholder="Your email"
                   name="email"
                   type="email"
@@ -66,19 +86,28 @@ const Login = (props) => {
                   onChange={handleChange}
                 />
                 <label
-                for="password">
+                  for="password">
                   Password
                 </label>
                 <input
                   className="form-control"
+                  id="password"
                   placeholder="******"
                   name="password"
                   type="password"
                   value={formState.password}
                   onChange={handleChange}
                 />
-                <button
-                  className="btn"
+                <label className="form-check-label">Role</label>
+                <div className="form-check">
+                  <input className="form-check-input" type="radio" name="role" value="skater" checked={formState.role === 'skater'} onChange={handleRadioChange} />
+                  <label className="form-check-label">Skater</label>
+                </div>
+                <div className="form-check">
+                  <input className="form-check-input" type="radio" name="role" value="sponsor" checked={formState.role === 'sponsor'} onChange={handleRadioChange} />
+                  <label className="form-check-label">Sponsor</label>
+                </div>
+                <button className="btn"
                   style={{ cursor: 'pointer' }}
                   type="submit"
                 >
@@ -86,17 +115,16 @@ const Login = (props) => {
                 </button>
               </form>
             )}
-
             {error && (
               <section className="">
                 {error.message}
               </section>
             )}
-          </section>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default Signup;

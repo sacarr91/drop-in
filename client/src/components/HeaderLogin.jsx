@@ -22,7 +22,7 @@ function LoginLogic(){
             <Link to="/Login">
               Login
             </Link>
-            <Link to="/">
+            <Link to="/Signup">
               Signup
             </Link>
           </>
