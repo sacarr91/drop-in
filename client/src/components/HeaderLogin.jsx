@@ -8,27 +8,25 @@ function LoginLogic(){
       }
     return(
         <>
-                  <section className="button-link-sec">
-                    {Auth.loggedIn() ? (
-                      <>
-                        <Link className="button-link secondary" to="/me">
-                          View My Profile
-                        </Link>
-                        <button className="button-link alert" onClick={logout}>
-                          Logout
-                        </button>
-                      </>
-                    ) : (
-                      <>
-                        <Link className="button-link primary" to="/login">
-                          Login
-                        </Link>
-                        <Link className="button-link secondary" to="/signup">
-                          Signup
-                        </Link>
-                      </>
-                    )}
-                  </section>
+        {Auth.loggedIn() ? (
+          <>
+            <Link to="/">
+              View My Profile
+            </Link>
+            <button onClick={logout}>
+              Logout
+            </button>
+          </>
+        ) : (
+          <>
+            <Link to="/Login">
+              Login
+            </Link>
+            <Link to="/Signup">
+              Signup
+            </Link>
+          </>
+        )}
       </>
     )
 }

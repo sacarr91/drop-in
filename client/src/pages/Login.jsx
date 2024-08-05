@@ -41,11 +41,11 @@ const Login = (props) => {
   };
 
   return (
-    <main className="">
-      <section className="">
-        <section className="">
-          <h4 className="">Login</h4>
-          <section className="">
+    <div className="w-50 mx-auto">
+      <div>
+        <div className="card bg-card">
+          <h4 className="card-header">Login</h4>
+          <section className="card-body">
             {data ? (
               <p>
                 Success! You may now head{' '}
@@ -53,16 +53,24 @@ const Login = (props) => {
               </p>
             ) : (
               <form onSubmit={handleFormSubmit}>
+                <label
+                for="email">
+                  Email
+                </label>
                 <input
-                  className=""
+                  className="form-control"
                   placeholder="Your email"
                   name="email"
                   type="email"
                   value={formState.email}
                   onChange={handleChange}
                 />
+                <label
+                for="password">
+                  Password
+                </label>
                 <input
-                  className=""
+                  className="form-control"
                   placeholder="******"
                   name="password"
                   type="password"
@@ -70,7 +78,7 @@ const Login = (props) => {
                   onChange={handleChange}
                 />
                 <button
-                  className=""
+                  className="btn"
                   style={{ cursor: 'pointer' }}
                   type="submit"
                 >
@@ -85,9 +93,9 @@ const Login = (props) => {
               </section>
             )}
           </section>
-        </section>
-      </section>
-    </main>
+        </div>
+      </div>
+    </div>
   );
 };
 

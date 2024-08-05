@@ -11,6 +11,7 @@ const Signup = () => {
     name: '',
     email: '',
     password: '',
+    role: '',
   });
   const [addProfile, { error, data }] = useMutation(ADD_PROFILE);
 
@@ -23,10 +24,17 @@ const Signup = () => {
     });
   };
 
+  const handleRadioChange = (event) => {
+    const { name, value } = event.target;
+
+    setFormState({
+      ...formState,
+      [name]: value,
+    })
+  }
+
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    console.log(formState);
-
     try {
       const { data } = await addProfile({
         variables: { ...formState },
@@ -39,11 +47,11 @@ const Signup = () => {
   };
 
   return (
-    <main className="">
-      <section className="">
-        <section className="">
-          <h4 className="">Sign Up</h4>
-          <section className="">
+    <div className="w-50 mx-auto">
+      <div>
+        <div className="card bg-card">
+          <h4 className="card-header">Sign Up</h4>
+          <div className="card-body">
             {data ? (
               <p>
                 Success! You may now head{' '}
@@ -51,32 +59,55 @@ const Signup = () => {
               </p>
             ) : (
               <form onSubmit={handleFormSubmit}>
+                <label
+                  for="username">
+                  Username
+                </label>
                 <input
-                  className=""
+                  className="form-control"
+                  id="username"
                   placeholder="Your username"
                   name="name"
                   type="text"
                   value={formState.name}
                   onChange={handleChange}
                 />
+                <label
+                  for="email">
+                  Email
+                </label>
                 <input
-                  className=""
+                  className="form-control"
+                  id="email"
                   placeholder="Your email"
                   name="email"
                   type="email"
                   value={formState.email}
                   onChange={handleChange}
                 />
+                <label
+                  for="password">
+                  Password
+                </label>
                 <input
-                  className=""
+                  className="form-control"
+                  id="password"
                   placeholder="******"
                   name="password"
                   type="password"
                   value={formState.password}
                   onChange={handleChange}
                 />
-                <button
-                  className=""
+                <label className="form-check-label">Role</label>
+                <div className="form-check">
+                  <input className="form-check-input" type="radio" name="role" value="skater" checked={formState.role === 'skater'} onChange={handleRadioChange} />
+                  <label className="form-check-label">Skater</label>
+                </div>
+                <div className="form-check">
+                  <input className="form-check-input" type="radio" name="role" value="sponsor" checked={formState.role === 'sponsor'} onChange={handleRadioChange} />
+                  <label className="form-check-label">Sponsor</label>
+                </div>
+                <button className="btn"
                   style={{ cursor: 'pointer' }}
                   type="submit"
                 >
@@ -84,16 +115,15 @@ const Signup = () => {
                 </button>
               </form>
             )}
-
             {error && (
               <section className="">
                 {error.message}
               </section>
             )}
-          </section>
-        </section>
-      </section>
-    </main>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

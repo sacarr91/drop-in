@@ -5,7 +5,7 @@ import "./utils/style.css";
 
 import App from "./App";
 import ErrorPage from "../src/pages/ErrorPage"
-
+import Signup from "./pages/Signup"
 import Home from "../src/pages/Home";
 import AboutSkater from "../src/pages/AboutSkater";
 import AboutSponsor from "../src/pages/AboutSponsor";
@@ -16,7 +16,7 @@ import Login from "./pages/Login";
 import AllSkater from "./pages/AllSkaters";
 import AllSponsors from "./pages/AllSponsors";
 import Profile from "./pages/Profile";
-import Signup from "./pages/Signup";
+
 
 const router = createBrowserRouter([
   {
@@ -28,6 +28,10 @@ const router = createBrowserRouter([
         index: true,
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/Signup",
+        element: <Signup />
       },
       {
         path: "/AboutSkater",
