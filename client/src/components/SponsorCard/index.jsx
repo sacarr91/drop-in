@@ -1,4 +1,4 @@
-import "../utils/sponsorcard.css"
+import "../../utils/sponsorcard.css"
 import defaultImage from "/images/baker.jpg"
 
 const SponsorCard = ({ sponsor }) => {

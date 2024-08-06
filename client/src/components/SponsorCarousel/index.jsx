@@ -1,6 +1,6 @@
-import SponsorCard from "./SponsorCard";
+import SponsorCard from '../SponsorCard';
 import { useQuery } from '@apollo/client';
-import { QUERY_PROFILES } from '../utils/queries';
+import { QUERY_PROFILES } from '../../utils/queries'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -29,14 +29,14 @@ const SponsorCarousel = () => {
       arrows: true,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1100,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
           },
         },
         {
-          breakpoint: 600,
+          breakpoint: 700,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
