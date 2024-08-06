@@ -1,13 +1,9 @@
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import Auth from '../utils/auth';
 
-import("../utils/style.css")
+import("../../utils/style.css")
 
 function NavLinks({ expand }) {
     return (
