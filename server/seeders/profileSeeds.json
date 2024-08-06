@@ -51,5 +51,44 @@
     "age": null,
     "bio": null,
     "role": "Sponsor"
+  },
+  {
+    "name": "Venture Trucks",
+    "email": "test@venturetrucks.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors":[],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": null,
+    "role": "Sponsor"
+  },
+  {
+    "name": "Darkstar Skateboards",
+    "email": "test@darkstar.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors":[],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": null,
+    "role": "Sponsor"
+  },
+  {
+    "name": "Spitfire Wheels",
+    "email": "test@spitfire.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors":[],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": null,
+    "role": "Sponsor"
   }
 ]

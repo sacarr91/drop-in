@@ -1,0 +1,66 @@
+.sponsor-card {
+    width: 50vh;
+    height: 35vh;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .sponsor-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .sponsor-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .sponsor-card:hover .sponsor-card-overlay {
+    opacity: 1;
+  }
+  
+  .sponsor-title {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  
+  .sponsor-description {
+    font-size: 1em;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .sponsor-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .sponsor-link {
+    background-color: var(--clr-accent1);
+    color: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .sponsor-link:hover {
+    background-color: var(--clr-accent2);
+    color: var(--clr-dark)
+  }
