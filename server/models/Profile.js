@@ -66,6 +66,10 @@ const profileSchema = new Schema({
     type: String,
     required: true,
   },
+
+  profileImage: {
+    type: String,
+  },
 });
 
 profileSchema.pre("save", async function (next) {

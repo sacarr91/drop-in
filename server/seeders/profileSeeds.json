@@ -10,6 +10,7 @@
     "weSponsor":[],
     "age": 19,
     "levels": "Amature",
+    "profileImage": null,
     "bio": "Hi I am Tony Hawk from Burnside California. I have been skating and surfing since I was just a kid in Sacremento. I am looking to get sponsored so that I can qualify to skate in the TampaAM contest 2024.",
     "role": "Skater"
   },
@@ -23,6 +24,7 @@
     "friends": [],
     "sponsors":[],
     "age": null,
+    "profileImage": null,
     "bio":"This is BAKER skateboards, checkout our videos and content @ BAKERSKATEBOARDS.COM BAKER BAKER BAKER",
     "role": "Sponsor"
   },
@@ -37,6 +39,7 @@
     "friends": [],
     "age": 22,
     "bio": null,
+    "profileImage": null,
     "role": "Skater"
   },
   {
@@ -50,6 +53,7 @@
     "friends": [],
     "age": null,
     "bio": null,
+    "profileImage": null,
     "role": "Sponsor"
   }
 ]

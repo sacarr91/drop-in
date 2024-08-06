@@ -43,3 +43,12 @@ export const REMOVE_GOAL = gql`
     }
   }
 `;
+
+export const ADD_PROFILE_IMAGE = gql`
+mutation addProfileImage($profileImage: String!) {
+  addProfileImage(profileImage: $profileImage ) {
+      _id
+      profileImage
+    }
+  }
+`

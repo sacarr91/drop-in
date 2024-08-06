@@ -162,6 +162,22 @@ const resolvers = {
       throw AuthenticationError;
     },
 
+    addProfileImage: async (parent, { profileId, profileImage }, context) => {
+      if(context.user) {
+        return Profile.findOneAndUpdate(
+          { _id: profileId },
+          { $set: {profileImage: profileImage } },
+          {
+            new: true,
+            runValidators: true,
+          }
+        );
+      }
+      throw AuthenticationError;
+
+    },
+
+
     addAge: async (parent, { profileId, age }, context) => {
       if (context.user) {
         return Profile.findOneAndUpdate(
