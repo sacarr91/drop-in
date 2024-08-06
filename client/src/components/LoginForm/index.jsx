@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import Auth from '../utils/auth';
+import Auth from '../../utils/auth';
 
-function LoginLogic(){
+function LoginForm(){
     const logout = (event) => {
         event.preventDefault();
         Auth.logout();
@@ -10,7 +10,7 @@ function LoginLogic(){
         <>
         {Auth.loggedIn() ? (
           <>
-            <Link to="/">
+            <Link to="/me">
               View My Profile
             </Link>
             <button onClick={logout}>
@@ -31,4 +31,4 @@ function LoginLogic(){
     )
 }
 
-export default LoginLogic
+export default LoginForm
