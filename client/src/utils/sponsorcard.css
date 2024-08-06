@@ -52,7 +52,7 @@
   }
   
   .sponsor-link {
-    background-color: var(--clr-accent1);
+    background-color: white;
     color: red;
     padding: 5px 10px;
     border-radius: 5px;
@@ -61,6 +61,6 @@
   }
   
   .sponsor-link:hover {
-    background-color: var(--clr-accent2);
-    color: var(--clr-dark)
+    background-color: red;
+    color: white
   }

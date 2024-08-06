@@ -1,9 +1,11 @@
 import "../utils/sponsorcard.css"
-import baker from "../assets/baker.jpg"
+import defaultImage from "/images/baker.jpg"
 
 const SponsorCard = ({ sponsor }) => {
+  const imageUrl = sponsor.image ? `images/${sponsor.image}` : defaultImage;
+
   return (
-    <div className="sponsor-card" style={{ backgroundImage: `url(${sponsor.image})` }}>
+    <div className="sponsor-card" style={{ backgroundImage: `url(${imageUrl})` }}>
       <div className="sponsor-card-overlay">
         <h3 className="sponsor-title">{sponsor.name}</h3>
         <p className="sponsor-description">{sponsor.bio}</p>

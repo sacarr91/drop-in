@@ -24,7 +24,8 @@
     "sponsors":[],
     "age": null,
     "bio":"This is BAKER skateboards, checkout our videos and content @ BAKERSKATEBOARDS.COM BAKER BAKER BAKER",
-    "role": "Sponsor"
+    "role": "Sponsor",
+    "image": "baker.jpg"
   },
   {
     "name": "Rodney Mullen",
@@ -50,7 +51,8 @@
     "friends": [],
     "age": null,
     "bio": null,
-    "role": "Sponsor"
+    "role": "Sponsor",
+    "image": "birdhouse.png"
   },
   {
     "name": "Venture Trucks",
@@ -63,7 +65,8 @@
     "friends": [],
     "age": null,
     "bio": null,
-    "role": "Sponsor"
+    "role": "Sponsor",
+    "image": "venture.jpg"
   },
   {
     "name": "Darkstar Skateboards",
@@ -76,7 +79,8 @@
     "friends": [],
     "age": null,
     "bio": null,
-    "role": "Sponsor"
+    "role": "Sponsor",
+    "image": "darkstar.jpg"
   },
   {
     "name": "Spitfire Wheels",
@@ -89,6 +93,7 @@
     "friends": [],
     "age": null,
     "bio": null,
-    "role": "Sponsor"
+    "role": "Sponsor",
+    "image": "spitfire.jpg"
   }
 ]

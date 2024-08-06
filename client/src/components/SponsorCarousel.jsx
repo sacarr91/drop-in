@@ -12,6 +12,8 @@ const SponsorCarousel = () => {
     if (error) return <p>Error: {error.message}</p>;
 
     const sponsorProfiles = data.profiles.filter(profile => profile.role === 'Sponsor');
+
+    console.log(sponsorProfiles);
   
     if (!sponsorProfiles.length) {
       return <h3>No Sponsor Profiles Yet</h3>;
@@ -20,9 +22,10 @@ const SponsorCarousel = () => {
     const settings = {
       dots: true,
       infinite: true,
-      speed: 1,
       slidesToShow: 3,
       slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
       arrows: true,
       responsive: [
         {
