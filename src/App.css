@@ -1,0 +1,66 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url("./utils/fonts.css");
+
+:root {
+  --bs-btn-focus-shadow-rgb: #65bd47;
+}
+
+.bg-img {
+  --bs-bg-opacity: 1;
+  background-image: url("/client/public/images/headerBgnd.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-toggler {
+  background-color: #6653a4;
+  --bs-navbar-toggler-icon-bg: url("/client/public/images/menuBtn.png");
+}
+
+.navbar-toggler:hover {
+  --box-shadow-color: rgb(101, 189, 71);
+  box-shadow: 0 0 30px var(--box-shadow-color);
+  --bs-navbar-toggler-border-color: rgb(101, 189, 71);
+  background-color: transparent;
+
+}
+
+.homeLink {
+  color: rgb(101, 189, 71);
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 12rem;
+  font-size: xx-large;
+  text-shadow: 0 0 20px #6653a4;
+}
+
+.homeLink:hover {
+  color: #ffffffe5;
+  text-shadow: 0 0 20px #6653a4;
+}
+
+.footer-style {
+  background-image: url("/client/public/images/footerBgnd.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a.headerbtn {
+  background-color: #6653a4;
+  color: #ffffffe5;
+  --bs-btn-hover-border-color: rgb(101, 189, 71);
+}
+
+a.headerbtn:hover {
+  color: rgb(101, 189, 71);
+  --box-shadow-color: rgb(101, 189, 71);
+  box-shadow: 0 0 30px var(--box-shadow-color);
+}
+
+body {
+  color: #ffffffe5;
+  background-image: url("/client/public/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

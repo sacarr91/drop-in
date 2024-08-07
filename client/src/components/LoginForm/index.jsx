@@ -10,19 +10,19 @@ function LoginForm(){
         <>
         {Auth.loggedIn() ? (
           <>
-            <Link to="/me">
+            <Link to="/me" className='btn headerbtn'>
               View My Profile
             </Link>
-            <button onClick={logout}>
+            <button onClick={logout} className='btn headerbtn'>
               Logout
             </button>
           </>
         ) : (
           <>
-            <Link to="/Login">
+            <Link to="/Login" className='btn headerbtn'>
               Login
             </Link>
-            <Link to="/Signup">
+            <Link to="/Signup" className='btn headerbtn'>
               Signup
             </Link>
           </>
