@@ -22,6 +22,8 @@
     "dotenv": "^16.4.5",
     "react-bootstrap": "^2.10.4",
     "react-slick": "^0.30.2",
-    "slick-carousel": "^1.8.1"
+    "react-square-web-payments-sdk": "^3.2.1",
+    "slick-carousel": "^1.8.1",
+    "square": "^37.1.1"
   }
 }
