@@ -11,7 +11,7 @@ const SponsorList = ({ profiles, title }) => {
 
   return (
     <Container>
-      <h3 className="my-4">{title}</h3>
+      <h3 className="my-4">All Sponsors</h3>
       <Row>
         {sponsorProfiles.map((profile) => (
           <Col key={profile._id} sm={12} md={6} lg={4} className="mb-4">
