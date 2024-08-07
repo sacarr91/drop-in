@@ -10,7 +10,7 @@ const SponsorCard = ({ sponsor }) => {
         <h3 className="sponsor-title">{sponsor.name}</h3>
         <p className="sponsor-description">{sponsor.bio}</p>
         <div className="sponsor-links">
-          <a href={`/profiles/${sponsor._id}`} className="sponsor-link">
+          <a href={`/profiles/${sponsor._id}`} className="btn carocardbtn">
             View Our Page!
           </a>
         </div>
