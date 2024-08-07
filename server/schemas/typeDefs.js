@@ -10,6 +10,7 @@ const typeDefs = `
     role: String!
     level: String
     bio: String
+    image: String
     awards: [Award]!
     friends: [Profile]!
     ourSponsors:[Profile]!

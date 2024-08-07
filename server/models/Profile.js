@@ -32,6 +32,10 @@ const profileSchema = new Schema({
     }
   ],
 
+  image: {
+    type: String,
+  },
+
   ourSponsors: [
     {
       type: Schema.Types.ObjectId,
