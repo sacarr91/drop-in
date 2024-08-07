@@ -1,30 +1,28 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import skateboardgif from '../../../public/images/skateboardgif.gif';
 
 function Footer() {
   return (
-    <Navbar fixed="bottom" expand="lg" className="bg-body-tertiary">
-      <Container className="d-flex justify-content-between align-items-center">
-        <Nav className="d-flex align-items-center">
-          <Nav.Item className="me-4">
-            <Nav.Link href="/home">
-              <img src={skateboardgif} height={80} alt="Skateboard" />
+    <Navbar fixed="bottom" expand="lg" className="footer-style">
+      <Container>
+        <Nav variant="underline">
+        <Nav.Item className='footLink'>
+            <Nav.Link href="https://github.com/sacarr91" target="_blank">
+            <img src='/images/devteam.png' height={40}>
+            </img>
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item className="me-4">
-            <Nav.Link href="https://www.linkedin.com/in/stephaniecarr424/" target="_blank">
-              <h1>Our Team</h1>
+          <Nav.Item className='footLink'>
+            <Nav.Link href="https://github.com/sacarr91" target="_blank">
+            <img src='/images/coderepo.png' height={40}>
+            </img>
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
-            <Nav.Link href="https://stackoverflow.com/users/23317680/stephcarr" target="_blank">
-              <h1>Our Mission</h1>
-            </Nav.Link>
-          </Nav.Item>
+          
+          
         </Nav>
-        <span>est. 2024</span>
+          <img src='/images/titanGlowFooter.png' height={30} style={{justifySelf: "end"}}></img>
       </Container>
     </Navbar>
   );
