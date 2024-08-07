@@ -65,7 +65,7 @@
   align-items: center;
 }
 
-a.headerbtn {
+.headerbtn {
   background-color: #6653a4;
   color: #ffffffe5;
   --bs-btn-hover-border-color: rgb(101, 189, 71);
@@ -73,7 +73,7 @@ a.headerbtn {
   margin-right: 1rem;
 }
 
-a.headerbtn:hover {
+.headerbtn:hover {
   color: rgb(101, 189, 71);
   --box-shadow-color: rgb(101, 189, 71);
   box-shadow: 0 0 30px var(--box-shadow-color);
@@ -96,7 +96,7 @@ body {
   /* Footer height */
 }
 
-.btn {
+.formbtn {
   margin: 5px;
   background-color: #7C737F;
   width: 99%;
