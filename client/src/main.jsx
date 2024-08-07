@@ -1,7 +1,5 @@
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./utils/style.css";
 
 import App from "./App";
 import ErrorPage from "../src/pages/ErrorPage"
@@ -13,10 +11,9 @@ import Connect from "../src/pages/Connect";
 import SponsorLevels from "../src/pages/SponsorLevels";
 import CreateSkater from "../src/pages/CreateSkater";
 import Login from "./pages/Login";
-import AllSkater from "./pages/AllSkaters";
 import AllSponsors from "./pages/AllSponsors";
 import Profile from "./pages/Profile";
-
+import AllSkaters from '../src/pages/AllSkaters.jsx';
 
 const router = createBrowserRouter([
   {
@@ -27,62 +24,55 @@ const router = createBrowserRouter([
       {
         index: true,
         path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/Signup",
+        element: <Home />
+      }, {
+        path: '/login',
+        element: <Login />
+      }, {
+        path: '/signup',
         element: <Signup />
+      }, {
+        path: '/profiles/:profileId',
+        element: <Profile />
+      }, {
+        path: '/me',
+        element: <Profile />
       },
+
+      // ----------------------------------
+      
       {
-        path: "/AboutSkater",
+        path: "/about-skater",
         element: <AboutSkater />,
       },
       {
-        path: "/AboutSponsor",
+        path: "/about-sponsor",
         element: <AboutSponsor />,
       },
       {
-        path: "/CreateSkater",
+        path: "/new-skater",
         element: <CreateSkater />,
       },
       {
-        path: "/Connect",
+        path: "/all-skaters",
+        element: <AllSkaters />,
+      },
+      {
+        path: "/all-sponsors",
+        element: <AllSponsors />,
+      },
+      {
+        path: "/connect",
         element: <Connect />,
       },
       {
-        path: "/SponsorLevels",
+        path: "/sponsor-levels",
         element: <SponsorLevels />,
-      },
-      {
-        path: '/login',
-        element: <Login />
-      }, 
-      {
-        path: "/SkaterList",
-        element: <AllSkater />
-      },
-      {
-        path: "/SponsorList",
-        element: <AllSponsors />
-      },
-      {
-        path: '/signup',
-        element: <Signup />
-      }, 
-      {
-        path: '/profiles/:profileId',
-        element: <Profile />
-      }, 
-      {
-        path: '/me',
-        element: <Profile />
       }
-
     ],
   },
 ]);
 
-// Render the RouterProvider component
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
-);
+)
