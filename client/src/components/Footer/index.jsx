@@ -5,7 +5,7 @@ import skateboardgif from '../../../public/images/skateboardgif.gif';
 
 function Footer() {
   return (
-    <Navbar fixed="bottom" expand="lg" className="bg-body-tertiary">
+    <Navbar position="absolute" expand="lg" className="bg-body-tertiary">
       <Container className="d-flex justify-content-between align-items-center">
         <Nav className="d-flex align-items-center">
           <Nav.Item className="me-4">

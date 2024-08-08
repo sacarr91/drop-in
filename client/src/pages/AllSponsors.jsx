@@ -17,7 +17,7 @@ const AllSponsor = () => {
           ) : (
             <SponsorList
               profiles={profiles}
-              title="All Skaters"
+              title="All Sponsors"
             />
           )}
         </section>
