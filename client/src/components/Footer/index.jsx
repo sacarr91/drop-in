@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import skateboardgif from '../../../public/images/skateboardgif.gif';
+import skateboardgif from '../../../public/images/skateboardgif.gif'
 
 function Footer() {
   return (
@@ -14,7 +14,7 @@ function Footer() {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item className="me-4">
-            <Nav.Link href="https://www.linkedin.com/in/stephaniecarr424/" target="_blank">
+            <Nav.Link href="/our-team" target="_blank">
               <h1>Our Team</h1>
             </Nav.Link>
           </Nav.Item>
