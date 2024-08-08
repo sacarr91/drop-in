@@ -5,7 +5,7 @@ import App from "./App";
 import ErrorPage from "../src/pages/ErrorPage"
 import Signup from "./pages/Signup"
 import Home from "../src/pages/Home";
-import AboutSkater from "../src/pages/AboutSkater";
+import AboutSkater from "./pages/About.jsx";
 import AboutSponsor from "../src/pages/AboutSponsor";
 import Connect from "../src/pages/Connect";
 import SponsorLevels from "../src/pages/SponsorLevels";
@@ -38,16 +38,9 @@ const router = createBrowserRouter([
         path: '/me',
         element: <Profile />
       },
-
-      // ----------------------------------
-      
       {
-        path: "/about-skater",
-        element: <AboutSkater />,
-      },
-      {
-        path: "/about-sponsor",
-        element: <AboutSponsor />,
+        path: "/get-sponsored",
+        element: <HowTo />,
       },
       {
         path: "/new-skater",
@@ -58,16 +51,20 @@ const router = createBrowserRouter([
         element: <AllSkaters />,
       },
       {
+        path: "/sponsor-levels",
+        element: <SponsorLevels />,
+      },
+      {
+        path: "/new-sponsor",
+        element: <Create />,
+      },
+      {
         path: "/all-sponsors",
         element: <AllSponsors />,
       },
       {
         path: "/connect",
         element: <Connect />,
-      },
-      {
-        path: "/sponsor-levels",
-        element: <SponsorLevels />,
       }
     ],
   },
