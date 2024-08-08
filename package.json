@@ -18,12 +18,17 @@
     "concurrently": "^8.2.0"
   },
   "dependencies": {
+    "@stripe/react-stripe-js": "^2.7.3",
+    "@stripe/stripe-js": "^4.2.0",
+    "axios": "^1.7.3",
+    "body-parser": "^1.20.2",
     "bootstrap": "^5.3.3",
     "dotenv": "^16.4.5",
     "react-bootstrap": "^2.10.4",
     "react-slick": "^0.30.2",
     "react-square-web-payments-sdk": "^3.2.1",
     "slick-carousel": "^1.8.1",
-    "square": "^37.1.1"
+    "square": "^37.1.1",
+    "stripe": "^16.6.0"
   }
 }
