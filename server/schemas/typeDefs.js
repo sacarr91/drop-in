@@ -9,7 +9,7 @@ const typeDefs = `
     role: String
     level: String
     bio: String
-    profileImage: String
+    profileImage: Upload
     awards: [Award]
     friends: [Profile]
     ourSponsors:[Profile]
@@ -47,7 +47,7 @@ type Mutation {
   addAward(profileId: ID!, awards: CreateAwardInput!): Profile
   addFriend(profileId: ID!, friendId: ID!): Profile
 
-  addProfileImage(profileId: ID!, profileImage: String!): Profile
+  addProfileImage(profileId: ID!, profileImage: Upload!): Profile
 
   addSponsor(profileId: ID!, friendId: ID!): Profile
 

@@ -1,6 +1,7 @@
 const { Profile, Award } = require('../models');
 const { signToken, AuthenticationError } = require('../utils/auth');
-
+const multer = require('multer');
+const upload = multer({ dest: 'uploads/' });
 
 // resolvers will be leveraged to run queries and mutations. 
 const resolvers = {
@@ -56,8 +57,6 @@ const resolvers = {
       const token = signToken(profile);
       return { token, profile };
     },
-
-    // TO DO: add levels
 
     // add awards
     addAward: async (parent, { profileId, awards }, context) => {
@@ -162,19 +161,16 @@ const resolvers = {
       throw AuthenticationError;
     },
 
-    addProfileImage: async (parent, { profileId, profileImage }, context) => {
-      if(context.user) {
+    addProfileImage: async (parent, { profileId }, context) => {
+      if (context.user) {
+        const profileImage = context.req.file.filename; 
         return Profile.findOneAndUpdate(
           { _id: profileId },
-          { $set: {profileImage: profileImage } },
-          {
-            new: true,
-            runValidators: true,
-          }
+          { $set: { profileImage: profileImage } },
+          { new: true, runValidators: true }
         );
       }
       throw AuthenticationError;
-
     },
 
 

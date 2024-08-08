@@ -45,7 +45,8 @@ export const REMOVE_GOAL = gql`
 `;
 
 export const ADD_PROFILE_IMAGE = gql`
-mutation addProfileImage($profileImage: String!) {
+
+mutation addProfileImage($profileImage: Upload!) {
   addProfileImage(profileImage: $profileImage ) {
       _id
       profileImage

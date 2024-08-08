@@ -1,21 +1,13 @@
 require("dotenv").config();
 const express = require('express');
-const { ApolloServer } = require('@apollo/server');
-const { expressMiddleware } = require('@apollo/server/express4');
+const { ApolloServer } = require('apollo-server');
+const { expressMiddleware } = require('@apollo/server');
 const path = require('path');
 const { authMiddleware } = require('./utils/auth');
 
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
 
-const PORT = process.env.PORT || 3001;
-const app = express();
-const server = new ApolloServer({
-  typeDefs,
-  resolvers,
-});
-
-// uploads code
 const multer = require('multer');
 
 const storage = multer.diskStorage({
@@ -28,7 +20,14 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage: storage });
-// uploads code
+
+const PORT = process.env.PORT || 3001;
+const app = express();
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+  uploads: false,
+});
 
 
 const startApolloServer = async () => {
