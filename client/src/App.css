@@ -1,5 +1,6 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@200..700&family=Rock+Salt&display=swap');
+@import './utils/developer.css';
 
 :root {
   --bs-btn-focus-shadow-rgb: #65bd47;
@@ -102,7 +103,21 @@ body {
   background-color: #E7DCEB;
 }
 
+.btn {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.1rem;
+}
 
+h1, h4, h5 {
+  font-family: "Rock Salt", cursive;;
+}
+
+h2, h3, h6 {
+  font-family: "Bangers", system-ui;
+}
 /* FONTS */
 
 

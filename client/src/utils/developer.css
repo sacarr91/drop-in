@@ -1,0 +1,31 @@
+.devCard {
+    width: 18rem;
+    margin: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+}
+
+.devCard img {
+    border-radius: 8px 8px 0 0;
+}
+
+.devCard div {
+    padding: 1rem;
+}
+
+.gh-link {
+    background-color: rgb(101, 189, 71);
+    color: #1a0026;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    --bs-btn-hover-border-color: #6653a4;
+}
+  
+  .gh-link:hover {
+    background-color: #1a0026;
+    color: #ffffff;
+    --box-shadow-color: rgb(101, 189, 71);
+    box-shadow: 0 0 30px var(--box-shadow-color);
+    border-color: rgb(101, 189, 71);
+  }
