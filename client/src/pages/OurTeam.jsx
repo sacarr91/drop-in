@@ -47,7 +47,7 @@ const Devs = [
 const OurTeam = () => {
     return(
         <>
-        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+        <div className='row'>
         {Devs.map((dev, index) => (
         <DeveloperCard key={index} dev={dev} />
         ))}
