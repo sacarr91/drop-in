@@ -16,8 +16,8 @@ const SkaterCard = ({ skater }) => {
       if (data) {
         setIsFriend(true);
       }
-    } catch (err) {
-      console.err("Error when adding friend:", err);
+    } catch (error) {
+      console.error("Error when adding friend:", error);
     }
   };
   return (
@@ -38,7 +38,7 @@ const SkaterCard = ({ skater }) => {
             className="btn carocardbtn"
             disabled={isFriend}
           >
-            {isFriend ? "Friend Added" : "Add Friend"}
+            {isFriend ? "Friend Added" : "Add Me"}
           </button>
         </div>
       </div>

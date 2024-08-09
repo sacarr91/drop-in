@@ -2,8 +2,8 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
-import ErrorPage from "../src/pages/ErrorPage"
-import Signup from "./pages/Signup"
+import ErrorPage from "../src/pages/ErrorPage";
+import Signup from "./pages/Signup";
 import Home from "../src/pages/Home";
 import Connect from "../src/pages/Connect";
 import SponsorLevels from "../src/pages/SponsorLevels";
@@ -11,12 +11,12 @@ import CreateSkater from "./pages/StartSkating.jsx";
 import Login from "./pages/Login";
 import AllSponsors from "./pages/AllSponsors";
 import Profile from "./pages/Profile";
-import AllSkaters from '../src/pages/AllSkaters.jsx';
+import AllSkaters from "../src/pages/AllSkaters.jsx";
 import HowTo from "./pages/HowTo.jsx";
 import Create from "./pages/BecomeSponsor.jsx";
-import OurTeam from "./pages/OurTeam.jsx";import UserProfile from "./pages/UserProfile";
+import OurTeam from "./pages/OurTeam.jsx";
+import UserProfile from "./pages/UserProfile";
 import EditProfile from "./pages/EditProfile";
-
 
 const router = createBrowserRouter([
   {
@@ -27,17 +27,17 @@ const router = createBrowserRouter([
       {
         index: true,
         path: "/",
-        element: <Home />
-      }, 
+        element: <Home />,
+      },
       {
-        path: '/login',
-        element: <Login />
-      }, 
+        path: "/login",
+        element: <Login />,
+      },
       {
-        path: '/signup',
-        element: <Signup />
-      }, 
- 
+        path: "/signup",
+        element: <Signup />,
+      },
+
       {
         path: "/get-sponsored",
         element: <HowTo />,
@@ -68,24 +68,24 @@ const router = createBrowserRouter([
       },
       {
         path: "/our-team",
-        element: <OurTeam />
+        element: <OurTeam />,
       },
       {
-        path: '/profiles/:profileId',
-        element: <UserProfile />
-      }, 
-      {
-        path: '/me',
-        element: <UserProfile />
+        path: "/profiles/:profileId",
+        element: <UserProfile />,
       },
       {
-        path:'/editprofile/:profileId',
-        element:<EditProfile />
-      }
+        path: "/me",
+        element: <EditProfile />,
+      },
+      {
+        path: "/editprofile/:profileId",
+        element: <EditProfile />,
+      },
     ],
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
-)
+);
