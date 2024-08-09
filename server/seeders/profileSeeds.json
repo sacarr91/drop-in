@@ -11,7 +11,8 @@
     "age": 19,
     "levels": "Amature",
     "bio": "Hi I am Tony Hawk from Burnside California. I have been skating and surfing since I was just a kid in Sacremento. I am looking to get sponsored so that I can qualify to skate in the TampaAM contest 2024.",
-    "role": "Skater"
+    "role": "Skater",
+    "image": null
   },
   {
     "name": "Baker Skateboards",
@@ -38,7 +39,8 @@
     "friends": [],
     "age": 22,
     "bio": null,
-    "role": "Skater"
+    "role": "Skater",
+    "image": null
   },
   {
     "name": "Birdhouse Skate Team",
