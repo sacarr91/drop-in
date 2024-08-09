@@ -107,7 +107,7 @@ const Signup = () => {
                   <input className="form-check-input" type="radio" name="role" value="sponsor" checked={formState.role === 'sponsor'} onChange={handleRadioChange} />
                   <label className="form-check-label">Sponsor</label>
                 </div>
-                <button className="btn"
+                <button className="btn formbtn"
                   style={{ cursor: 'pointer' }}
                   type="submit"
                 >

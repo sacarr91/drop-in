@@ -1,30 +1,23 @@
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import Auth from '../../utils/auth';
 import NavLinks from '../NavLinks';
 import LoginForm from '../LoginForm';
 
-import("../../utils/style.css")
 
 function Header() {
   return (
-    <>
+    <div className='headerNav'>
       {[false].map((expand) => (
-        <Navbar key={expand} expand={expand} className="bg-body-tertiary bg-img mb-3">
-          <Container fluid>
+        <Navbar key={expand} expand={expand} className=" bg-img mb-3">
             <Navbar.Brand href="/" className="bangers homeLink">DROP IN</Navbar.Brand>
+            <div className='buttonDiv'>
             <LoginForm />
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} className="toggleBtn" />
+            </div>
             <NavLinks />
-          </Container>
         </Navbar>
       ))}
-    </>
+    </div>
   );
 }
 

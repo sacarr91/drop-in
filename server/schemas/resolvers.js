@@ -1,5 +1,16 @@
 const { Profile, Award } = require('../models');
 const { signToken, AuthenticationError } = require('../utils/auth');
+const { randomUUID } = require('crypto');
+const { Client } = require('square');
+require('dotenv').config();
+
+
+const getPaymentsApi = () => {
+  return new Client({
+    accessToken: process.env.SQUARE_ACCESS_TOKEN,
+    environment: 'sandbox'
+  }).paymentsApi;
+};
 
 
 // resolvers will be leveraged to run queries and mutations. 
@@ -203,6 +214,29 @@ const resolvers = {
         );
       }
       throw AuthenticationError;
+    },
+    createPayment: async (_, { input }) => {
+      const { sourceId, amount } = input;
+      console.log("Payment input:", input);  // Log the input to debug
+      const paymentsApi = getPaymentsApi();  // Initialize the Square client here
+      try {
+        const { result } = await paymentsApi.createPayment({
+          idempotencyKey: randomUUID(),
+          sourceId,
+          amountMoney: {
+            currency: 'USD',
+            amount,
+          },
+        });
+        console.log("Payment result:", result);  // Log the result to debug
+        return {
+          paymentId: result.payment.id,
+          status: result.payment.status,
+        };
+      } catch (error) {
+        console.error("Payment error:", error);  // Log the error to debug
+        throw new Error("Payment processing failed");
+      }
     },
     editProfile: async (parent, { profileId, age, levels,goals}, context) => {
       if (context.user) {

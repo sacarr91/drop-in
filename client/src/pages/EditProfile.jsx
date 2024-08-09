@@ -5,7 +5,6 @@ import Card from 'react-bootstrap/Card';
 import { Link, useParams } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
-
 import { EDIT_PROFILE } from '../utils/mutations';
 
 const EditProfile = () => {

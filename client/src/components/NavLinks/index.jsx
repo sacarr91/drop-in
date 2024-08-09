@@ -3,7 +3,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-import("../../utils/style.css")
 
 function NavLinks({ expand }) {
     return (
@@ -25,13 +24,13 @@ function NavLinks({ expand }) {
                 title="Skaters"
                 id={`offcanvasNavbarDropdown-expand-${expand}`}
               >
-                <NavDropdown.Item href="/AboutSkater">
-                  How to Become a Skater
+                <NavDropdown.Item href="/get-sponsored">
+                  How to Get Sponsored
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/CreateSkater">
+                <NavDropdown.Item href="/new-skater">
                   Become a Skater
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/SkaterList">
+                <NavDropdown.Item href="/all-skaters">
                   See All Skaters
                 </NavDropdown.Item>
               </NavDropdown>
@@ -39,25 +38,17 @@ function NavLinks({ expand }) {
                 title="Sponsors"
                 id={`offcanvasNavbarDropdown-expand-${expand}`}
               >
-                <NavDropdown.Item href="/AboutSponsor">
-                  How to Become a Sponsor
+                <NavDropdown.Item href="/sponsor-levels">
+                  Sponsorship Levels
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/SponsorList">
+                <NavDropdown.Item href="/new-sponsor">
+                  Become a Sponsor
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/all-sponsors">
                   See All Sponsors
                 </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown
-                title="Levels"
-                id={`offcanvasNavbarDropdown-expand-${expand}`}
-              >
-                <NavDropdown.Item href="/SponsorLevels">
-                  Levels Description
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
-                </NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link href="/Connect">Connect</Nav.Link>
+              <Nav.Link href="/connect">Connect</Nav.Link>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>

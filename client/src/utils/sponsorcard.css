@@ -1,0 +1,72 @@
+.sponsor-card {
+    height: 35vh;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .sponsor-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .sponsor-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .sponsor-card:hover .sponsor-card-overlay {
+    opacity: 1;
+  }
+  
+  .sponsor-title {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  
+  .sponsor-description {
+    font-size: 1em;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .sponsor-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .carocardbtn {
+    background-color: rgb(101, 189, 71);
+    color: black;
+    --bs-btn-hover-border-color: rgb(101, 189, 71);
+    height: 40px;
+    margin-right: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .carocardbtn:hover {
+    background-color: #1a0026;
+    color: rgb(101, 189, 71);
+    --box-shadow-color: rgb(101, 189, 71);
+    box-shadow: 0 0 30px var(--box-shadow-color);
+  }
+  
+  .sponsor-link:hover {
+    background-color: red;
+    color: white
+  }

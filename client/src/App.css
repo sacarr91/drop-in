@@ -1,28 +1,90 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@200..700&family=Rock+Salt&display=swap');
 
-.primary {
-  background-color: #1deb57;
+:root {
+  --bs-btn-focus-shadow-rgb: #65bd47;
 }
 
-.secondary {
-  background-color: #1d70eb;
+.bg-img {
+  --bs-bg-opacity: 1;
+  background-image: url("/images/headerBgnd.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fit-content;
 }
 
-.alert{
-  background-color: #eb1d54;
-}
-
-.button-link {
-  text-align: center;
-  display: inline-block;
-  padding: 0.5rem 1.2rem;
-  margin: 0;
-  text-decoration: none;
+.navbar-toggler {
+  background-color: #6653a4;
+  --bs-navbar-toggler-icon-bg: url("/images/menuBtn.png");
+  height: 40px;
+  margin-right: 1rem;
   font-size: 1rem;
-  border-radius: 0.3rem;
-  border: 1px solid transparent;
-  outline: none;
-  color: #1a1a1a;
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.navbar-toggler:hover {
+  --box-shadow-color: #65bd47;
+  box-shadow: 0 0 30px var(--box-shadow-color);
+  --bs-navbar-toggler-border-color: rgb(101, 189, 71);
+  background-color: #1a0026;
+}
+
+.homeLink {
+  color: rgb(101, 189, 71);
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 12rem;
+  font-size: xx-large;
+  font-family: "Bangers";
+  text-shadow: 0 0 20px #6653a4;
+}
+
+.homeLink:hover {
+  color: #ffffffe5;
+  text-shadow: 0 0 20px #6653a4;
+}
+
+.footLink {
+  padding: 1px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.footer-style {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-image: url("/images/footerbgnd.png");
+  background-size: cover;
+  height: 60px;
+  align-content: center;
+}
+
+.buttonDiv {
+  justify-self: end;
+  align-items: center;
+}
+
+.headerbtn {
+  background-color: #6653a4;
+  color: #ffffffe5;
+  --bs-btn-hover-border-color: rgb(101, 189, 71);
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.headerbtn:hover {
+  background-color: #1a0026;
+  color: #ffffff;
+  --box-shadow-color: rgb(101, 189, 71);
+  box-shadow: 0 0 30px var(--box-shadow-color);
+}
+
+body {
+  color: #ffffffe5;
+  background-image: url("/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #page-container {
@@ -30,7 +92,70 @@
   min-height: 100vh;
 }
 
-#content-wrap {
-  padding-bottom: 150px; /* Footer height */
+.formbtn {
+  margin: 5px;
+  background-color: #7C737F;
+  width: 99%;
 }
 
+.bg-card {
+  background-color: #E7DCEB;
+}
+
+
+/* FONTS */
+
+
+.rock-salt {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oswald-light {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.oswald-normal {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.oswald-medium {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oswald-bold {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.oswald-heavy {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.oswald-wide {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bangers {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}

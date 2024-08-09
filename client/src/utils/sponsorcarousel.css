@@ -1,0 +1,15 @@
+.sponsor {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .sponsor-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .sponsor-carousel {
+    margin: 2rem;
+  }

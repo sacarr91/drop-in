@@ -7,6 +7,8 @@ export const QUERY_PROFILES = gql`
       name
       goals
       role
+      image
+      bio
     }
   }
 `;

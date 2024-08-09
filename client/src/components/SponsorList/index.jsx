@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
+import SponsorCard from '../SponsorCard';
+import '../../utils/sponsorlist.css'
 
 const SponsorList = ({ profiles, title }) => {
   // Filter profiles to only include those with the role "skater"
@@ -10,10 +12,31 @@ const SponsorList = ({ profiles, title }) => {
   }
 
   return (
-    <Container>
-      <h3 className="my-4">{title}</h3>
-      <Row>
-        {sponsorProfiles.map((profile) => (
+<Container style={{ width: '100%', maxWidth: '100%', padding: '0' }}>
+  <h3 className="my-4" style={{ textAlign: 'center' }}>All Sponsors</h3>
+  <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+    {sponsorProfiles.map((sponsor, index) => (
+      <div 
+        key={index} 
+        style={{ 
+          flex: '1 1 calc(33.333% - 20px)', 
+          margin: '5px',
+          maxWidth: 'calc(33.333% - 20px)',
+          boxSizing: 'border-box'
+        }}
+      >
+        <SponsorCard sponsor={sponsor} />
+      </div>
+    ))}
+  </div>
+</Container>
+  );
+};
+
+export default SponsorList;
+
+// Old code in case needed
+        {/* {sponsorProfiles.map((profile) => (
           <Col key={profile._id} sm={12} md={6} lg={4} className="mb-4">
             <Card>
               <Card.Body>
@@ -34,10 +57,4 @@ const SponsorList = ({ profiles, title }) => {
               </Card.Body>
             </Card>
           </Col>
-        ))}
-      </Row>
-    </Container>
-  );
-};
-
-export default SponsorList;
+        ))} */}

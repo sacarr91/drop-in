@@ -14,8 +14,6 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 
 // imports for app styling
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './utils/style.css';
 import './App.css'
 
 
@@ -48,12 +46,10 @@ function App() {
     <>
       <ApolloProvider client={client}>
       <div id='page-container'>
-      <div id='content-wrap'>
           <Header />
           <main className="mx-3 p-3">
             <Outlet />
           </main>
-          </div>
           <Footer />
         </div>
       </ApolloProvider>
