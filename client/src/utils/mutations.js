@@ -43,3 +43,12 @@ export const REMOVE_GOAL = gql`
     }
   }
 `;
+
+export const CREATE_PAYMENT = gql`
+  mutation CreatePayment($input: PaymentInput!) {
+    createPayment(input: $input) {
+      paymentId
+      status
+    }
+  }
+`;

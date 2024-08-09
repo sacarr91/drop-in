@@ -8,7 +8,7 @@ function Footer() {
         <Container>
           <Nav variant="underline">
             <Nav.Item className='footLink'>
-              <Nav.Link href="https://github.com/sacarr91" target="_blank">
+              <Nav.Link href="/our-team" target="_blank">
                 <img src='/images/devteam.png' height={40}>
                 </img>
               </Nav.Link>
