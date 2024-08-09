@@ -32,6 +32,10 @@ const profileSchema = new Schema({
     }
   ],
 
+  image: {
+    type: String,
+  },
+
   ourSponsors: [
     {
       type: Schema.Types.ObjectId,
@@ -51,6 +55,7 @@ const profileSchema = new Schema({
   age: {
     type: Number,
     trim: true,
+    required:false,
   },
   levels: {
     type: String,
