@@ -5,15 +5,15 @@ import App from "./App";
 import ErrorPage from "../src/pages/ErrorPage"
 import Signup from "./pages/Signup"
 import Home from "../src/pages/Home";
-import AboutSkater from "./pages/About.jsx";
-import AboutSponsor from "../src/pages/AboutSponsor";
 import Connect from "../src/pages/Connect";
 import SponsorLevels from "../src/pages/SponsorLevels";
-import CreateSkater from "../src/pages/CreateSkater";
+import CreateSkater from "./pages/StartSkating.jsx";
 import Login from "./pages/Login";
 import AllSponsors from "./pages/AllSponsors";
 import Profile from "./pages/Profile";
 import AllSkaters from '../src/pages/AllSkaters.jsx';
+import HowTo from "./pages/HowTo.jsx";
+import Create from "./pages/BecomeSponsor.jsx";
 
 const router = createBrowserRouter([
   {
