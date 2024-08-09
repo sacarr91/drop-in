@@ -68,9 +68,8 @@ type Mutation {
   addLevels(profileId: ID!, levels: String!): Profile
   removeProfile: Profile
   removeGoal(goal: String!): Profile
-
-
   createPayment(input: PaymentInput): PaymentResult
+  editProfile(profileId:ID!, age:Int, levels:String!, goals:[String!]): Profile
 }
 `;
 

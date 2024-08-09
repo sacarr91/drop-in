@@ -54,7 +54,7 @@ const Login = (props) => {
             ) : (
               <form onSubmit={handleFormSubmit}>
                 <label
-                for="email">
+                  for="email">
                   Email
                 </label>
                 <input
@@ -66,7 +66,7 @@ const Login = (props) => {
                   onChange={handleChange}
                 />
                 <label
-                for="password">
+                  for="password">
                   Password
                 </label>
                 <input
