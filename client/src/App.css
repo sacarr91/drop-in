@@ -92,6 +92,10 @@ body {
   min-height: 100vh;
 }
 
+#content-wrap {
+  padding-bottom: 80px;
+}
+
 .formbtn {
   margin: 5px;
   background-color: #7C737F;
