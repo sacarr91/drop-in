@@ -24,7 +24,8 @@
     "sponsors":[],
     "age": null,
     "bio":"This is BAKER skateboards, checkout our videos and content @ BAKERSKATEBOARDS.COM BAKER BAKER BAKER",
-    "role": "Sponsor"
+    "role": "Sponsor",
+    "image": "baker.jpg"
   },
   {
     "name": "Rodney Mullen",
@@ -50,6 +51,49 @@
     "friends": [],
     "age": null,
     "bio": null,
-    "role": "Sponsor"
+    "role": "Sponsor",
+    "image": "birdhouse.png"
+  },
+  {
+    "name": "Venture Trucks",
+    "email": "test@venturetrucks.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors":[],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": null,
+    "role": "Sponsor",
+    "image": "venture.jpg"
+  },
+  {
+    "name": "Darkstar Skateboards",
+    "email": "test@darkstar.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors":[],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": null,
+    "role": "Sponsor",
+    "image": "darkstar.jpg"
+  },
+  {
+    "name": "Spitfire Wheels",
+    "email": "test@spitfire.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors":[],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": null,
+    "role": "Sponsor",
+    "image": "spitfire.jpg"
   }
 ]
