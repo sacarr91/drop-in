@@ -11,7 +11,7 @@ function LoginForm(){
         {Auth.loggedIn() ? (
           <>
             <Link to="/me" className='btn headerbtn'>
-              View My Profile
+              Edit My Profile
             </Link>
             <button onClick={logout} className='btn headerbtn'>
               Logout

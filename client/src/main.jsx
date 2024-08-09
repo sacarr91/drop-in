@@ -14,8 +14,9 @@ import Profile from "./pages/Profile";
 import AllSkaters from '../src/pages/AllSkaters.jsx';
 import HowTo from "./pages/HowTo.jsx";
 import Create from "./pages/BecomeSponsor.jsx";
-import OurTeam from "./pages/OurTeam.jsx";import UserProfile from "./pages/UserProfile";
+import OurTeam from "./pages/OurTeam.jsx";
 import EditProfile from "./pages/EditProfile";
+import UserProfile from "./pages/UserProfile";
 
 
 const router = createBrowserRouter([
@@ -76,7 +77,7 @@ const router = createBrowserRouter([
       }, 
       {
         path: '/me',
-        element: <UserProfile />
+        element: <EditProfile />
       },
       {
         path:'/editprofile/:profileId',
