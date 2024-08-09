@@ -16,6 +16,8 @@ import Login from "./pages/Login";
 import AllSkater from "./pages/AllSkaters";
 import AllSponsors from "./pages/AllSponsors";
 import Profile from "./pages/Profile";
+import UserProfile from "./pages/UserProfile";
+import EditProfile from "./pages/EditProfile";
 
 
 const router = createBrowserRouter([
@@ -71,13 +73,16 @@ const router = createBrowserRouter([
       }, 
       {
         path: '/profiles/:profileId',
-        element: <Profile />
+        element: <UserProfile />
       }, 
       {
         path: '/me',
-        element: <Profile />
+        element: <UserProfile />
+      },
+      {
+        path:'/editprofile/:profileId',
+        element:<EditProfile />
       }
-
     ],
   },
 ]);

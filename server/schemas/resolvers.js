@@ -24,7 +24,7 @@ const resolvers = {
   },
 
 
-// mutations block
+  // mutations block
   Mutation: {
 
     // add profile
@@ -84,10 +84,10 @@ const resolvers = {
       }
       throw new AuthenticationError;
     },
-  
+
     // add friends
-    addFriend: async(parent, { profileId, friendId }, context) => {
-      if(context.user){
+    addFriend: async (parent, { profileId, friendId }, context) => {
+      if (context.user) {
         const updatedProfile = await Profile.findOneAndUpdate(
           { _id: profileId },
           {
@@ -104,10 +104,10 @@ const resolvers = {
     },
 
     // add sponsor
-    addSponsor: async(parent, { profileId, friendId }, context) => {
-      if(context.user){
+    addSponsor: async (parent, { profileId, friendId }, context) => {
+      if (context.user) {
         const updatedProfile = await Profile.findOneAndUpdate(
-          {_id: profileId },
+          { _id: profileId },
           {
             $addToSet: { weSponsor: friendId },
           },
@@ -116,13 +116,13 @@ const resolvers = {
             runValidators: true,
           }
         );
-          const friendProfile = await Profile.findByIdAndUpdate(
-            { _id: friendId },
-            {
-              $addToSet: { ourSponsors: profileId }
-            }
-          );
-          return updatedProfile;
+        const friendProfile = await Profile.findByIdAndUpdate(
+          { _id: friendId },
+          {
+            $addToSet: { ourSponsors: profileId }
+          }
+        );
+        return updatedProfile;
       }
       throw AuthenticationError;
     },
@@ -147,7 +147,7 @@ const resolvers = {
 
     // add and update bio
     addBio: async (parent, { profileId, bio }, context) => {
-      if(context.user) {
+      if (context.user) {
         return Profile.findOneAndUpdate(
           { _id: profileId },
           {
@@ -204,6 +204,39 @@ const resolvers = {
       }
       throw AuthenticationError;
     },
+    editProfile: async (parent, { profileId, age, levels,goals}, context) => {
+      if (context.user) {
+        const updateFields = {}
+        if(age !== null){
+          updateFields.age = age;
+        }
+        if(levels!==""){
+          updateFields.levels = levels;
+        }
+        if(goals.length!==0){
+          return Profile.findOneAndUpdate(
+            { _id: profileId },
+            { $set: updateFields,$addToSet: { goals: goals } },
+            {
+              new: true,
+              runValidators: true,
+              omitUndefined: true
+            }
+          );
+        }else{
+          return Profile.findOneAndUpdate(
+            { _id: profileId },
+            { $set: updateFields},
+            {
+              new: true,
+              runValidators: true,
+              omitUndefined: true
+            }
+          );
+        }
+      }
+      throw AuthenticationError;
+    }
   },
 };
 

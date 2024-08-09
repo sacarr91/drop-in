@@ -43,3 +43,13 @@ export const REMOVE_GOAL = gql`
     }
   }
 `;
+
+export const EDIT_PROFILE = gql`
+mutation editProfile($profileId:ID!, $age:Int, $levels:String!, $goals:[String!]){
+editProfile(profileId:$profileId, age:$age, levels:$levels, goals:$goals){
+_id
+age
+levels
+goals
+}
+}`

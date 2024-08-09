@@ -21,6 +21,8 @@ const Profile = () => {
   const profile = data?.me || data?.profile || {};
 
   if (Auth.loggedIn() && Auth.getProfile().data._id === profileId) {
+    console.log(Auth.getProfile().data._id);
+    console.log(profileId);
     return <Navigate to="/me" />;
   }
 
