@@ -8,28 +8,26 @@ import SponsorCarousel from '../components/SponsorCarousel';
 import SkaterCarousel from '../components/SkaterCarousel';
 
 const Home = () => {
-  const { loading, data } = useQuery(QUERY_PROFILES);
-  const profiles = data?.profiles || [];
+    const { loading, data } = useQuery(QUERY_PROFILES);
+    const profiles = data?.profiles || [];
 
     return (
-        <section className="">
-            <section className='homepageImg'>
-                <Container className="py-5">
+        <>
+            <main className='p-2'>
+                <Container>
                     <center>
-                        <h1>🛹 Our Sponsors 🤙 </h1>
+                        <h1 className='py-2'>🛹 Our Sponsors 🤙 </h1>
                     </center>
                 </Container>
-            </section>
-            <main>
                 <SponsorCarousel />
-                <Container className="py-5">
+                <Container>
                     <center>
-                        <h1>🤙 Our Skaters 🛹 </h1>
+                        <h1 className='py-2'>🤙 Our Skaters 🛹 </h1>
                     </center>
                 </Container>
                 <SkaterCarousel />
             </main>
-        </section>
+        </>
     );
 };
 

@@ -1,5 +1,4 @@
 .sponsor-card {
-    width: 50vh;
     height: 35vh;
     position: relative;
     border-radius: 10px;
@@ -51,13 +50,20 @@
     gap: 10px;
   }
   
-  .sponsor-link {
-    background-color: white;
-    color: red;
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-decoration: none;
+  .carocardbtn {
+    background-color: rgb(101, 189, 71);
+    color: black;
+    --bs-btn-hover-border-color: rgb(101, 189, 71);
+    height: 40px;
+    margin-right: 1rem;
     transition: background-color 0.3s;
+  }
+  
+  .carocardbtn:hover {
+    background-color: #1a0026;
+    color: rgb(101, 189, 71);
+    --box-shadow-color: rgb(101, 189, 71);
+    box-shadow: 0 0 30px var(--box-shadow-color);
   }
   
   .sponsor-link:hover {

@@ -9,3 +9,7 @@
     justify-content: center;
     gap: 20px;
   }
+
+  .sponsor-carousel {
+    margin: 2rem;
+  }

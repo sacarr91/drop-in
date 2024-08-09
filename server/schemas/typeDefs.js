@@ -41,6 +41,18 @@ const typeDefs = `
     me: Profile
   }
 
+    type PaymentResult {
+    paymentId: String
+    status: String
+  }
+
+  input PaymentInput {
+    sourceId: String!
+    amount: Int!
+  }
+
+
+
 type Mutation {
   addProfile(name: String!, email: String!, password: String!, role: String!): Auth
   login(email: String!, password: String!): Auth
@@ -56,6 +68,9 @@ type Mutation {
   addLevels(profileId: ID!, levels: String!): Profile
   removeProfile: Profile
   removeGoal(goal: String!): Profile
+
+
+  createPayment(input: PaymentInput): PaymentResult
 }
 `;
 
