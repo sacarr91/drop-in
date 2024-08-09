@@ -3,6 +3,8 @@ import { useMutation } from '@apollo/client';
 import { Form, Col } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import { Link, useParams } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
+import InputGroup from 'react-bootstrap/InputGroup';
 
 import { EDIT_PROFILE } from '../utils/mutations';
 
@@ -62,14 +64,21 @@ const EditProfile = () => {
                         <Form.Label>
                             Goals
                         </Form.Label>
-                        <Col>
-                            <Form.Control type="text" value={formState.levels} onChange={handleChange} />
-                        </Col>
+                        <InputGroup className="mb-3">
+                            <Form.Control
+                                placeholder="Add Goals"
+                                aria-label="Add-Goals"
+                                aria-describedby="basic-addon2"
+                            />
+                            <button variant="outline-secondary" id="button-addon2" className="add-goal">
+                                Add Goal
+                            </button>
+                        </InputGroup>
                     </Form.Group>
                     <Link
-                    className="button-link secondary"
-                    to={`/editprofile/`}
-                >Submit</Link>
+                        className="button-link secondary"
+                        to={`/editprofile/`}
+                    >Submit</Link>
                 </Form>
             </Card.Body>
         </Card>
