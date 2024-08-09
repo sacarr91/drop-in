@@ -14,7 +14,9 @@ import Profile from "./pages/Profile";
 import AllSkaters from '../src/pages/AllSkaters.jsx';
 import HowTo from "./pages/HowTo.jsx";
 import Create from "./pages/BecomeSponsor.jsx";
-import OurTeam from "./pages/OurTeam.jsx";
+import OurTeam from "./pages/OurTeam.jsx";import UserProfile from "./pages/UserProfile";
+import EditProfile from "./pages/EditProfile";
+
 
 const router = createBrowserRouter([
   {
@@ -26,19 +28,16 @@ const router = createBrowserRouter([
         index: true,
         path: "/",
         element: <Home />
-      }, {
+      }, 
+      {
         path: '/login',
         element: <Login />
-      }, {
+      }, 
+      {
         path: '/signup',
         element: <Signup />
-      }, {
-        path: '/profiles/:profileId',
-        element: <Profile />
-      }, {
-        path: '/me',
-        element: <Profile />
-      },
+      }, 
+ 
       {
         path: "/get-sponsored",
         element: <HowTo />,
@@ -70,6 +69,18 @@ const router = createBrowserRouter([
       {
         path: "/our-team",
         element: <OurTeam />
+      },
+      {
+        path: '/profiles/:profileId',
+        element: <UserProfile />
+      }, 
+      {
+        path: '/me',
+        element: <UserProfile />
+      },
+      {
+        path:'/editprofile/:profileId',
+        element:<EditProfile />
       }
     ],
   },
