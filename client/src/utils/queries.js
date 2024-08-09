@@ -9,6 +9,8 @@ export const QUERY_PROFILES = gql`
       role
       image
       bio
+      age
+      levels
     }
   }
 `;

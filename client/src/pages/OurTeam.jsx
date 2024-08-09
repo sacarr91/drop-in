@@ -9,7 +9,7 @@ import joe from '/images/joe.png';
 const Devs = [
     {
         name: "David Rauf",
-        bio: "Full Stack Web Developer, specializing in MERN stack. Checkout my GitHub in the link below!",
+        bio: "Full Stack Web Developer based out of Saint Petersburg Florida, specializing in the MERN stack. Checkout my GitHub in the link below!",
         githubLink: "https://github.com/drauf727",
         githubName: "drauf727",
         image: dave
