@@ -4,8 +4,6 @@ import Nav from 'react-bootstrap/Nav';
 
 function Footer() {
   return (
-    <div className='footerNav'>
-
       <Navbar className="footer-style">
         <Container>
           <Nav variant="underline">
@@ -21,13 +19,10 @@ function Footer() {
                 </img>
               </Nav.Link>
             </Nav.Item>
-
-
           </Nav>
-          <img src='/images/titanGlowFooter.png' height={30} style={{ justifySelf: "end" }}></img>
+          <img src='/images/titanGlowFooter.png' height={33} style={{ justifySelf: "end" }}></img>
         </Container>
       </Navbar>
-    </div>
   );
 }
 
