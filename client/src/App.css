@@ -9,9 +9,9 @@
 .bg-img {
   --bs-bg-opacity: 1;
   background-image: url("/images/headerBgnd.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: cover;
-  height: fit-content;
+  /* height: fit-content; */
 }
 
 .navbar-toggler {
@@ -117,6 +117,10 @@ h1, h4, h5 {
 
 h2, h3, h6 {
   font-family: "Bangers", system-ui;
+}
+
+#footer-buffer {
+  height: 60px;
 }
 /* FONTS */
 

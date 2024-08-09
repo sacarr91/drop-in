@@ -45,10 +45,11 @@ function App() {
   return (
     <>
       <ApolloProvider client={client}>
-      <div id='page-container'>
+        <div id='page-container'>
           <Header />
           <main className="mx-3 p-3">
             <Outlet />
+            <div id='footer-buffer'></div>
           </main>
           <Footer />
         </div>

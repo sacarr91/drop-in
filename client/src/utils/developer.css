@@ -1,20 +1,82 @@
-.devCard {
-    width: 16rem;
-    margin: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: transparent;
-    color: white;
+#dev-page {
+    justify-content: center;
 }
 
-.devCard img {
-    border-radius: 8px 8px 0 0;
-    object-fit: cover;
+@media screen and (min-width: 767.4px) {
+    .devCard {
+        /* width: 15rem; */
+        max-width: 575px;
+        min-height: fit-content;
+        margin: 0.5rem;
+        border: 1px solid #6653a4;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: transparent;
+        color: white;
+    }
+
+    #dev-content {
+        max-height: 250px;
+    }
+
+    #dev-img {
+        border-radius: 8px;
+        object-fit: cover;
+        max-width: 30vw;
+        height: 100vh;
+        max-height: 235px;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #dev-text {
+        height: 120px;
+    }
+
+    #dev-footer {
+        text-align: right;
+    }
 }
 
-.devCard div {
-    padding: 1rem;
+@media screen and (max-width: 767px) {
+    .devCard {
+        width: 40vw;
+        /* max-width: 575px; */
+       height: fit-content;
+        margin: 0.5rem;
+        border: 1px solid #6653a4;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: transparent;
+        color: white;
+    }
+
+    #dev-content {
+        min-height: fit-content;
+    }
+
+    #dev-img {
+        border-radius: 8px;
+        object-fit: cover;
+        max-width: 100vw;
+        height: 33vh;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #dev-text {
+        height: 45vh;
+    }
+
+    #dev-footer {
+        text-align: center;
+    height: 15vh
+    }
+}
+
+.devCard h5 {
+    padding-top: 0.5rem;
+    color: rgb(101, 189, 71);
 }
 
 .gh-link {
@@ -30,8 +92,4 @@
     --box-shadow-color: rgb(101, 189, 71);
     box-shadow: 0 0 30px var(--box-shadow-color);
     border-color: rgb(101, 189, 71);
-}
-
-.dc-foot {
-    height: 20vh;
 }
