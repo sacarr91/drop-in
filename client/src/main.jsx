@@ -14,6 +14,7 @@ import Login from "./pages/Login";
 import AllSponsors from "./pages/AllSponsors";
 import Profile from "./pages/Profile";
 import AllSkaters from '../src/pages/AllSkaters.jsx';
+import OurTeam from "./pages/OurTeam.jsx";
 
 const router = createBrowserRouter([
   {
@@ -65,6 +66,10 @@ const router = createBrowserRouter([
       {
         path: "/connect",
         element: <Connect />,
+      },
+      {
+        path: "/our-team",
+        element: <OurTeam />
       }
     ],
   },
