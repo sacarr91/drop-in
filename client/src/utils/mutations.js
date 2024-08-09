@@ -1,13 +1,29 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 export const ADD_PROFILE = gql`
-  mutation addProfile($name: String!, $email: String!, $password: String!, $role: String!) {
+  mutation addProfile(
+    $name: String!
+    $email: String!
+    $password: String!
+    $role: String!
+  ) {
     addProfile(name: $name, email: $email, password: $password, role: $role) {
       token
       profile {
         _id
         name
       }
+    }
+  }
+`;
+
+export const ADD_FRIEND = gql`
+  mutation addFriend($friendId: ID!) {
+    addFriend(friendId: $friendId) {
+      id
+      name
+      bio
+      age
     }
   }
 `;
@@ -54,11 +70,22 @@ export const CREATE_PAYMENT = gql`
 `;
 
 export const EDIT_PROFILE = gql`
-mutation editProfile($profileId:ID!, $age:Int, $levels:String!, $goals:[String!]){
-editProfile(profileId:$profileId, age:$age, levels:$levels, goals:$goals){
-_id
-age
-levels
-goals
-}
-}`
+  mutation editProfile(
+    $profileId: ID!
+    $age: Int
+    $levels: String!
+    $goals: [String!]
+  ) {
+    editProfile(
+      profileId: $profileId
+      age: $age
+      levels: $levels
+      goals: $goals
+    ) {
+      _id
+      age
+      levels
+      goals
+    }
+  }
+`;
