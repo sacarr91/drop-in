@@ -12,13 +12,15 @@ const SkaterList = ({ profiles, title }) => {
   }
 
   return (
-    <div>
-      {skaterProfiles.map((skater, index) => (
-        <div key={index}>
-          <SkaterProfileCard skater={skater} />
-        </div>
-      ))}
-  </div>
+    <div className="container">
+      <div className="row">
+        {skaterProfiles.map((skater, index) => (
+          <div key={index} className="col-12 col-md-6 col-xl-4 justify-content-center">
+            <SkaterProfileCard skater={skater} />
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 

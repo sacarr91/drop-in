@@ -4,11 +4,15 @@ import defaultImage from "/images/baker.jpg"
 const SkaterProfileCard = ({ skater }) => {
   const imageUrl = skater.image ? `images/${skater.image}` : defaultImage;
 
+  const limitText = (text, wordLimit) => {
+    const words = text.split(' ');
+    return words.length > wordLimit ? words.slice(0, wordLimit).join(' ') + '...' : text;
+  };
+
   return (
-    <section className="px-4 py-5" style={{borderRadius: '.5rem .5rem 0 0' }}>
-    <div className="row d-flex justify-content-center">
+    <div className="row d-flex">
       <div className="col col-md-9 col-lg-7 col-xl-6">
-        <div className="card" style={{ borderRadius: '15px' }}>
+        <div className="card" style={{ borderRadius: '15px', background: 'transparent', color: 'rgb(101, 189, 71)', border: 'none'}}>
           <div className="card-body p-4">
             <div className="d-flex">
               <div className="flex-shrink-0">
@@ -22,27 +26,27 @@ const SkaterProfileCard = ({ skater }) => {
               <div className="flex-grow-1 ms-3">
                 <h5 className="mb-1">{skater.name}</h5>
                 <p className="mb-2 pb-1">{skater.role}</p>
-                <div className="d-flex justify-content-start rounded-3 p-2 mb-2 bg-body-tertiary">
+                <div className="d-flex justify-content-start rounded-3 p-2 mb-2">
                   <div>
-                    <p className="small text-muted mb-1">Age</p>
+                    <p className="small mb-1">Age</p>
                     <p className="mb-0">{skater.age}</p>
                   </div>
                   <div className="px-3">
-                    <p className="small text-muted mb-1">Level</p>
+                    <p className="small mb-1">Level</p>
                     <p className="mb-0">{skater.levels}</p>
                   </div>
                 </div>
-                <p>{skater.bio}</p>
+                {skater.bio && <p>{limitText(skater.bio, 20)}</p>}
                 <div className="d-flex pt-1">
                   <button
                     type="button"
-                    className="btn btn-outline-primary me-1 flex-grow-1"
+                    className="btn me-1 flex-grow-1 headerbtn"
                   >
-                    Chat
+                    Profile
                   </button>
                   <button
                     type="button"
-                    className="btn btn-primary flex-grow-1"
+                    className="btn flex-grow-1 headerbtn"
                   >
                     Follow
                   </button>
@@ -53,7 +57,6 @@ const SkaterProfileCard = ({ skater }) => {
         </div>
       </div>
     </div>
-  </section>
 );
 };
 
