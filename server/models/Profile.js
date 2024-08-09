@@ -1,5 +1,6 @@
 const { Schema, model } = require('mongoose');
 const Award = require('./Awards');
+const Request = require('./Request')
 const bcrypt = require('bcrypt');
 
 
@@ -51,6 +52,8 @@ const profileSchema = new Schema({
   ],
   
   awards: [ Award ],
+
+  requests: [ Request ],
 
   age: {
     type: Number,

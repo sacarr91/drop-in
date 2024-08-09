@@ -12,6 +12,7 @@ const typeDefs = `
     bio: String
     image: String
     awards: [Award]!
+    requests: [Request]!
     friends: [Profile]!
     ourSponsors:[Profile]!
     weSponsor:[Profile]!
@@ -27,6 +28,23 @@ const typeDefs = `
     title: String
     competition: String
     awardedDate: String
+  }
+  
+  type Request {
+    _id: ID
+    fromId: String
+    requestType: String,
+    accepted: Boolean,
+    message: String,
+    requestDate: String, 
+  }
+
+  input CreateRequestInput {
+    fromId: String
+    requestType: String,
+    accepted: Boolean,
+    message: String,
+    requestDate: String, 
   }
 
   input CreateAwardInput {
@@ -58,8 +76,9 @@ type Mutation {
   login(email: String!, password: String!): Auth
 
   addAward(profileId: ID!, awards: CreateAwardInput!): Profile
-  addFriend(profileId: ID!, friendId: ID!): Profile
+  addRequest(profileId: ID!, requests: CreateRequestInput!): Profile
 
+  addFriend(profileId: ID!, friendId: ID!): Profile
   addSponsor(profileId: ID!, friendId: ID!): Profile
 
   addGoal(profileId: ID!, goal: String!): Profile
