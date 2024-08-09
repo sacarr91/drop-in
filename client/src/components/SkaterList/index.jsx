@@ -13,6 +13,7 @@ const SkaterList = ({ profiles, title }) => {
 
   return (
     <div className="container">
+      <h3 className="my-4" style={{ textAlign: 'center' }}>Our Skaters</h3>
       <div className="row">
         {skaterProfiles.map((skater, index) => (
           <div key={index} className="col-12 col-md-6 col-xl-4 justify-content-center">

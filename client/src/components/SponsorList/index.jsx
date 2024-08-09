@@ -13,7 +13,7 @@ const SponsorList = ({ profiles, title }) => {
 
   return (
 <Container style={{ width: '100%', maxWidth: '100%', padding: '0' }}>
-  <h3 className="my-4" style={{ textAlign: 'center' }}>All Sponsors</h3>
+  <h3 className="my-4" style={{ textAlign: 'center' }}>Our Sponsors</h3>
   <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
     {sponsorProfiles.map((sponsor, index) => (
       <div 
