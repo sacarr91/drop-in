@@ -30,7 +30,7 @@ const Devs = [
     },
     {
         name: "Stephanie Carr",
-        bio: "Full Stack Web Developer",
+        bio: "Web Developer & Music Ed, passionate about product quality and user experience. Thoroughly convinced anything can be handled suitably with determination, creativity, and southern charm.",
         githubLink: "https://github.com/sacarr91",
         githubName: "sacarr91",
         image: steph
