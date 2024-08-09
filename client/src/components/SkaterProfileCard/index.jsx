@@ -41,6 +41,7 @@ const SkaterProfileCard = ({ skater }) => {
                   <button
                     type="button"
                     className="btn me-1 flex-grow-1 headerbtn"
+                    onClick={() => window.location.href = `/profiles/${skater._id}`}
                   >
                     Profile
                   </button>
