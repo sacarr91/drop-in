@@ -18,8 +18,8 @@ export const ADD_PROFILE = gql`
 `;
 
 export const ADD_FRIEND = gql`
-  mutation addFriend($friendId: ID!) {
-    addFriend(friendId: $friendId) {
+  mutation addFriend($profileId: ID!, $friendId: ID!) {
+    addFriend(profileId: $profileId, friendId: $friendId) {
       _id
       name
       friends {

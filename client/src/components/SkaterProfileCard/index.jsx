@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import { useMutation } from "@apollo/client";
 import { ADD_FRIEND } from "../../utils/mutations";
 import "../../utils/sponsorcard.css";
+
 import defaultImage from "/images/baker.jpg";
 
-const SkaterProfileCard = ({ skater }) => {
+const SkaterProfileCard = ({ skater, profileId, onAddFriend }) => {
   // State will track whether a user is a friend with false value to update the state whenever necessary
   const [isFriend, setIsFriend] = useState(false);
   const [addFriend] = useMutation(ADD_FRIEND);
+
   const imageUrl = skater.image ? `images/${skater.image}` : defaultImage;
 
   const limitText = (text, wordLimit) => {
@@ -19,9 +21,14 @@ const SkaterProfileCard = ({ skater }) => {
 
   const handleAddFriend = async () => {
     try {
-      const { data } = await addFriend({ variables: { friendId: skater._id } });
+      const { data } = await addFriend({
+        variables: { profileId: profileId, friendId: skater._id },
+      });
       if (data) {
         setIsFriend(true);
+        if (onAddFriend) {
+          onAddFriend(skater._id);
+        }
       }
     } catch (error) {
       console.error("Unable to add friends", error);
