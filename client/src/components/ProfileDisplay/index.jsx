@@ -1,9 +1,23 @@
 import "../../utils/profile.css"
 import defaultImage from "/images/baker.jpg"
+import { useState } from "react";
+import '../../utils/modal.css'
+import Modal from "../Modal"
+import Donate from "../../pages/Donate";
 
 const ProfileDisplay = ({ profile }) => {
     const imageUrl = profile.image ? `/images/${profile.image}` : defaultImage;
-    console.log(profile.image)
+
+    const [showModal, setShowModal] = useState(false);
+
+    const handleOpenModal = () => {
+      setShowModal(true);
+    };
+  
+    const handleCloseModal = () => {
+      setShowModal(false);
+    };
+
 
     return(
         <>
@@ -28,7 +42,7 @@ const ProfileDisplay = ({ profile }) => {
                     <p>{profile.goals && profile.goals.length > 0 ? profile.goals.join(', ') : 'N/A'}</p>
                   </div>
                   <div className="media">
-                  <button className="carocardbtn">Donate</button>
+                  <button className="carocardbtn" onClick={handleOpenModal}>Donate</button>
                   </div>
                 </div>
                 <div className="col-md-6">
@@ -71,6 +85,10 @@ const ProfileDisplay = ({ profile }) => {
         </div>
       </div>
     </section>
+    <Modal show={showModal} handleClose={handleCloseModal}>
+                <Donate />
+            </Modal>
+    
         </>
     )
 }
