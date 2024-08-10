@@ -44,6 +44,7 @@ export default function Payment() {
         </div>
       ) : (
         <>
+          <h3>Make Your Donation</h3>
           <input
             type="number"
             value={amount}
