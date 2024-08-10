@@ -27,6 +27,7 @@ const SkaterProfileCard = ({ skater }) => {
       console.error("Unable to add friends", error);
     }
   };
+  console.log(handleAddFriend);
 
   return (
     <div className="row d-flex">

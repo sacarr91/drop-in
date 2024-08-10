@@ -20,10 +20,12 @@ export const ADD_PROFILE = gql`
 export const ADD_FRIEND = gql`
   mutation addFriend($friendId: ID!) {
     addFriend(friendId: $friendId) {
-      id
+      _id
       name
-      bio
-      age
+      friends {
+        _id
+        name
+      }
     }
   }
 `;
