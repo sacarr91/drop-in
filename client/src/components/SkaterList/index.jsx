@@ -3,8 +3,6 @@ import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 import SkaterProfileCard from '../SkaterProfileCard';
 
 const SkaterList = ({ profiles, title }) => {
-  // Filter profiles to only include those with the role "skater"
-  console.log(profiles)
   const skaterProfiles = profiles.filter(profile => profile.role === 'Skater');
 
   if (!skaterProfiles.length) {

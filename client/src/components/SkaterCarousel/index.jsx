@@ -12,8 +12,6 @@ const SkaterCarousel = () => {
     if (error) return <p>Error: {error.message}</p>;
 
     const skaterProfiles = data.profiles.filter(profile => profile.role === 'Skater');
-
-    console.log(skaterProfiles);
   
     if (!skaterProfiles.length) {
       return <h3>No Skater Profiles Yet</h3>;
@@ -24,7 +22,7 @@ const SkaterCarousel = () => {
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,
-      // autoplay: true,
+      autoplay: true,
       autoplaySpeed: 2000,
       arrows: true,
       responsive: [

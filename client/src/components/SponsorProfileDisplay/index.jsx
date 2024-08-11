@@ -1,23 +1,10 @@
 import "../../utils/profile.css"
 import defaultImage from "/images/baker.jpg"
-import { useState } from "react";
 import '../../utils/modal.css'
-import Modal from "../Modal"
-import Donate from "../../pages/Donate";
+
 
 const SponsorProfileDisplay = ({ profile }) => {
     const imageUrl = profile.image ? `/images/${profile.image}` : defaultImage;
-
-    const [showModal, setShowModal] = useState(false);
-
-    const handleOpenModal = () => {
-      setShowModal(true);
-    };
-  
-    const handleCloseModal = () => {
-      setShowModal(false);
-    };
-
 
     return(
         <>
@@ -67,11 +54,7 @@ const SponsorProfileDisplay = ({ profile }) => {
           </div>
         </div>
       </div>
-    </section>
-    <Modal show={showModal} handleClose={handleCloseModal}>
-                <Donate />
-            </Modal>
-    
+    </section>    
         </>
     )
 }
