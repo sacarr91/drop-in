@@ -1,8 +1,10 @@
-import { useQuery } from '@apollo/client';
+import { useQuery } from "@apollo/client";
 
-import SkaterList from '../components/SkaterList';
+import SkaterList from "../components/SkaterList";
 
-import { QUERY_PROFILES } from '../utils/queries';
+import { QUERY_PROFILES } from "../utils/queries";
+
+import Payment from "../components/Payment";
 
 const AllSkater = () => {
   const { loading, data } = useQuery(QUERY_PROFILES);
@@ -10,14 +12,16 @@ const AllSkater = () => {
 
   return (
     <main>
-    {loading ? (
+      <section className="">
+        <section className="">
+          {loading ? (
             <section>Loading...</section>
           ) : (
-            <SkaterList
-              profiles={profiles}
-              title="All Skaters"
-            />
+            <SkaterList profiles={profiles} title="All Skaters" />
           )}
+        </section>
+      </section>
+      <Payment />
     </main>
   );
 };
