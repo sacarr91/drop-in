@@ -12,7 +12,53 @@
     "age": 19,
     "levels": "Amature",
     "bio": "Hi I am Tony Hawk from Burnside California. I have been skating and surfing since I was just a kid in Sacremento. I am looking to get sponsored so that I can qualify to skate in the TampaAM contest 2024.",
-    "role": "Skater"
+    "role": "Skater",
+     "image": "tonyhawk.jpg"
+  },
+  {
+    "name": "Thoetis Beasley",
+    "email": "theo@skater.com",
+    "password": "wordpass123",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "ourSponsors":[],
+    "weSponsor":[],
+    "age": 25,
+    "levels": "Pro",
+    "bio": "Pro Skater out of Inglewood CA. CEO of Grown And Gifted",
+    "role": "Skater",
+    "image": "theotis.jpg"
+  },
+  {
+    "name": "Lizzy Armanto",
+    "email": "lizzy@skater.com",
+    "password": "wordpass123",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "ourSponsors":[],
+    "weSponsor":[],
+    "age": 25,
+    "levels": "Pro",
+    "bio": "American-Finnish professional skater, member of Birdhouse Skate Team",
+    "role": "Skater",
+    "image": "lizzy.jpg"
+  },
+  {
+    "name": "Pedro Barros",
+    "email": "pedro@skater.com",
+    "password": "wordpass123",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "ourSponsors":[],
+    "weSponsor":[],
+    "age": 25,
+    "levels": "Pro",
+    "bio": "Brazilian skater specializing in bowl and park skateboarding",
+    "role": "Skater",
+    "image": "pedro.jpg"
   },
   {
     "name": "Baker Skateboards",
@@ -41,7 +87,8 @@
     "requests": [],
     "age": 22,
     "bio": null,
-    "role": "Skater"
+    "role": "Skater",
+    "image": "rodneymullen.jpg"
   },
   {
     "name": "Birdhouse Skate Team",
