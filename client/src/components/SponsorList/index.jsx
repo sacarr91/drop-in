@@ -4,7 +4,6 @@ import SponsorCard from '../SponsorCard';
 import '../../utils/sponsorlist.css'
 
 const SponsorList = ({ profiles, title }) => {
-  // Filter profiles to only include those with the role "skater"
   const sponsorProfiles = profiles.filter(profile => profile.role === 'Sponsor');
 
   if (!sponsorProfiles.length) {
@@ -34,27 +33,3 @@ const SponsorList = ({ profiles, title }) => {
 };
 
 export default SponsorList;
-
-// Old code in case needed
-        {/* {sponsorProfiles.map((profile) => (
-          <Col key={profile._id} sm={12} md={6} lg={4} className="mb-4">
-            <Card>
-              <Card.Body>
-                <Card.Title>{profile.name}</Card.Title>
-                <Card.Text>
-                  <span>
-                    Currently has {profile.goals ? profile.goals.length : 0} goal
-                    {profile.goals && profile.goals.length === 1 ? '' : 's'}
-                  </span>
-                </Card.Text>
-                <Button
-                  variant="secondary"
-                  as={Link}
-                  to={`/profiles/${profile._id}`}
-                >
-                  View Card Data
-                </Button>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))} */}
