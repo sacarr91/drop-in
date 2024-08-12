@@ -1,13 +1,15 @@
 const DeveloperCard = ({ dev }) => (
-    <div style={{ width: '18rem', margin: '1rem', border: '1px solid #ddd', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>
-        <img src={dev.image} className="card-img-top" alt={dev.name} style={{ borderRadius: '8px 8px 0 0'}} />
-        <div className="card-body" style={{ padding: '1rem' }}>
-            <h5 className="card-title text-center">{dev.name}</h5>
-            <p className="card-text text-center">{dev.bio}</p>
-            <div style={{ textAlign: 'center' }}>
-            <a href={dev.githubLink} className="btn" style={{ backgroundColor: 'rgb(101, 189, 71)', color: '#fff', padding: '0.5rem 1rem', borderRadius: '4px' }}>{dev.githubName}</a>
+    <div className="card devCard">
+            <div className="row g-0" id='dev-content'>
+                <img src={dev.image} id="dev-img" className="image-fluid rounded-start col-md-4" alt={dev.name}></img>
+                <div className="card-body col-md-8" >
+                    <h5 className="card-title">{dev.name}</h5>
+                    <p className="card-text" id="dev-text">{dev.bio}</p>
+                    <div className="card-footer" id="dev-footer">
+                        <a href={dev.githubLink} className="btn gh-link">{dev.githubName}</a>
+                    </div>
+                </div>
             </div>
-        </div>
     </div>
 );
 
