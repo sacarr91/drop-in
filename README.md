@@ -15,11 +15,17 @@ A platform to connect sponsors with rising talent in the skateboarding world.
 
 ## Description
 
+Our app empowers skaters to showcase their talent and connect with sponsors worldwide. Skaters can easily update their profiles with details like age, skill level, and goals, making it easier for sponsors to discover and support them. Sponsors can search for skaters they’re interested in and even contribute directly through our integrated donation feature. Both skaters and sponsors can sign up, customize their profiles, and become part of a global community dedicated to promoting and supporting skateboarding talent.
+
 <p align="right"><a href="#readme-top">back to top</a></p>
 
 ## Link to Deployed Application
 
-https://drop-in-50il.onrender.com/
+<https://drop-in-50il.onrender.com/>
+
+## GitHub Repo
+
+<https://github.com/sacarr91/drop-in>
 
 ## Technology
 
@@ -57,10 +63,6 @@ https://drop-in-50il.onrender.com/
 
 ## Key Features
 
-- [Drop-In Render Link](https://drop-in.onrender.com)
-
-- [Drop-In Repo Link](https://github.com/sacarr91/drop-in)
-
 <!-- - ![Finished Product](link finished product gif) -->
 
 <p align="right"><a href="#readme-top">back to top</a></p>
@@ -78,6 +80,11 @@ Stephanie Carr
 ---
 
 Pranith Gunda
+
+> - Worked on Sign Up functionality, for user's to signup using a role.
+> - Modified mutation for signup, to take role into account, so user profile is created with the role selected.
+> - Beautified the appearance of login and signup components. Defined functionality to edit User Profile by creating Edit Profile component and created mutation to edit a user profile.
+> - Added functionality to display updated user information on successful update.
 
 ---
 
