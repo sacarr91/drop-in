@@ -2,24 +2,31 @@ import { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { Form, Col } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
-import { Link, useParams } from 'react-router-dom';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { EDIT_PROFILE } from '../utils/mutations';
+// import Auth to get profileId
+import Auth from '../utils/auth';
+import UserProfile from './UserProfile';
 
 
 const EditProfile = () => {
-    const { profileId } = useParams();
-    console.log(profileId);
+    // Declare profileId
+    let profileId = "";
+    // Get profileId using the Auth
+    if (Auth.loggedIn) {
+        profileId = Auth.getProfile().data._id;
+    }
+    // Define state to manage form inputs
     const [formState, setFormState] = useState({
         profileId: profileId,
         age: '',
         levels: ''
     });
-
+    // Define state to manage form goals
     const [formGoals, setGoals] = useState([]);
 
     const [inputValue, setInputValue] = useState('');
-
+    // Function to add goal
     const addGoal = (event) => {
         event.preventDefault();
         if (inputValue !== "") {
@@ -32,9 +39,9 @@ const EditProfile = () => {
             setInputValue('');
         }
     }
-
+    // Define mutation to execute on form submit
     const [editProfile, { error, data }] = useMutation(EDIT_PROFILE);
-
+    // Capture form input
     const handleChange = (event) => {
         let { name, value } = event.target;
         if (name === "age") {
@@ -46,6 +53,7 @@ const EditProfile = () => {
         });
     };
 
+    // Execute mutation on form submit
     const handleFormSubmit = async (event) => {
         event.preventDefault();
         try {
