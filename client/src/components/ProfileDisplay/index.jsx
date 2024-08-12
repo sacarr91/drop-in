@@ -1,96 +1,53 @@
-import "../../utils/profile.css"
-import defaultImage from "/images/baker.jpg"
-import { useState } from "react";
-import '../../utils/modal.css'
-import Modal from "../Modal"
-import Donate from "../../pages/Donate";
+import React from 'react';
+import { useQuery, useMutation } from '@apollo/client';
+import { FOLLOW_PROFILE } from '../../utils/mutations';
+import { QUERY_ME } from '../../utils/queries';
 
 const ProfileDisplay = ({ profile }) => {
-    const imageUrl = profile.image ? `/images/${profile.image}` : defaultImage;
+  const { loading: loadingMe, data: myData } = useQuery(QUERY_ME);
+  const [followProfile] = useMutation(FOLLOW_PROFILE);
 
-    const [showModal, setShowModal] = useState(false);
+  // Destructure user data from the query result
+  const me = myData?.me || {};
 
-    const handleOpenModal = () => {
-      setShowModal(true);
-    };
-  
-    const handleCloseModal = () => {
-      setShowModal(false);
-    };
+  const handleFollowProfile = async (profileId) => {
+    if (!me._id) {
+      console.error("User is not authenticated or data is not loaded");
+      return; 
+    }
 
+    try {
+      const { data } = await followProfile({
+        variables: {
+          profileId: profile._id,
+          friendId: me._id
+        }
+      });
 
-    return(
-        <>
-    <section className="section about-section gray-bg" id="about">
-      <div className="container">
-        <div className="row align-items-center flex-row-reverse">
-          <div className="col-lg-6">
-            <div className="about-text go-to">
-              <h3 className="dark-color">{profile.name}</h3>
-              <h6 className="theme-color lead">{profile.role}</h6>
-              <p>
-               {profile.bio}
-              </p>
-              <div className="row about-list">
-                <div className="col-md-6">
-                  <div className="media">
-                    <label>Age</label>
-                    <p>{profile.age ? `${profile.age} Yr` : 'N/A'}</p>
-                  </div>
-                  <div className="media">
-                    <label>Goals</label>
-                    <p>{profile.goals && profile.goals.length > 0 ? profile.goals.join(', ') : 'N/A'}</p>
-                  </div>
-                  <div className="media">
-                  <button className="carocardbtn" onClick={handleOpenModal}>Donate</button>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="media">
-                    <label>E-mail</label>
-                    <p>{profile.email}</p>
-                  </div>
-                  <div className="media">
-                    <label>Level</label>
-                    <p>{profile.levels ? profile.levels : 'N/A'}</p>
-                  </div>
-                  <div className="media">
-                  <button className="carocardbtn">Follow Me</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6">
-            <div className="about-avatar">
-              <img src={imageUrl} title={profile.name} alt={profile.name} />
-            </div>
-          </div>
-        </div>
-        <div className="counter">
-          <div className="row">
-            <div className="col-6 col-lg-6">
-              <div className="count-data text-center">
-                <h6 className="count h2">850</h6>
-                <p className="m-0px font-w-600">Followers</p>
-              </div>
-            </div>
-            <div className="col-6 col-lg-6">
-              <div className="count-data text-center">
-                <h6 className="count h2">190</h6>
-                <p className="m-0px font-w-600">Sponsors</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <Modal show={showModal} handleClose={handleCloseModal}>
-                <Donate />
-            </Modal>
-    
-        </>
-    )
+      // Handle success response if needed
+      console.log('Follow Profile response:', data);
+    } catch (error) {
+      console.error('Error following profile:', error);
+      // Handle error if needed
+    }
+  };
+
+  if (loadingMe) {
+    return <p>Loading...</p>; // Or any appropriate loading indicator
+  }
+
+  return (
+    <>
+      <section className="section about-section gray-bg" id="about">
+        <button
+          className="caro-card-btn"
+          onClick={() => handleFollowProfile(profile._id)}
+        >
+          Follow Me
+        </button>
+      </section>
+    </>
+  );
 }
 
-export default ProfileDisplay
+export default ProfileDisplay;

@@ -22,8 +22,8 @@ const resolvers = {
       return Profile.find();
     },
 
-    profile: async (parent, { profileId }) => {
-      return Profile.findOne({ _id: profileId });
+    profile: async (parent, { profileId }, context ) => {
+      return Profile.findOne({ _id: profileId }) 
     },
 
     me: async (parent, args, context) => {
@@ -132,7 +132,7 @@ const resolvers = {
         );
         return updatedProfile;
       }
-      throw new AuthenticationError;
+      throw AuthenticationError;
     },
 
     // add sponsor

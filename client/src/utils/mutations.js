@@ -53,6 +53,26 @@ export const CREATE_PAYMENT = gql`
   }
 `;
 
+export const FOLLOW_PROFILE = gql`
+  mutation addFriend($profileId: ID!, $friendId: ID!) {
+    addFriend(profileId: $profileId, friendId: $friendId) {
+      _id
+      name
+      email
+      age
+      levels
+      goals
+      role
+      bio
+      image
+      friends {
+        _id
+        name
+      }
+    }
+  }
+`;
+
 export const EDIT_PROFILE = gql`
 mutation editProfile($profileId:ID!, $age:Int, $levels:String!, $goals:[String!]){
 editProfile(profileId:$profileId, age:$age, levels:$levels, goals:$goals){
