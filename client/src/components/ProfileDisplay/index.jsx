@@ -4,7 +4,6 @@ import { useState } from "react";
 import '../../utils/modal.css'
 import Modal from "../Modal"
 import Donate from "../../pages/Donate";
-
 import React from 'react';
 import { useQuery, useMutation } from '@apollo/client';
 import { FOLLOW_PROFILE } from '../../utils/mutations';
@@ -27,7 +26,6 @@ const ProfileDisplay = ({ profile }) => {
   const handleCloseModal = () => {
     setShowModal(false);
   };
-
 
   // Follow Me code block
   const { loading: loadingMe, data: myData } = useQuery(QUERY_ME);
