@@ -1,16 +1,14 @@
-import "../../utils/profile.css"
-import defaultImage from "/images/baker.jpg"
-import { useState } from "react";
-import '../../utils/modal.css'
-import Modal from "../Modal"
-import Donate from "../../pages/Donate";
-import React from 'react';
+import React, { useState } from 'react';
 import { useQuery, useMutation } from '@apollo/client';
-import { FOLLOW_PROFILE } from '../../utils/mutations';
 import { QUERY_ME } from '../../utils/queries';
+import { FOLLOW_PROFILE, SPONSOR_PROFILE } from '../../utils/mutations';
+import defaultImage from "/images/baker.jpg";
+import Modal from "../Modal";
+import Donate from "../../pages/Donate";
+import '../../utils/profile.css';
+import '../../utils/modal.css';
 
 const ProfileDisplay = ({ profile }) => {
-
   // handle profile images image url
   const imageUrl = profile.image ? `/images/${profile.image}` : defaultImage;
 
@@ -29,11 +27,10 @@ const ProfileDisplay = ({ profile }) => {
 
   // Follow Me code block
   const { loading: loadingMe, data: myData } = useQuery(QUERY_ME);
-
-  // pull in mutation for executing FOLLOW_PROFILE logic
   const [followProfile] = useMutation(FOLLOW_PROFILE);
+  const [sponsorProfile] = useMutation(SPONSOR_PROFILE);
 
-  // reference to data for logged in user (me)  
+  // reference to data for logged in user (me)
   const me = myData?.me || {};
 
   // logic for handling adding friendId to user profile
@@ -52,10 +49,34 @@ const ProfileDisplay = ({ profile }) => {
         }
       });
       console.log('Follow Profile response:', data);
-      alert(`👨‍🚀 Success! you are now following ${profile.name}! 👩‍🚀`)
+      alert(`👨‍🚀 Success! You are now following ${profile.name}! 👩‍🚀`);
     } catch (error) {
       console.error('Error following profile:', error);
-      alert('An error occurred while following the profile. Please refresh the page, ensure you are logged in and try again.');
+      alert('An error occurred while following the profile. Please refresh the page, ensure you are logged in, and try again.');
+    }
+  };
+
+  // Sponsor Me code block
+  const handleSponsorProfile = async (profileId) => {
+    if (!me._id) {
+      console.error("User is not authenticated or data is not loaded");
+      alert('🛸 Sorry to sponsor a user profile you must be logged in. Please login and try again.');
+      return;
+    }
+
+    try {
+      const { data } = await sponsorProfile({
+        variables: {
+          profileId: profile._id,
+          friendId: me._id
+        }
+      });
+      console.log('Sponsor Profile response:', data);
+      alert(`🚀 Success! You are now sponsoring ${profile.name}! 🌟`);
+      window.location.assign('/');
+    } catch (error) {
+      console.error('Error sponsoring profile:', error);
+      alert('👾 An error occurred while sponsoring the profile. Please refresh the page, ensure you are logged in, and try again.');
     }
   };
 
@@ -72,9 +93,7 @@ const ProfileDisplay = ({ profile }) => {
               <div className="about-text go-to">
                 <h3 className="dark-color">{profile.name}</h3>
                 <h6 className="theme-color lead">{profile.role}</h6>
-                <p>
-                  {profile.bio}
-                </p>
+                <p>{profile.bio}</p>
                 <div className="row about-list">
                   <div className="col-md-6">
                     <div className="media">
@@ -86,7 +105,7 @@ const ProfileDisplay = ({ profile }) => {
                       <p>{profile.goals && profile.goals.length > 0 ? profile.goals.join(', ') : 'N/A'}</p>
                     </div>
                     <div className="media">
-                      <button className="carocardbtn" onClick={handleOpenModal}>Donate</button>
+                      <button className="carocardbtn" onClick={handleOpenModal}>💸 Donate</button>
                     </div>
                   </div>
                   <div className="col-md-6">
@@ -99,7 +118,10 @@ const ProfileDisplay = ({ profile }) => {
                       <p>{profile.levels ? profile.levels : 'N/A'}</p>
                     </div>
                     <div className="media">
-                      <button className="carocardbtn" onClick={() => handleFollowProfile(profile._id)}>Follow Me</button>
+                      <button className="carocardbtn" onClick={() => handleFollowProfile(profile._id)}>🌠 Follow Me</button>
+                    </div>
+                    <div className="media">
+                      <button className="carocardbtn" onClick={() => handleSponsorProfile(profile._id)}>🚀 Sponsor Me</button>
                     </div>
                   </div>
                 </div>
@@ -134,6 +156,6 @@ const ProfileDisplay = ({ profile }) => {
       </Modal>
     </>
   );
-}
+};
 
 export default ProfileDisplay;

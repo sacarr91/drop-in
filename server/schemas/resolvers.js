@@ -139,9 +139,9 @@ const resolvers = {
     addSponsor: async (parent, { profileId, friendId }, context) => {
       if (context.user) {
         const updatedProfile = await Profile.findOneAndUpdate(
-          { _id: profileId },
+          { _id: friendId },
           {
-            $addToSet: { weSponsor: friendId },
+            $addToSet: { weSponsor: profileId },
           },
           {
             new: true,
@@ -149,9 +149,9 @@ const resolvers = {
           }
         );
         const friendProfile = await Profile.findByIdAndUpdate(
-          { _id: friendId },
+          { _id: profileId },
           {
-            $addToSet: { ourSponsors: profileId }
+            $addToSet: { ourSponsors: friendId }
           }
         );
         return updatedProfile;

@@ -22,7 +22,7 @@ const Home = () => {
                 <SponsorCarousel />
                 <Container>
                     <center>
-                        <h1 className='py-2'>🤙 Our Skaters 🛹 </h1>
+                        <h1 className='py-2'>👽 Our Skaters 🛹 </h1>
                     </center>
                 </Container>
                 <SkaterCarousel />
