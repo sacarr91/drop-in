@@ -36,63 +36,11 @@ const UserProfile = () => {
 
     return (
         <>
-        <ProfileDisplay profile={profile} />
-      </>
+            <ProfileDisplay profile={profile} />
+        </>
     )
 
 }
 
 
 export default UserProfile;
-
-        // <Card style={{width:"50%"}}>
-        //     <Card.Body>
-        //         <Card.Title>View Profile</Card.Title>
-        //         <Form>
-        //     <Form.Group as={Row} className="mb-3" controlId="formPlaintextName">
-        //         <Form.Label column sm="2">
-        //             Name
-        //         </Form.Label>
-        //         <Col sm="10">
-        //             <Form.Control plaintext readOnly defaultValue={profile.name} />
-        //         </Col>
-        //     </Form.Group>
-        //     <Form.Group as={Row} className="mb-3" controlId="formPlaintextAge">
-        //         <Form.Label column sm="2">
-        //             Age
-        //         </Form.Label>
-        //         <Col sm="10">
-        //             <Form.Control plaintext readOnly defaultValue={profile.age} />
-        //         </Col>
-        //     </Form.Group>
-        //     <Form.Group as={Row} className="mb-3" controlId="formPlaintextLevels">
-        //         <Form.Label column sm="2">
-        //             Levels
-        //         </Form.Label>
-        //         <Col sm="10">
-        //             <Form.Control plaintext readOnly defaultValue={profile.levels} />
-        //         </Col>
-        //     </Form.Group>
-        //     <Form.Group as={Row} className="mb-3" controlId="formPlaintextGoals">
-        //         <Form.Label column sm="2">
-        //             Goals
-        //         </Form.Label>
-        //         <Col sm="10">
-        //             <Form.Control plaintext readOnly defaultValue={profile.goals} />
-        //         </Col>
-        //     </Form.Group>
-        //     {isEditProfile && (
-        //         <Link
-        //             className="button-link secondary"
-        //             to={`/editprofile/${profile._id}`}
-        //         >Edit Profile</Link>
-        //     )}
-        //     {!isEditProfile && (
-        //         <Link
-        //             className="button-link secondary"
-        //             to={`/editprofile/${profile._id}`}
-        //         >Donate</Link>
-        //     )}
-        // </Form>
-        //     </Card.Body>
-        // </Card>
