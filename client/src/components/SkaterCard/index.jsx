@@ -11,7 +11,7 @@ const SkaterCard = ({ skater }) => {
         <p className="sponsor-description">{skater.bio}</p>
         <div className="sponsor-links">
           <a href={`/profiles/${skater._id}`} className="btn carocardbtn">
-            View Our Page!
+            View My Page!
           </a>
         </div>
       </div>
