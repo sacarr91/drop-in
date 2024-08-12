@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useQuery, useMutation } from '@apollo/client';
 import { QUERY_ME } from '../../utils/queries';
 import { FOLLOW_PROFILE, SPONSOR_PROFILE } from '../../utils/mutations';
-import defaultImage from "/images/baker.jpg";
+import defaultImage from "/images/b-s-default-1.png";
 import Modal from "../Modal";
 import Donate from "../../pages/Donate";
 import '../../utils/profile.css';

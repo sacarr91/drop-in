@@ -13,6 +13,8 @@ const SkaterCarousel = () => {
 
     const skaterProfiles = data.profiles.filter(profile => profile.role === 'Skater');
   
+    console.log(skaterProfiles);
+
     if (!skaterProfiles.length) {
       return <h3>No Skater Profiles Yet</h3>;
     }
