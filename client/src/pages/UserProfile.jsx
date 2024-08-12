@@ -34,15 +34,6 @@ const UserProfile = () => {
         return <section>Loading....</section>
     }
 
-    if (!profile?.name) {
-        return (
-            <h4>
-                🤓 You need to be logged in to see profile page. Use the navigation
-                links above to sign up or log in!
-            </h4>
-        )
-    }
-
     return (
         <>
             <ProfileDisplay profile={profile} />

@@ -39,6 +39,8 @@ export const QUERY_ME = gql`
       age
       levels
       goals
+      bio
+      email
     }
   }
 `;

@@ -1,4 +1,4 @@
-const { Profile, Award } = require('../models');
+const { Profile, Award, Request } = require('../models');
 const { signToken, AuthenticationError } = require('../utils/auth');
 const { randomUUID } = require('crypto');
 const { Client } = require('square');
@@ -22,8 +22,8 @@ const resolvers = {
       return Profile.find();
     },
 
-    profile: async (parent, { profileId }) => {
-      return Profile.findOne({ _id: profileId });
+    profile: async (parent, { profileId }, context ) => {
+      return Profile.findOne({ _id: profileId }) 
     },
 
     me: async (parent, args, context) => {
@@ -93,9 +93,30 @@ const resolvers = {
           throw new Error(error.message);
         }
       }
-      throw new AuthenticationError;
+      throw AuthenticationError;
     },
 
+    // add/send request
+    addRequest: async(parent, { profileId, requests }, context) => {
+      if (context.user) {
+        try{
+          const updatedProfile = await Profile.findOneAndUpdate(
+            { _id: profileId },
+            {
+              $addToSet: { requests: requests }
+            },
+            {
+              new: true,
+              runValidators: true,
+            }
+          );
+          return updatedProfile;
+        } catch (error) {
+          throw new Error(error.message);
+        }
+      }
+      throw AuthenticationError;
+    },
     // add friends
     addFriend: async (parent, { profileId, friendId }, context) => {
       if (context.user) {
@@ -111,16 +132,16 @@ const resolvers = {
         );
         return updatedProfile;
       }
-      throw new AuthenticationError;
+      throw AuthenticationError;
     },
 
     // add sponsor
     addSponsor: async (parent, { profileId, friendId }, context) => {
       if (context.user) {
         const updatedProfile = await Profile.findOneAndUpdate(
-          { _id: profileId },
+          { _id: friendId },
           {
-            $addToSet: { weSponsor: friendId },
+            $addToSet: { weSponsor: profileId },
           },
           {
             new: true,
@@ -128,9 +149,9 @@ const resolvers = {
           }
         );
         const friendProfile = await Profile.findByIdAndUpdate(
-          { _id: friendId },
+          { _id: profileId },
           {
-            $addToSet: { ourSponsors: profileId }
+            $addToSet: { ourSponsors: friendId }
           }
         );
         return updatedProfile;

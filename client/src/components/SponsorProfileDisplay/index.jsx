@@ -1,10 +1,63 @@
 import "../../utils/profile.css"
-import defaultImage from "/images/baker.jpg"
+import defaultImage1 from "/images/a-s-default-1.png"
+import defaultImage2 from "/images/a-s-default-2.png"
+import defaultImage3 from "/images/a-s-default-3.png"
 import '../../utils/modal.css'
 
+import React from 'react';
+import { useQuery, useMutation } from '@apollo/client';
+import { FOLLOW_PROFILE } from '../../utils/mutations';
+import { QUERY_ME } from '../../utils/queries';
+
+const randomizeDefaultImage = function() {
+  const imageArray = [ defaultImage1, defaultImage2, defaultImage3]
+  while(imageArray.length) {
+    const randomIndex = Math.floor(Math.random() * imageArray.length);
+    const defaultImage = imageArray[randomIndex];
+    return defaultImage  
+  }
+  
+}
 
 const SponsorProfileDisplay = ({ profile }) => {
+  const defaultImage = randomizeDefaultImage();
     const imageUrl = profile.image ? `/images/${profile.image}` : defaultImage;
+
+      // Follow Me code block
+  const { loading: loadingMe, data: myData } = useQuery(QUERY_ME);
+
+  // pull in mutation for executing FOLLOW_PROFILE logic
+  const [followProfile] = useMutation(FOLLOW_PROFILE);
+
+  // reference to data for logged in user (me)  
+  const me = myData?.me || {};
+
+  // logic for handling adding friendId to user profile
+  const handleFollowProfile = async (profileId) => {
+    if (!me._id) {
+      console.error("User is not authenticated or data is not loaded");
+      alert('🛸 Sorry to follow a user profile you must be logged in. Please login and try again.');
+      return;
+    }
+
+    try {
+      const { data } = await followProfile({
+        variables: {
+          profileId: profile._id,
+          friendId: me._id
+        }
+      });
+      console.log('Follow Profile response:', data);
+      alert(`👨‍🚀 Success! you are now following ${profile.name}! 👩‍🚀`)
+    } catch (error) {
+      console.error('Error following profile:', error);
+      alert('An error occurred while following the profile. Please refresh the page, ensure you are logged in and try again.');
+    }
+  };
+
+  if (loadingMe) {
+    return <p>Loading...</p>;
+  }
 
     return(
         <>
@@ -25,7 +78,7 @@ const SponsorProfileDisplay = ({ profile }) => {
                     <p>{profile.email}</p>
                   </div>
                   <div className="media">
-                  <button className="carocardbtn">Follow Us</button>
+                  <button className="carocardbtn" onClick={() => handleFollowProfile(profile._id)} >Follow Us</button>
                   </div>
                 </div>
               </div>
@@ -56,7 +109,7 @@ const SponsorProfileDisplay = ({ profile }) => {
       </div>
     </section>    
         </>
-    )
+    );
 }
 
 export default SponsorProfileDisplay
