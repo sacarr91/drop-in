@@ -13,8 +13,6 @@ const randomizeDefaultImage = function() {
   
 }
 
-
-
 const SkaterCard = ({ skater }) => {
   const defaultImage = randomizeDefaultImage(); 
   const imageUrl = skater.image ? `images/${skater.image}` : defaultImage;
