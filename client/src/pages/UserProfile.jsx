@@ -45,8 +45,8 @@ const UserProfile = () => {
 
     return (
         <>
-        <ProfileDisplay profile={profile} />
-      </>
+            <ProfileDisplay profile={profile} />
+        </>
     )
 
 }

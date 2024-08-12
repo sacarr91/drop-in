@@ -6,10 +6,9 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import { EDIT_PROFILE } from '../utils/mutations';
 // import Auth to get profileId
 import Auth from '../utils/auth';
-import UserProfile from './UserProfile';
-
 
 const EditProfile = () => {
+    const originLocation = window.location.origin;
     // Declare profileId
     let profileId = "";
     // Get profileId using the Auth
@@ -24,8 +23,10 @@ const EditProfile = () => {
     });
     // Define state to manage form goals
     const [formGoals, setGoals] = useState([]);
-
+    
+    // Define state to set formInput
     const [inputValue, setInputValue] = useState('');
+
     // Function to add goal
     const addGoal = (event) => {
         event.preventDefault();
@@ -60,6 +61,8 @@ const EditProfile = () => {
             const { data } = await editProfile({
                 variables: { ...formState },
             });
+            // redirect to view the updated profile details
+            window.location.assign(`${originLocation}/profiles/${profileId}`);
         } catch (e) {
             console.error(e);
         }
