@@ -14,3 +14,4 @@ const DeveloperCard = ({ dev }) => (
 );
 
 export default DeveloperCard;
+
