@@ -6,13 +6,13 @@ import Card from 'react-bootstrap/Card';
 
 import { QUERY_SINGLE_PROFILE, QUERY_ME } from '../utils/queries';
 import Auth from '../utils/auth';
-import ProfileDisplay from '../components/ProfileDisplay';
+import SponsorProfileDisplay from '../components/SponsorProfileDisplay';
 import Modal from '../components/Modal';
 import Donate from './Donate';
 import '../utils/modal.css'
 
 let isEditProfile = "";
-const UserProfile = () => {
+const SponsorProfile = () => {
 
     const { profileId } = useParams();
     const { loading, data } = useQuery(
@@ -45,11 +45,11 @@ const UserProfile = () => {
 
     return (
         <>
-            <ProfileDisplay profile={profile} />
-        </>
+        <SponsorProfileDisplay profile={profile} />
+      </>
     )
 
 }
 
 
-export default UserProfile;
+export default SponsorProfile;

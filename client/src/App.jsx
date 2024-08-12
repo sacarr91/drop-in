@@ -51,6 +51,7 @@ function App() {
             <Outlet />
             <div id='footer-buffer'></div>
           </main>
+          </div>
           <Footer />
         </div>
       </ApolloProvider>

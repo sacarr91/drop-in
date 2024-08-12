@@ -93,6 +93,10 @@ body {
   min-height: 100vh;
 }
 
+#content-wrap {
+  padding-bottom: 80px;
+}
+
 .formbtn {
   margin: 5px;
   background-color: #7C737F;
@@ -177,4 +181,42 @@ h2, h3, h6 {
   font-family: "Bangers", system-ui;
   font-weight: 400;
   font-style: normal;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  flex-direction: column; 
+  height: 100%;           
+}
+
+#rswp-card-button {
+  background-color: rgb(101, 189, 71);
+  color: black;
+  --bs-btn-hover-border-color: rgb(101, 189, 71);
+  margin-right: 1rem;
+  transition: background-color 0.3s;
+}
+
+#rswp-card-button:hover {
+  background-color: #1a0026;
+  color: rgb(101, 189, 71);
+  --box-shadow-color: rgb(101, 189, 71);
+  box-shadow: 0 0 30px var(--box-shadow-color);
+}
+
+.confirmation-message button{
+  background-color: rgb(101, 189, 71);
+  color: black;
+  --bs-btn-hover-border-color: rgb(101, 189, 71);
+  margin-right: 1rem;
+  transition: background-color 0.3s;
+}
+
+.confirmation-message button:hover {
+  background-color: #1a0026;
+  color: rgb(101, 189, 71);
+  --box-shadow-color: rgb(101, 189, 71);
+  box-shadow: 0 0 30px var(--box-shadow-color);
 }

@@ -1,0 +1,42 @@
+@import url("fonts.css");
+
+.bg-img {
+    --bs-bg-opacity: 1;
+    background-image: url("/images/diHeaderImgLongNoText.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.toggleBtn {
+    background-color: rgba(255, 255, 255, 0.897);
+}
+
+.homeLink {
+    color: white;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 12rem;
+    font-size: xx-large;
+}
+
+.bg-style {
+    background-image: url("/images/homepage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn {
+    margin: 5px;
+    background-color: #7C737F;
+    width: 99%;
+}
+
+.bg-card {
+    background-color: #E7DCEB;
+}
+
+.col-form-label{
+    font-weight: bold;
+}
+
