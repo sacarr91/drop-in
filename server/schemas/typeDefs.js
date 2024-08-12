@@ -1,21 +1,20 @@
 const typeDefs = `
   type Profile {
     _id: ID
-    name: String
-    email: String
-    password: String
+    name: String!
+    email: String!
+    password: String!
     age: Int
-    levels: String!
-    goals: [String]!
-    role: String!
-    level: String
+    levels: String
+    goals: [String]
+    role: String
     bio: String
     image: String
-    awards: [Award]!
-    requests: [Request]!
-    friends: [Profile]!
-    ourSponsors:[Profile]!
-    weSponsor:[Profile]!
+    awards: [Award]
+    requests: [Request]
+    friends: [Profile]
+    ourSponsors:[Profile]
+    weSponsor:[Profile]
   }
 
   type Auth {

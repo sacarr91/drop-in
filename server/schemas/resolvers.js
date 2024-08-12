@@ -45,6 +45,10 @@ const resolvers = {
         email,
         password,
         role,
+        bio: null,
+        image: null,
+        age: null,
+        levels: null,
       });
       const token = signToken(profile);
 

@@ -13,6 +13,7 @@ const profileSchema = new Schema({
   },
   bio: {
     type: String,
+    default: null
   },
   email: {
     type: String,
@@ -35,6 +36,7 @@ const profileSchema = new Schema({
 
   image: {
     type: String,
+    default: null
   },
 
   ourSponsors: [
@@ -58,11 +60,12 @@ const profileSchema = new Schema({
   age: {
     type: Number,
     trim: true,
-    required:false,
+    default: null
   },
   levels: {
     type: String,
     trim: true,
+    default: null
   },
   goals: [
     {
