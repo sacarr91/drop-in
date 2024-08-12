@@ -1,5 +1,7 @@
 import "../../utils/profile.css"
-import defaultImage from "/images/baker.jpg"
+import defaultImage1 from "/images/a-s-default-1.png"
+import defaultImage2 from "/images/a-s-default-2.png"
+import defaultImage3 from "/images/a-s-default-3.png"
 import '../../utils/modal.css'
 
 import React from 'react';
@@ -7,8 +9,18 @@ import { useQuery, useMutation } from '@apollo/client';
 import { FOLLOW_PROFILE } from '../../utils/mutations';
 import { QUERY_ME } from '../../utils/queries';
 
+const randomizeDefaultImage = function() {
+  const imageArray = [ defaultImage1, defaultImage2, defaultImage3]
+  while(imageArray.length) {
+    const randomIndex = Math.floor(Math.random() * imageArray.length);
+    const defaultImage = imageArray[randomIndex];
+    return defaultImage  
+  }
+  
+}
 
 const SponsorProfileDisplay = ({ profile }) => {
+  const defaultImage = randomizeDefaultImage();
     const imageUrl = profile.image ? `/images/${profile.image}` : defaultImage;
 
       // Follow Me code block
