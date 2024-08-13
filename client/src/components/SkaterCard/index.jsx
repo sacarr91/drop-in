@@ -21,7 +21,7 @@ const SkaterCard = ({ skater }) => {
     <div className="sponsor-card" style={{ backgroundImage: `url(${imageUrl})` }}>
       <div className="sponsor-card-overlay">
         <h3 className="sponsor-title">{skater.name}</h3>
-        <p className="sponsor-description">{skater.bio}</p>
+        <div className="sponsor-description">{skater.bio}</div>
         <div className="sponsor-links">
           <a href={`/profiles/${skater._id}`} className="btn carocardbtn">
             View My Page!
