@@ -7,7 +7,7 @@ A platform to connect sponsors with rising talent in the skateboarding world.
 ## Table of Contents
 
 - [Description](#Description)
-- [Languages](#Languages)
+- [Technology](#Technology)
 - [Usage](#Usage)
 - [Key Features](#Key-Features)
 - [Acknowledgements](#Acknowledgements)
@@ -63,6 +63,17 @@ Our app empowers skaters to showcase their talent and connect with sponsors worl
 
 ## Key Features
 
+- User Accounts: Sponsors and skaters can sign up, log in, and update their profiles with details like name, age, level, and goals.
+- Landing Page: Displays a list of sponsors and skaters, with links to visit their pages, and includes links to the dev team and GitHub repo.
+- Side Navbar:
+  - Skaters: Provides information on how to get sponsored, become a skater, and view all skaters.
+  - Sponsors: Explains how to become a sponsor and allows users to see all sponsors.
+- Skater Page:
+  - Users can add friends with a "Follow Me" button.
+  - Skaters can receive sponsorships through a "Sponsor Me" button.
+  - Donations can be made via Square using a "Donate Me" button.
+- Sponsor Page: Users can follow sponsors with a "Follow Us" button.
+
 <!-- - ![Finished Product](link finished product gif) -->
 
 <p align="right"><a href="#readme-top">back to top</a></p>
@@ -99,6 +110,13 @@ Joseph Ruff
 ---
 
 Peter Smith
+
+My contributions include:
+* framework development implentation.
+* client and server side features
+* backend development for the database
+* Server side schemas for data manipulation
+* Client side react components and UI/UX
 
 ## Team Contact
 

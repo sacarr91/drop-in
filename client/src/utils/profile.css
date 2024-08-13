@@ -115,8 +115,7 @@ mark {
 
 .followers-card, .sponsors-card {
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-between; 
+  flex-wrap: wrap;  
   padding: 0;
   margin: 0;
   list-style: none;
@@ -127,20 +126,21 @@ mark {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 120px; 
-  margin: 5px; 
+  width: 10%; 
+  margin: 5%; 
 }
 
 .follower-img, .sponsor-img {
-  width: 80px; 
-  height: 80px; 
+  width: 80%; 
+  height: 80%; 
   border-radius: 50%;
   object-fit: cover; 
 }
 
 .follower-name, .sponsor-name {
-  margin-top: 5px;
+  margin-top: 5%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding: 2px;
 }
