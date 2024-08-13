@@ -164,6 +164,17 @@ const ProfileDisplay = ({ profile }) => {
             </div>
           </div>
         </div>
+        <div className="sponsors-list">
+          <h4>Sponsors:</h4>
+          <ul className="sponsors-card">
+            {profile.ourSponsors && profile.ourSponsors.map(sponsor => (
+              <li className='sponsor-li' key={sponsor._id}>
+                <img className='sponsor-img' src={sponsor.image ? `/images/${sponsor.image}` : randomizeDefaultImage()} alt={sponsor.name} />
+                <span className='sponsor-name'>{sponsor.name}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
         <div className="friends-list">
           <h4>Followers:</h4>
           <ul className="followers-card">

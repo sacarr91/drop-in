@@ -113,34 +113,34 @@ mark {
   margin-bottom: 15px;
 }
 
-.followers-card {
+.followers-card, .sponsors-card {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping to new lines if items exceed container width */
-  justify-content: space-between; /* Distributes items evenly with minimal space */
+  flex-wrap: wrap; 
+  justify-content: space-between; 
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.follower-li {
+.follower-li, .sponsor-li {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 120px; /* Adjust width to fit more or fewer items per row */
-  margin: 5px; /* Small margin to add a bit of separation */
+  width: 120px; 
+  margin: 5px; 
 }
 
-.follower-img {
-  width: 80px; /* Adjust to preferred thumbnail size */
-  height: 80px; /* Adjust to preferred thumbnail size */
+.follower-img, .sponsor-img {
+  width: 80px; 
+  height: 80px; 
   border-radius: 50%;
-  object-fit: cover; /* Ensures the image covers the area */
+  object-fit: cover; 
 }
 
-.follower-name {
-  margin-top: 5px; /* Adds a small space between the image and the name */
+.follower-name, .sponsor-name {
+  margin-top: 5px;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis; /* Handles overflow text gracefully */
+  text-overflow: ellipsis;
 }
