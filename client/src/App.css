@@ -99,12 +99,12 @@ body {
 
 .formbtn {
   margin: 5px;
-  background-color: #7C737F;
+  background-color: #7c737f;
   width: 99%;
 }
 
 .bg-card {
-  background-color: #E7DCEB;
+  background-color: #e7dceb;
 }
 
 .btn {
@@ -126,8 +126,11 @@ h2, h3, h6 {
 #footer-buffer {
   height: 60px;
 }
-/* FONTS */
+.bg-card2 {
+  background-color: #656465;
+}
 
+/* FONTS */
 
 .rock-salt {
   font-family: "Rock Salt", cursive;
@@ -186,9 +189,9 @@ h2, h3, h6 {
 .center-content {
   display: flex;
   justify-content: center;
-  align-items: center;    
-  flex-direction: column; 
-  height: 100%;           
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
 }
 
 #rswp-card-button {
@@ -206,7 +209,7 @@ h2, h3, h6 {
   box-shadow: 0 0 30px var(--box-shadow-color);
 }
 
-.confirmation-message button{
+.confirmation-message button {
   background-color: rgb(101, 189, 71);
   color: black;
   --bs-btn-hover-border-color: rgb(101, 189, 71);
