@@ -10,7 +10,6 @@ import SponsorLevels from "../src/pages/SponsorLevels";
 import CreateSkater from "./pages/StartSkating.jsx";
 import Login from "./pages/Login";
 import AllSponsors from "./pages/AllSponsors";
-import Profile from "./pages/Profile";
 import AllSkaters from '../src/pages/AllSkaters.jsx';
 import HowTo from "./pages/HowTo.jsx";
 import Create from "./pages/BecomeSponsor.jsx";
