@@ -7,7 +7,7 @@ A platform to connect sponsors with rising talent in the skateboarding world.
 ## Table of Contents
 
 - [Description](#Description)
-- [Languages](#Languages)
+- [Technology](#Technology)
 - [Usage](#Usage)
 - [Key Features](#Key-Features)
 - [Acknowledgements](#Acknowledgements)
