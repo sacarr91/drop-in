@@ -43,6 +43,8 @@
     font-size: 1em;
     margin: 10px 0;
     text-align: center;
+    overflow-y: hidden;
+    max-height: 50%;
   }
   
   .sponsor-links {

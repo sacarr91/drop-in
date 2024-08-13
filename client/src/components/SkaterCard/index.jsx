@@ -15,16 +15,16 @@ const randomizeDefaultImage = function() {
 
 const SkaterCard = ({ skater }) => {
   const defaultImage = randomizeDefaultImage(); 
-  const imageUrl = skater.image ? `images/${skater.image}` : defaultImage;
+  const imageUrl = skater.image ? `${skater.image}` : defaultImage;
 
   return (
     <div className="sponsor-card" style={{ backgroundImage: `url(${imageUrl})` }}>
       <div className="sponsor-card-overlay">
         <h3 className="sponsor-title">{skater.name}</h3>
-        <p className="sponsor-description">{skater.bio}</p>
+        <div className="sponsor-description">{skater.bio}</div>
         <div className="sponsor-links">
           <a href={`/profiles/${skater._id}`} className="btn carocardbtn">
-            View Our Page!
+            View My Page!
           </a>
         </div>
       </div>

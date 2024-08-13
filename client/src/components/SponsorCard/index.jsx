@@ -15,7 +15,7 @@ const randomizeDefaultImage = function() {
 
 const SponsorCard = ({ sponsor }) => {
   const defaultImage = randomizeDefaultImage(); 
-  const imageUrl = sponsor.image ? `images/${sponsor.image}` : defaultImage;
+  const imageUrl = sponsor.image ? `${sponsor.image}` : defaultImage;
 
   return (
     <div className="sponsor-card" style={{ backgroundImage: `url(${imageUrl})` }}>

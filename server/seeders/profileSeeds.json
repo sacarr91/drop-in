@@ -1,64 +1,839 @@
 [
   {
-    "name": "Tony Hawk",
-    "email": "tony@birdhouse.com",
+    "name": "Andy Anderson",
+    "email": "Andy@Anderson.com",
     "password": "wordpass123",
-    "goals": ["Tampa Am", "Shoes", "Skateboards"],
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Powell Peralta, Trucks: Mini Logo, Wheels: Bones, Shoes: Etnies, Clothing: Swatch, Skullcandy, Other: Skull Skates, Mind Control Products"
+    ],
+    "age": 28,
+    "bio": "Anderson is known in the skateboarding world for a unique skateboarding style and extensive arsenal of technical tricks. He has competed and placed in the final round of various noteworthy competitions since 2015, including the Zumiez Best Foot Forward Vancouver, the Vans Park Series Americas Continental Championships, the Jackalope Festival, The Boardr Am, the Mystic Sk8 Cup, the Continental Championships, the Nitro World Games, and the semi-finals of the Dew Tour 2021. In the 2018 skateboarding world championships, Anderson placed 21st in the semifinals. In 2020 Anderson won the Canadian Men's Park final, while also placing 10th in the Street skateboarding category. ",
+    "role": "Skater",
+    "image": "https://juicemagazine.com/home/wp-content/uploads/2016/03/Andy-ANDERSON-one-foot-grind-DEVILLEtif.jpg"
+  },
+  {
+    "name": "Aori Nishimura",
+    "email": "Aori@Nishimura.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [
+      "TRUCKS, WHEELS"
+    ],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Deathwish, Shoes: Nike SB, CLOTHING, Other: Kinoshita Group, Monster Energy, Oakley, Baby G, Shake Junt, Beats by Dre, Murasaki Sports"
+    ],
+    "age": 23,
+    "bio": "Born in Edogawa, Tokyo in Japan, Aori Nishimura started skating at the age of 7, in 2008. She made her professional debut when she was in fifth grade in a tournament organized by the All-Japan Skateboarding Association.",
+    "role": "Skater",
+    "image": "https://www.japantimes.co.jp/uploads/imported_images/uploads/2021/07/np_file_101278.jpeg"
+  },
+  {
+    "name": "Bam Margera",
+    "email": "Bam@Margera.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [
+      "SHOES, CLOTHING"
+    ],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Element, Trucks: Destructo, Wheels: Spitfire, Other: Speed Metal Bearings, Fairman's Skateshop."
+    ],
+    "age": 44,
+    "bio": "Brandon Cole 'Bam' Margera is an American former professional skateboarder, stunt performer, television personality, and filmmaker. Margera rose to prominence in the early 2000s as one of the stars of the MTV reality stunt show Jackass. He also created the Jackass spin-off shows Viva La Bam (2003–2006), Bam's Unholy Union (2007), Bam's World Domination (2010), and Bam's Bad Ass Game Show (2014), and co-wrote and directed the films Haggard (2003) and Minghags (2009).",
+    "role": "Skater",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Bam_Margera_2017.jpg/230px-Bam_Margera_2017.jpg"
+  },
+  {
+    "name": "Brandon Westgate",
+    "email": "Brandon@Westgate.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [
+      "WHEELS"
+    ],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Element, Trucks: Venture, Shoes: New Balance, Clothing: Dakine, Other: Bones Bearings, MOB Grip"
+    ],
+    "age": 35,
+    "bio": "Westgate was born in Wareham, Massachusetts, United States (US). When he was young, Westgate skated in his hometown and at Skater Island skate park in Rhode Island, US.",
+    "role": "Skater",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Zoo_York_Skater_Brandon_Westgate_doing_a_Frontside_Flip_in_Queens%2C_NY_%28cropped%29.jpg/220px-Zoo_York_Skater_Brandon_Westgate_doing_a_Frontside_Flip_in_Queens%2C_NY_%28cropped%29.jpg"
+  },
+  {
+    "name": "Brighton Zeuner",
+    "email": "Brighton@Zeuner.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [
+      "CLOTHING"
+    ],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Frog, Trucks: Independent, Wheels: OJ, Shoes: Vans, Other: Bronson Speed Co, MOB Grip, Protec, 187 Pads"
+    ],
+    "age": 20,
+    "bio": "A resident of Newport Beach, she has two X Games gold medals in skateboard park, with her first title in 2017 making her the youngest champion in X Games history at just day over 13 years old. She is also the youngest female X Games competitor, having skateboarded at the age of eleven in 2016.[1] She has become a regular at the Vans Park Series events, having won two Vans Park World Championships. She wins competitions with high-flying and twisting tricks and strong fundamentals as she moves over obstacles in the park. At the 2018 X Games, she already had the high score when she decided to try and up her score to win the gold. Zeuner was among the 16 members of the inaugural U.S.A Skateboarding National Team announced in March 2019. Zeuner skated the 2020 Tokyo Olympic Games in the Women's Park division. This was the first contest she ever skated without her father being allowed to be there. She placed 12th overall.",
+    "role": "Skater",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Brighton_Zeuner.jpeg/220px-Brighton_Zeuner.jpeg"
+  },
+  {
+    "name": "Bucky Lasek",
+    "email": "Bucky@Lasek.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Green Issue, Trucks: Independent, Wheels: Bones, Shoes: Puma, Clothing: Billabong, Other: Rockstar Energy Drink"
+    ],
+    "age": 51,
+    "bio": "Born in Baltimore, Maryland, Lasek started skateboarding at the age of 12, shortly after his bike was stolen. After entering amateur contests, he was quickly noticed by Powell Peralta talent scouts in 1987. Powell Peralta promptly sponsored Lasek and introduced him in a 1987 publication as a 14 year old newly-sponsored amateur who 'rides a mini-Caballero with X-Bones.' Lasek made his video debut in the fourth Bones Brigade video, Public Domain (1988).[3]",
+    "role": "Skater",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Bucky_Lasek_Red_Bull_Global_Rallycross_2016_%28cropped%29.jpg/220px-Bucky_Lasek_Red_Bull_Global_Rallycross_2016_%28cropped%29.jpg"
+  },
+  {
+    "name": "Chad Muska",
+    "email": "Chad@Muska.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [
+      "TRUCKS"
+    ],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Element, Wheels: Ricta, Shoes: Supra, Clothing: KR3W, Other: Mob Grip, Brooklyn Projects"
+    ],
+    "age": 47,
+    "bio": "While in Arizona, Muska first met and spent time skateboarding with professional skateboarder Erik Ellington prior to both of their careers. Muska eventually moved to Mission Beach in San Diego, California, with very little money, a sketch book, and a portable cassette player to further pursue skateboarding and art.",
+    "role": "Skater",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Chadmuska_%283243525035%29.jpg/220px-Chadmuska_%283243525035%29.jpg"
+  },
+  {
+    "name": "Chris Cole",
+    "email": "Chris@Cole.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [
+      "CLOTHING"
+    ],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Zero, Trucks: Thunder, Wheels: Spitfire, Shoes: Fallen, Other: Monster Energy, Grizzly, Reign Skateshop, Stance, Kershaw"
+    ],
+    "age": 42,
+    "bio": "Cole gained attention following the completion of a number of difficult tricks: 360 flip, Switch Frontside flip and Backside 360 ollie down the staircase at Wallenberg High School in San Francisco, California. Backside 360 Kickflip down the Carlsbad gap in Carlsbad, California & Martin Place Amphitheatre in Sydney, Australia. But most notable a Backside flip, Switch Frontside flip and a Backside 360 ollie down the 'Love Park' fountain in Philadelphia as seen in his Transworld In Bloom, and Fallen Ride the Sky Video Parts.",
+    "role": "Skater",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Chris-Cole-skateboarder-DSC_0110.jpg/220px-Chris-Cole-skateboarder-DSC_0110.jpg"
+  },
+  {
+    "name": "Chris Haslam",
+    "email": "Chris@Haslam.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Brainchild, Trucks: Independent, Wheels: Bones, Shoes: Globe, Clothing: Sitka, Other: Vestal, Dakine, Bones Bearings, Gypsy Grip, Leftover Hardware"
+    ],
+    "age": 43,
+    "bio": "Chris Haslam (born December 19, 1980) is a Canadian professional skateboarder whose natural stance is right foot forward, or 'Goofy'. He is recognized as an innovative skateboarder whose skateboarding is defined by creativity and progression.",
+    "role": "Skater",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Chris_Haslam_Uruguay_2011_003.jpg/220px-Chris_Haslam_Uruguay_2011_003.jpg"
+  },
+  {
+    "name": "Christian Hosoi",
+    "email": "Christian@Hosoi.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Hosoi Skates, Trucks: Independent, Wheels: Penny, Shoes: Vans, Clothing: Evoke, Other: Nixon, Pro tec, Diamond Supply Co., McKenna VW, Stance, AWSM, Ollo Clip"
+    ],
+    "age": 56,
+    "bio": "In 1979, as an amateur, Hosoi was sponsored by Powell Peralta. He left Powell Peralta a year later when they would not allow him to turn professional and joined Dogtown Skateboards. Shortly thereafter, Dogtown went out of business. Christian turned pro at the age of 14 with Sims Skateboards. After leaving Sims, Hosoi joined Alva Skates with the idea of launching his own company through Alva. Hosoi later claimed that he 'almost quit' Alva Skates following an argument over Hosoi's allegation that Alva 'cheated [Hosoi] out' of the fish-tail board shape, which Hosoi claimed to have conceptualized and shown to Alva.",
+    "role": "Skater",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Christian_Hosoi_in_2008.jpg/220px-Christian_Hosoi_in_2008.jpg"
+  },
+  {
+    "name": "Daewon Song",
+    "email": "Daewon@Song.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Thank You, Trucks: Tensor, Wheels: Spitfire, Shoes: Adidas, Clothing: Matix, Other: Andale, Brick Harbor, MOB Grip, Glassy Sunhaters, Loud Headphones"
+    ],
+    "age": 49,
+    "bio": "Daewon Song is an American professional skateboarder. He is the co-founder and co-owner of Almost Skateboards and Thank You Skateboards, and continues to skate for the latter company. Song was named the 2006 'Skater of the Year' by Thrasher magazine, an award that is widely considered to be one of the most significant honors in skateboarding.",
+    "role": "Skater",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Daewon_Song_2006.jpg/220px-Daewon_Song_2006.jpg"
+  },
+  {
+    "name": "Danny Way",
+    "email": "Danny@Way.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [
+      "CLOTHING"
+    ],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Plan B, Trucks: Independent, Wheels: Plan B, Shoes: DC, Other: Nixon, Jessup, ASEC, Megaramp, Pacific Drive, Capix"
+    ],
+    "age": 50,
+    "bio": "Danny Way became the youngest person (15 yrs old) to win a pro vert skateboarding contest at the World Skateboard Association Pro Vert Contest in Lansing, Michigan sponsored by Modern Skate & Surf in 1989. Way was introduced in the Powell Peralta skateboard company's video 'Public Domain' in the late 80's and H-Street skateboard company's videos Shackle Me Not and Hokus Pokus and, shortly afterwards in 1991, co-founded the skateboard company Plan B, together with Mike Ternasky. He has been injured repeatedly, including breaking his neck in 1994, and as of 2009 having undergone 13 operations.",
+    "role": "Skater",
+    "image": "https://mareacoffee.com/cdn/shop/articles/danny-way-skateboarding_2048x.jpg?v=1517773448"
+  },
+  {
+    "name": "Edgard Pereira",
+    "email": "Edgard@Pereira.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [
+      "DECKS, TRUCKS, WHEELS, SHOES"
+    ],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Clothing: Tent Beach, Other: Adrenal"
+    ],
+    "age": 42,
+    "bio": "Pereira is most known for his competition in Mega Ramp contests. In 2010, he was invited to his first X Games and finished 6th. In the following year, he finished in 3rd place at X Games Big Air, solidifying his place as a top rider. During the next years he was invited to participate at X Games around the world and was always a top finisher. In 2014, Vovo achieved 3rd place finishes in both the Brazilian Skate Circuit Vertical and X Games Austin Big Air where his run consisted of a backflip and a huge backside 540 heelflip flip, a never before seen trick.",
+    "role": "Skater",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Edgard_Pereira_wins_bronze_2014_X_Games_%28cropped%29.png/220px-Edgard_Pereira_wins_bronze_2014_X_Games_%28cropped%29.png"
+  },
+  {
+    "name": "Elissa Steamer",
+    "email": "Elissa@Steamer.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Baker, Trucks: Thunder, Wheels: Spitfire, Shoes: Nike SB, Clothing: Gnarhunters"
+    ],
+    "age": 49,
+    "bio": "Born on July 31, 1975 in Fort Meyers, Florida, Elissa Steamer was the first pro female street skater and the first woman in the sport to have a starring role in a major video. Beyond the benchmarks, Elissa was really the first girl since the explosion of street skating to be accepted into the boys club as an equal–helping break down gender barriers and inspiring fellow women worldwide to hit the streets.",
+    "role": "Skater",
+    "image": "hhttps://myhero.com/content/images/thumbs/0164089_elissa-steamer.jpeg"
+  },
+  {
+    "name": "Eric Koston",
+    "email": "Eric@Koston.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Skate Mental, Trucks: Independent, Wheels: Spitfire, Shoes: Nike SB, Clothing: Nike SB, Other: Diamond Supply Co., Jessup, Oakley, Skullcandy, The Berrics"
+    ],
+    "age": 49,
+    "bio": "Eric Koston (born April 29, 1975) is an American professional skateboarder and company owner. He has been featured in the Tony Hawk's video game series and the Electronic Arts (EA) video games Skate 2 and Skate 3. Koston co-owns both Fourstar Clothing (with Guy Mariano) and the skatepark/website 'The Berrics' (with professional skateboarder Steve Berra).",
+    "role": "Skater",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kostonfandangle_%28cropped%29.jpg/220px-Kostonfandangle_%28cropped%29.jpg"
+  },
+  {
+    "name": "Erik Ellington",
+    "email": "Erik@Ellington.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Deathwish, Trucks: Thunder, Wheels: Spitfire, Shoes: Supra, Clothing: KR3W, Other: Brigada Eyewear, Shake Junt"
+    ],
+    "age": 47,
+    "bio": "Ellington first appeared on video when he played a Zero rider in Thrill of it All. Prior to this, he had appeared in the 'Friends' section of the Toy Machine video, Welcome to Hell, but the part was uncredited. Ellington had relocated from San Diego to Tempe around the same time that he was recruited by professional skateboarder Jamie Thomas, the founder and owner of Zero.",
+    "role": "Skater",
+    "image": "https://www.skateboarding.com/.image/t_share/MTk2NDExMDI2ODk0NDk2OTE4/tws_wedwallpaper_0411_11950.jpg"
+  },
+  {
+    "name": "Geoff Rowley",
+    "email": "Geoff@Rowley.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [
+      "CLOTHING"
+    ],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Free Dome, Trucks: Independent, Wheels: Ricta, Shoes: Vans, Other: MOB Grip"
+    ],
+    "age": 48,
+    "bio": "Geoffrey Joseph Rowley Jr. (born 6 June 1976) is an English professional skateboarder, former co-owner of Flip Skateboards and owner of the Civilware Service Corporation.[1] He received Thrasher Magazine's 'Skater of the Year' award in 2000.",
+    "role": "Skater",
+    "image": "https://images.freeskatemag.com/wp-content/uploads/2021/06/02114921/16-9-geoffrowley_360flip_oceanside_swift1994-1024x576.jpg"
+  },
+  {
+    "name": "Greg Lutzka",
+    "email": "Greg@Lutzka.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [
+      "CLOTHING"
+    ],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Darkstar, Trucks: Independent, Wheels: Ricta, Shoes: Osiris Shoes, Other: FKD, OC Ramps, Rockstar Energy Drink, Kicker, Daphne's California Greek, Ethika"
+    ],
+    "age": 39,
+    "bio": "Lutzka was first sponsored at the age of 15 and he explained in 2014 that, upon attaining sponsorship, he realized that professional skateboarding was a feasible option for him. Volcom and Oakley were two of the brands that supported Lutzka, while he was connected with established skateboarders like Rodney Mullen and Tony Hawk. Lutzka relocated to California, U.S., at the request of his sponsors.",
+    "role": "Skater",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Greg_Lutzka_dehors_Leo_Harley-Davidson_Brossard.jpg/220px-Greg_Lutzka_dehors_Leo_Harley-Davidson_Brossard.jpg"
+  },
+  {
+    "name": "Jagger Eaton",
+    "email": "Jagger@Eaton.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [
+      "SHOES, CLOTHING"
+    ],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: The Heart Supply, Trucks: Independent, Wheels: Bones, Other: Red Bull, KTR"
+    ],
+    "age": 23,
+    "bio": "Jagger Jesse Eaton (born February 21, 2001) is an American professional skateboarder who competes in street and park competitions. He was the youngest ever X Games competitor at age 11, until his record was broken in 2019. In 2021, Eaton won the first Olympic skateboarding medal, earning a bronze in the men's street competition in Tokyo, Japan. Eaton won Silver in the 2024 Olympic men's street event at 2024 Summer Olympics in Paris, France.",
+    "role": "Skater",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/XGames-Chiba-2022_2022-04-24_0392_cropped-2_%28cropped%29.jpg/250px-XGames-Chiba-2022_2022-04-24_0392_cropped-2_%28cropped%29.jpg"
+  },
+  {
+    "name": "Jake Anderson",
+    "email": "Jake@Anderson.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Skate Mental, Trucks: Thunder, Wheels: Spitfire, Shoes: HUF, Clothing: Former, Other: Five Points Skateshop"
+    ],
+    "age": 43,
+    "bio": "Anderson and his wife, Jenna, live in Seattle, Washington, with their three children. Anderson is an avid skateboarder and is sponsored by the American footwear and clothing company DVS Shoes. He has a signature skateboard shoe released through the company.",
+    "role": "Skater",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/JakeAnderson2.jpg/220px-JakeAnderson2.jpg"
+  },
+  {
+    "name": "Jake Brown",
+    "email": "Jake@Brown.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [
+      "SHOES"
+    ],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Sk8Mafia, Trucks: Independent, Wheels: Spitfire, Clothing: Laced, Other: Monster Energy, Paradox Griptape"
+    ],
+    "age": 49,
+    "bio": "Jake Brown (born 6 September 1974) is an Australian skateboarder who specialises in transition skateboarding. He began competing in 1996 and regularly[citation needed] appears as a contestant in the X Games contest events. Brown has also successfully skateboarded the 'MegaRamp' structure, on which he is the first person to ever perform a 720-degree rotation without grabbing his board as of September 2013.[1] He lost control of his board while competing in the X Games in 2007, falling from a height of 14 meters (45 feet) and sustaining severe injuries. Despite this, he recovered and went on to win gold in the same tournament in 2009 and successfully defend his title in 2010.",
+    "role": "Skater",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSM5WYHSxJnSp77033aOzWEivtpIRvt1fQGg&s"
+  },
+  {
+    "name": "Jamie Foy",
+    "email": "Jamie@Foy.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Deathwish, Trucks: Thunder, Wheels: Spitfire, Shoes: New Balance Numeric, Clothing: Stance, Other: Bones, Bronson Bearings, Red Bull, Shake Junt, Skate Warehouse"
+    ],
+    "age": 28,
+    "bio": "Jamie Foy (born June 14, 1996) is a regular-footed American skateboarder. Foy was crowned 2017 Skater of the Year by Thrasher magazine. He is part of the New Balance Numeric skateboarding team.",
+    "role": "Skater",
+    "image": "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2017/05/22/3e0a74a4-37dc-402d-b1d2-5e1f9e4d238c/jamie-foy-diy-blunt-slide"
+  },
+  {
+    "name": "Jerry Hsu",
+    "email": "Jerry@Hsu.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [
+      "SHOES, CLOTHING"
+    ],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Sci-Fi Fantasy, Trucks: Royal, Wheels: Ricta, Other: Bones Bearings, MOB Grip"
+    ],
+    "age": 42,
+    "bio": "Jerry Hsu (born December 17, 1981) is a Taiwanese-American skateboarder, photographer and owner/operator of the skate company 'Sci-Fi Fantasy'",
+    "role": "Skater",
+    "image": "https://www.thrashermagazine.com/images/image/Features/2016/JerryHsu/Jerry_2.5_750px_2x.jpg"
+  },
+  {
+    "name": "Josh Rodriguez",
+    "email": "Josh@Rodriguez.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [
+      "TRUCKS, WHEELS"
+    ],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Creature, Shoes: Osiris, Clothing: Merge4 Socks, Skeleton Key, Other: 187 Killer Pads, SoCal Skateshop, Taco Dudes"
+    ],
+    "age": 32,
+    "bio": null,
+    "role": "Skater",
+    "image": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/361284701_769499281847735_3506143125502880666_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=s__5KJoKnPMQ7kNvgFaUiyt&_nc_ht=scontent-atl3-2.xx&oh=00_AYDLeOLZbCZyBrzNGG-qlbbjmg2-4guzmULv-71m2RByrg&oe=66C099D3"
+  },
+  {
+    "name": "Lance Mountain",
+    "email": "Lance@Mountain.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [
+      "CLOTHING"
+    ],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Flip, Trucks: Independent, Wheels: Spitfire, Shoes: Nike SB"
+    ],
+    "age": 60,
+    "bio": "Robert Lance Mountain (born June 13, 1964) is an American professional skateboarder and artist who was one of the prominent skateboarders throughout the 1980s, primarily due to his involvement with the Bones Brigade. As of August 2017, Mountain continues to skate professionally and his sponsors include Flip, Nike SB, Independent Trucks, Spitfire Wheels, and Bones Bearings.",
+    "role": "Skater",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Lance_Mountain_%282014%29.jpg/220px-Lance_Mountain_%282014%29.jpg"
+  },
+  {
+    "name": "Letícia Bufoni",
+    "email": "Letícia@Bufoni.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [
+      "CLOTHING"
+    ],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Monarch Project, Trucks: Venture, Wheels: Bones, Shoes: NikeSB, Other: Red Bull, Beats By Dre, GoPro, Grizzly Griptape, Boarders for Breast Cancer, Oi Brasil"
+    ],
+    "age": 31,
+    "bio": "Letícia Bufoni e Silva (born April 13, 1993) is a Brazilian-American professional street skateboarder. She is a six-time X Games gold medalist.",
+    "role": "Skater",
+    "image": "https://www.si.com/.image/t_share/MTc1NTg3Njg0MDcxMjUzMjI3/si201908230008_hires_jpeg_24bit_rgb.jpg"
+  },
+  {
+    "name": "Lizzie Armanto",
+    "email": "Lizzie@Armanto.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Birdhouse, Trucks: Independent, Wheels: Bones, Shoes: Vans, Clothing: Bro Style, Other: 187, Action Cam, GShock, Mahfia"
+    ],
+    "age": 31,
+    "bio": "Elizabeth Marika Armanto (born January 26, 1993) is an American-Finnish professional skateboarder. She is part of the Birdhouse skate Team and is also sponsored by Vans with whom she has her own pro-model shoe.",
+    "role": "Skater",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Skateboarder_Lizzie_Armanto_upright_-_Denmark_2015_%28cropped%29.jpg/220px-Skateboarder_Lizzie_Armanto_upright_-_Denmark_2015_%28cropped%29.jpg"
+  },
+  {
+    "name": "Manny Santiago",
+    "email": "Manny@Santiago.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Fortune, Trucks: Krux, Wheels: Bliss, Clothing: Ecko Unlimited, Other: Flat Fitty, Rockstar Energy Drink, Etcetera Insoles, Grizzly Griptape, Diamond Supply Co., Andale, Ion Cameras, OC Ramps, PSD Underwear, Sk8Hop"
+    ],
+    "age": 38,
+    "bio": "Emanuel 'Manny' Santiago (born September 10, 1985), nicknamed 'Manny Slays All', is a professional skateboarder from Cayey, Puerto Rico. Santiago is the first Puerto Rican skateboarder to be in the Street League Skateboarding (SLS) 'premier competitive series'.",
+    "role": "Skater",
+    "image": "https://www.mensjournal.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk2MTM2Mjk5MzE0MDMwMDg1/manny-santiago-main-2341-japan-skateboard-1.jpg"
+  },
+  {
+    "name": "Mark Gonzales",
+    "email": "Mark@Gonzales.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Krooked, Trucks: Independent, Shoes: Adidas, Clothing: Fourstar"
+    ],
+    "age": 56,
+    "bio": "Mark Gonzales (born June 1, 1968), also known as 'Gonz', 'the Gonz' and 'the Godfather', is an American professional skateboarder and artist. A pioneer in the development of modern street skating and considered the first street-only skateboarder alongside Natas Kaupas. Gonzales and Kaupas are also credited with the first known boardslides on a handrail. His pioneering influence on skateboarding has caused him to be known as the 'God Father' of modern street skateboarding, and he was named the 'Most Influential Skateboarder of All Time' by Transworld Skateboarding magazine in December 2011. Gonzales was placed ahead of Tony Hawk (2nd) and Rodney Mullen (3rd)",
+    "role": "Skater",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Skin-Phillips-Mark-Gonzales-tunnel-ride-St%C3%A4dtisches-Museum-1998..png/220px-Skin-Phillips-Mark-Gonzales-tunnel-ride-St%C3%A4dtisches-Museum-1998..png"
+  },
+  {
+    "name": "Mike Mo Capaldi",
+    "email": "Mike@Capaldi.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Girl, Trucks: Royal, Wheels: Spitfire, Other: Diamond, MOB Grip, Bones Bearings, HEX, Glassy Sunhaters"
+    ],
+    "age": 34,
+    "bio": "Mchael Capaldi (born March 27, 1990), popularly known as Mike Mo Capaldi, is a professional regular-footed skateboarder who gained popularity following his video part in Forecast, a video produced by professional skateboarder Paul Rodriguez.",
+    "role": "Skater",
+    "image": "https://boardridingstorageus.blob.core.windows.net/images/resize/Mike-Capaldi-106.jpg"
+  },
+  {
+    "name": "Mike Vallely",
+    "email": "Mike@Vallely.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Streetplant, Shoes: Servant Footwear, Clothing: Iron Fist Clothing"
+    ],
+    "age": 54,
+    "bio": "Mike Vallely, also known as Mike V, is an American professional skateboarder and musician. Since November 2013, he has been the lead vocalist of the hardcore punk band Black Flag. Vallely is the second-longest-serving member of the band, although he has not appeared on any albums.",
+    "role": "Skater",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Mike_stiffed_out_fs_air.jpg/220px-Mike_stiffed_out_fs_air.jpg"
+  },
+  {
+    "name": "Nick Garcia",
+    "email": "Nick@Garcia.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Element, Shoes: Etnies, Clothing: Stance, Other: Furnace Skateshop"
+    ],
+    "age": 35,
+    "bio": null,
+    "role": "Skater",
+    "image": "https://cdn.shopify.com/s/files/1/0513/0174/4799/files/et-NickGarcia-TeamPage-TeamPage-1170x530.jpg?v=1714689859"
+  },
+  {
+    "name": "Nyjah Huston",
+    "email": "Nyjah@Huston.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Disorder, Trucks: Thunder, Wheels: Ricta, Shoes: Nike SB, Clothing: Nike Apparel, Other: CBD, MOB Grip, Diamond supply co., Monster Energy, Bolds Cracker Sandwiches, Stance Socks"
+    ],
+    "age": 29,
+    "bio": "Nyjah Imani Huston (/ˈnaɪʒə ˈhjuːstən/ NYE-zhə HEW-stən; born November 30, 1994) is an American professional skateboarder. With numerous sponsorships and competition prize winnings, Huston is one of the highest paid skateboarders in the world. Huston won gold medals at the SLS Super Crown World Championship in 2014, 2017 to 2019, and has won 15 gold medals at the X Games since 2011. Huston won his first Olympic medal, a bronze, in the 2024 Olympic men's street event at the 2024 Summer Olympics in Paris, France.",
+    "role": "Skater",
+    "image": "https://ca-times.brightspotcdn.com/dims4/default/7e292a4/2147483647/strip/true/crop/7278x4852+0+0/resize/1200x800!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F05%2F4e%2F83b1dce94786ba26d1b70bb0d59e%2Fparis-olympics-skateboarding-49940.jpg"
+  },
+  {
+    "name": "Paul Rodriguez",
+    "email": "Paul@Rodriguez.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Primitive, Trucks: Venture, Shoes: Nike SB, Other: Nixon, Andalé Bearings, Target, Markisa,"
+    ],
+    "age": 39,
+    "bio": "Paul Martin Rodriguez Jr. (born December 31, 1984), also known by his nickname P-Rod, is an American professional street skateboarder and actor. Rodriguez has won a total of eight medals at the X Games, four of them gold, with the most recent first-place victory occurring in Los Angeles, California in July 2012.",
+    "role": "Skater",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Paul_Rodriguez%2C_Jr.jpg/220px-Paul_Rodriguez%2C_Jr.jpg"
+  },
+  {
+    "name": "Pedro Barros",
+    "email": "Pedro@Barros.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Pocket Pistols, Trucks: Independent, Wheels: Alta, Shoes: Vans, Clothing: Volcom, Other: Bronson Speed Co, Evoke, Frágil Skate, Layback Beer, Oi Skate, Petrobras, Red Bull"
+    ],
+    "age": 29,
+    "bio": "Pedro Barros (born 15 March 1995), known as Pedrinho Barros, is a Brazilian skateboarder who is specialized in Bowl and Park Skateboarding. He won the silver medal in the inaugural Olympic men's park skateboarding event at the 2020 Summer Olympics in Tokyo. Pedro is also an entrepreneur, having his own beer company (LayBack) and his fashion and lifestyle brand, Privê (Privet, in Portuguese).",
+    "role": "Skater",
+    "image": "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2016/10/19/1331824597214_2/pedro-barros-5-for-5"
+  },
+  {
+    "name": "PJ Ladd",
+    "email": "PJ@Ladd.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Plan B, Trucks: Venture, Wheels: Bones, Shoes: New Balance Numeric, Clothing: Plan B, Other: Jessup, Brick Harbor, Bones Bearings, Diamond Supply Co."
+    ],
+    "age": 41,
+    "bio": "Patrick John Ladd (born January 11, 1983), professionally known as PJ Ladd, is an American professional skateboarder whose stance is regular. Ladd was labelled an 'east coast legend' by fellow professional skateboarder and team manager John Rattray in May 2013.",
+    "role": "Skater",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pj_ladd.jpg/220px-Pj_ladd.jpg"
+  },
+  {
+    "name": "Rayssa Leal",
+    "email": "Rayssa@Leal.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: April Skateboards, Trucks: Stronger, Wheels: Bones, Shoes: Nike SB, Clothing: 8 EyeS, Other: Monster Energy, Mob Grip, Colegio Cebama"
+    ],
+    "age": 16,
+    "bio": "Jhulia Rayssa Mendes Leal (born 4 January 2008) is a Brazilian professional skateboarder who won a silver medal in women's street skateboarding at the 2020 Summer Olympics and a bronze medal at the 2024 Summer Olympics.",
+    "role": "Skater",
+    "image": "https://images.seattletimes.com/wp-content/uploads/2021/10/urn-publicid-ap-org-ac8d7421311dcd039efd5876b1917050Leal27s_Legacy_81806.jpg?d=780x520"
+  },
+  {
+    "name": "Rob Dyrdek",
+    "email": "Rob@Dyrdek.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Alien Workshop, Trucks: Silver, Shoes: DC, Clothing: DC Apparel, Other: Monster Energy, IVI Eyewear, Street League Skateboarding (SLS)"
+    ],
+    "age": 50,
+    "bio": "Robert Stanley Dyrdek (born June 28, 1974) is an American entrepreneur, actor, producer, reality TV personality, and former professional skateboarder. He is best known for his roles in the MTV reality and variety shows Rob & Big, Rob Dyrdek's Fantasy Factory, and Ridiculousness. In addition to his television ventures, Dyrdek is a serial entrepreneur, founding several businesses through his venture studio, Dyrdek Machine, including Street League Skateboarding and Superjacket Productions (now Thrill One Media).",
+    "role": "Skater",
+    "image": "https://static.wikia.nocookie.net/rob-dyrdek/images/e/e1/Rob-Dyrdek-rob-dyrdek-1243697_517_365-1-.jpg/revision/latest?cb=20121227024643"
+  },
+  {
+    "name": "Rodney Mullen",
+    "email": "Rodney@Mullen.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Almost, Trucks: Tensor, Wheels: Bones, Shoes: Globe"
+    ],
+    "age": 57,
+    "bio": "John Rodney Mullen (born August 17, 1966) is an American professional skateboarder who practices freestyle skateboarding and street skateboarding. He is considered one of the most influential skateboarders of all time. Mullen is credited for inventing numerous tricks, including the flatground ollie, kickflip, heelflip, impossible, and 360-flip. As a result, he has been called the 'Godfather of modern freestyle skating.'",
+    "role": "Skater",
+    "image": "https://www.surfertoday.com/images/stories/rodney-mullen.jpg"
+  },
+  {
+    "name": "Ryan Gallant",
+    "email": "Ryan@Gallant.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Visit, Trucks: Theeve, Wheels: Gold, Shoes: C1rca, Other: MOB Grip"
+    ],
+    "age": 42,
+    "bio": "Gallant was first noticed in the skate video PJ Ladd's Wonderful Horrible Life, a shop video from Boston, Massachusetts's Coliseum skate shop. He is also affiliated with True East Skateshop, which is an East Coast-based chain of 'mom and pop' shops. Gallant was first sponsored by Expedition One skateboards and appeared in the company's first video Alone. In April 2009, Gallant left his longtime sponsor DC Shoes and established a sponsorship deal with Circa. The 'Gallant Grind' is a skateboard trick that is named after Gallant.",
+    "role": "Skater",
+    "image": "https://boardridingstorageus.blob.core.windows.net/images/resize/ryan-gallant-1278.jpg"
+  },
+  {
+    "name": "Ryan Reyes",
+    "email": "Ryan@Reyes.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Creature, Wheels: Bones, Shoes: Ipath, Clothing: KR3W, Glassy Sunhaters, Hex, Other: Dry Bones Nation, Krocket Kids"
+    ],
+    "age": 35,
+    "bio": null,
+    "role": "Skater",
+    "image": "https://a.espncdn.com/photo/2011/0908/as_skate_reyes_feeb_576.jpg"
+  },
+  {
+    "name": "Ryan Sheckler",
+    "email": "Ryan@Sheckler.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Plan B, Trucks: Independent, Wheels: Plan B, Shoes: Etnies, Clothing: Volcom, Other: Red Bull, Oakley, Nixon, CCS, Andale, Ethika, GoPro, Grizzly Griptape"
+    ],
+    "age": 34,
+    "bio": "Ryan Allen Sheckler (born December 30, 1989) is an American professional skateboarder and entrepreneur, and the star of the MTV-produced reality television series Life of Ryan, which ran from 2007 to 2009. He also starred in four seasons of the short-format video series Sheckler Sessions on Red Bull TV. Sheckler was listed in Fox Weekly's '15 Most Influential Skateboarders of All-Time' article.",
+    "role": "Skater",
+    "image": "https://orangecoast.com/.image/t_share/MTk3NjY1NTk5NDU5OTYwMTA5/dec-poi.jpg"
+  },
+  {
+    "name": "Steve Caballero",
+    "email": "Steve@Caballero.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Powell Peralta, Trucks: Independent, Wheels: Autobahn, Shoes: Vans, Other: Pro-tec"
+    ],
+    "age": 59,
+    "bio": "Steve Caballero (born November 8, 1964) is an American professional skateboarder. He is known for the difficult tricks and air variations he invented for vertical skating and for setting the long-standing record for the highest air achieved on a halfpipe. In 1999, Thrasher Magazine named Caballero the 'Skater of the Century'.",
+    "role": "Skater",
+    "image": "https://static.wixstatic.com/media/9c2b61_69225a2fe3a540749ba1e10daca80df1~mv2.jpg/v1/fit/w_2500,h_1330,al_c/9c2b61_69225a2fe3a540749ba1e10daca80df1~mv2.jpg"
+  },
+  {
+    "name": "Stevie Williams",
+    "email": "Stevie@Williams.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: DGK, Trucks: Venture, Wheels: Gold, Shoes: Adidas, Clothing: Asphalt Yacht Club, Other: G-Shock, 9Five Eyewear, Grizzly Griptape, Diamond Supply co., Beats by Dre, Bones Bearings, Tango Hotel, StatusLife, Weedmaps"
+    ],
+    "age": 44,
+    "bio": "Stevie Williams (born December 17, 1979) is a professional skateboarder who was included in the twenty-seventh position of the '30 Most Influential Skaters of All Time' list that was compiled by Transworld Skateboarding in late 2011.",
+    "role": "Skater",
+    "image": "https://gshock.casio.com/content/casio/locales/sg/en/brands/gshock/team/stevie-williams/_jcr_content/root/responsivegrid/container_1689197747/teaser.casiocoreimg.jpeg/1627359590168/hero-pc-m.jpeg"
+  },
+  {
+    "name": "Theotis Beasley",
+    "email": "Theotis@Beasley.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Baker, Trucks: Thunder, Wheels: Spitfire, Shoes: Nike SB, Clothing: Nike Apparel, Other: Mountain Dew, Shake Junt, Bones Bearings, Diamond Supply Co., Stance Socks, Ethika"
+    ],
+    "age": 33,
+    "bio": "Beasley started skating at age 11 when his cousin gave him a skateboard. He grew up down the street from the Hawthrone skatepark where he spent considerable time. At Hawthorne, Beasley witnessed and skated alongside professional skateboarders he looked up to including Louie Lopez and Antwuan Dixon. The Hawthrone skatepark is where Andrew Reynolds discovered Beasley when Theotis was 12-years old. Reynolds went by the park with Dustin Dollin, Ryan 'Beagle' Ewing, and Erik Ellington, noticing the young Beasley. After seeing him skate, Baker Skateboards put Beasley on flow.",
+    "role": "Skater",
+    "image": "https://media.gettyimages.com/id/115154825/photo/new-york-theotis-beasley-skates-during-open-practice-prior-to-the-maloof-money-cup-on-june-3.jpg?s=612x612&w=gi&k=20&c=NSPxUupKYh2FMeLPqOctDAuVd4k5bTFdNwIb4isvYXE="
+  },
+  {
+    "name": "Tony Hawk",
+    "email": "Tony@Hawk.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "sponsors": [
+      "Decks: Birdhouse, Trucks: Independent, Wheels: Bones, Shoes: Vans, Clothing: and pads, Other: Nixon, RIDE, Quiksilver & Roxy Initiative, Tony Hawk Foundation, Tony Hawk Series"
+    ],
+    "age": 56,
+    "bio": "Anthony Frank Hawk (born May 12, 1968) is an American professional skateboarder, entrepreneur and the owner of the skateboard company Birdhouse. Hawk, known professionally as the Birdman, is considered to be a pioneer of modern vertical skateboarding, completing the first documented '900' skateboarding trick in 1999. He also licensed a skateboarding video game series named after him, published by Activision that same year. Hawk retired from competing professionally in 2003 and is widely regarded as one of the greatest and most influential skateboarders of all time. Hawk has been involved in various philanthropic activities throughout his career. He founded The Skatepark Project, which helps to build skateparks in underprivileged areas around the world.",
+    "role": "Skater",
+    "image": "https://images.ctfassets.net/gl3ev2s7u7gx/5r9PbHPQSrUpbO1m3pZNU7/dba718cbb1407974f257d4660eb714a7/TonyHawk?w=900"
+  },
+  {
+    "name": "Tony Trujillo",
+    "email": "Tony@Trujillo.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "goals": [],
     "awards": [],
     "friends": [],
     "requests": [],
     "ourSponsors":[],
     "weSponsor":[],
-    "age": 19,
-    "levels": "Amature",
-    "bio": "Hi I am Tony Hawk from Burnside California. I have been skating and surfing since I was just a kid in Sacremento. I am looking to get sponsored so that I can qualify to skate in the TampaAM contest 2024.",
+  
+    "sponsors": [
+      "Decks: Anti-hero, Trucks: Independent, Wheels: Spitfire, Shoes: Vans, Other: Fourstar, Jessie"
+    ],
+    "age": 41,
+    "bio": "Tony Trujillo (born August 23, 1982) is an American professional skateboarder and musician.[1] Trujillo was awarded the 'Skater of the Year' award by Thrasher magazine in 2002.",
     "role": "Skater",
-     "image": "tonyhawk.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Tony_trujillo.jpg/220px-Tony_trujillo.jpg"
   },
   {
-    "name": "Thoetis Beasley",
-    "email": "theo@skater.com",
+    "name": "Tyshawn Jones",
+    "email": "Tyshawn@Jones.com",
     "password": "wordpass123",
+    "levels": "Professional",
     "goals": [],
     "awards": [],
     "friends": [],
-    "ourSponsors":[],
-    "weSponsor":[],
+    "sponsors": [
+      "Trucks: Thunder, Shoes: Adidas, Other: Hardies Hardware"
+    ],
     "age": 25,
-    "levels": "Pro",
-    "bio": "Pro Skater out of Inglewood CA. CEO of Grown And Gifted",
+    "bio": "Tyshawn Jones (born December 24, 1998) is an American professional skateboarder, from New York. He is a two time Thrasher Skater of the Year winner (2018 and 2022).",
     "role": "Skater",
-    "image": "theotis.jpg"
+    "image": "https://www.thrashermagazine.com/images/TJ_2_750px.jpg"
   },
   {
-    "name": "Lizzy Armanto",
-    "email": "lizzy@skater.com",
+    "name": "Yuto Horigome",
+    "email": "Yuto@Horigome.com",
     "password": "wordpass123",
+    "levels": "Professional",
     "goals": [],
     "awards": [],
     "friends": [],
-    "ourSponsors":[],
-    "weSponsor":[],
+    "sponsors": [
+      "Decks: April, Trucks: Venture, Wheels: Spitfire, Shoes: Nike SB, Clothing: G-Shock, Other: Andale Bearings"
+    ],
     "age": 25,
-    "levels": "Pro",
-    "bio": "American-Finnish professional skater, member of Birdhouse Skate Team",
+    "bio": "Yuto Horigome (堀米 雄斗, Horigome Yūto, born 7 January 1999) is a Japanese professional skateboarder and two-time Olympic champion. He won the gold medal in the inaugural Olympic men's street event at the 2020 Summer Olympics, becoming the first person ever to win gold in men's street skateboarding at the Summer Olympics. He defended his gold medal in the same event at the 2024 Summer Olympics.",
     "role": "Skater",
-    "image": "lizzy.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/XGames-Chiba-2022_2022-04-24_0776.jpg/800px-XGames-Chiba-2022_2022-04-24_0776.jpg"
   },
   {
-    "name": "Pedro Barros",
-    "email": "pedro@skater.com",
+    "name": "Zion Wright",
+    "email": "Zion@Wright.com",
     "password": "wordpass123",
+    "levels": "Professional",
     "goals": [],
     "awards": [],
     "friends": [],
-    "ourSponsors":[],
-    "weSponsor":[],
+    "sponsors": [
+      "Decks: Real, Trucks: Thunder, Wheels: Spitfire, Shoes: Nike SB, Clothing: Glassy Sunhaters, Other: Red Bull, SPoT, Bones Bearings, Shake Junt, Kreamy Wax"
+    ],
     "age": 25,
-    "levels": "Pro",
-    "bio": "Brazilian skater specializing in bowl and park skateboarding",
+    "bio": "Zion Wright (born February 3, 1999) is a regular-footed American skateboarder.[2] In 2019, Wright solidified himself as one of the newest generation's stars after being named a member of the USA Skateboarding Team.",
     "role": "Skater",
-    "image": "pedro.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/XGames-Chiba-2022_2022-04-24_0051.jpg/800px-XGames-Chiba-2022_2022-04-24_0051.jpg"
   },
   {
     "name": "Baker Skateboards",
@@ -68,34 +843,18 @@
     "goals": [],
     "awards": [],
     "friends": [],
-    "requests": [],
-    "sponsors":[],
+    "sponsors": [],
     "age": null,
-    "bio":"This is BAKER skateboards, checkout our videos and content @ BAKERSKATEBOARDS.COM BAKER BAKER BAKER",
+    "bio": "This is BAKER skateboards, checkout our videos and content @ BAKERSKATEBOARDS.COM BAKER BAKER BAKER",
     "role": "Sponsor",
-    "image": "baker.jpg"
-  },
-  {
-    "name": "Rodney Mullen",
-    "email": "rod@workshop.com",
-    "password": "wordpass123",
-    "levels": "Professional",
-    "goals": ["Trucks", "Wheeles"],
-    "sponsors":[],
-    "awards": [],
-    "friends": [],
-    "requests": [],
-    "age": 22,
-    "bio": null,
-    "role": "Skater",
-    "image": "rodneymullen.jpg"
+    "image": "https://www.surfertoday.com/images/skateboard-brands/baker-skateboards.jpg"
   },
   {
     "name": "Birdhouse Skate Team",
     "email": "alva@birdhouse.com",
     "password": "wordpass123",
     "levels": "Professional",
-    "sponsors":[],
+    "sponsors": [],
     "goals": [],
     "awards": [],
     "requests": [],
@@ -103,14 +862,14 @@
     "age": null,
     "bio": null,
     "role": "Sponsor",
-    "image": "birdhouse.png"
+    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/08af5020017868.562e42220c7e8.png"
   },
   {
     "name": "Venture Trucks",
     "email": "test@venturetrucks.com",
     "password": "wordpass123",
     "levels": "Professional",
-    "sponsors":[],
+    "sponsors": [],
     "goals": [],
     "awards": [],
     "friends": [],
@@ -118,14 +877,15 @@
     "age": null,
     "bio": null,
     "role": "Sponsor",
-    "image": "venture.jpg"
+    "image": "https://www.impactskateshop.com/cdn/shop/collections/venture-trucks-impact-skate.jpg?v=1704501070"
+
   },
   {
     "name": "Darkstar Skateboards",
     "email": "test@darkstar.com",
     "password": "wordpass123",
     "levels": "Professional",
-    "sponsors":[],
+    "sponsors": [],
     "goals": [],
     "awards": [],
     "friends": [],
@@ -133,21 +893,319 @@
     "age": null,
     "bio": null,
     "role": "Sponsor",
-    "image": "darkstar.jpg"
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt2kbsD5sAArZCd7FQv-hs5eNPdaaseIA0rQ&s"
+
   },
   {
     "name": "Spitfire Wheels",
     "email": "test@spitfire.com",
     "password": "wordpass123",
     "levels": "Professional",
-    "sponsors":[],
+    "sponsors": [],
     "goals": [],
     "awards": [],
     "friends": [],
-    "requests": [],
     "age": null,
-    "bio": null,
+    "bio": "Founded: 1986 | Headquarters: San Francisco, California | Products: Wheels, Clothing",
     "role": "Sponsor",
-    "image": "spitfire.jpg"
+    "image": "https://www.surfertoday.com/images/skateboard-brands/spitfire.jpg"
+  },
+  {
+    "name": "SantaCruz Skateboards",
+    "email": "scs@sponsor.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors": [],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": "Founded: 1973 | Headquarters: Santa Cruz, California | Products: Decks, Wheels, Clothing",
+    "role": "Sponsor",
+    "image": "https://www.surfertoday.com/images/skateboard-brands/santa-cruz-skateboards.jpg"
+  },
+  {
+    "name": "Powell Peralta",
+    "email": "powell@sponsor.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors": [],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": "Founded: 1976 | Headquarters: Santa Barbara, California | Products: Decks, Completes, Wheels, Griptape, Clothing",
+    "role": "Sponsor",
+    "image": "https://www.surfertoday.com/images/skateboard-brands/powell-peralta.jpg"
+  },
+  {
+    "name": "Girl Skateboards",
+    "email": "girl@sponsor.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors": [],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": "Founded: 1993 | Headquarters: Torrance, California | Products: Decks, Clothing",
+    "role": "Sponsor",
+    "image": "https://www.surfertoday.com/images/skateboard-brands/girl-skateboards.jpg"
+  } ,
+  {
+    "name": "Anti-Hero Skateboards",
+    "email": "Anti-Hero@sponsor.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors": [],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": "Founded: 1995 | Headquarters: California | Products: Decks",
+    "role": "Sponsor",
+    "image": "https://www.surfertoday.com/images/skateboard-brands/anti-hero-skateboards.jpg"
+  } ,
+  {
+    "name": "Enjoi",
+    "email": "Enjoi@sponsor.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors": [],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": "Founded: 2000 | Headquarters: Los Angeles, California | Products: Decks, Clothing",
+    "role": "Sponsor",
+    "image": "https://www.surfertoday.com/images/skateboard-brands/enjoi-skateboards.jpg"
+  } ,
+  {
+    "name": "Real Skateboards",
+    "email": "real@sponsor.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors": [],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": "Founded: 1991 | Headquarters: San Francisco, California | Products: Decks",
+    "role": "Sponsor",
+    "image": "https://www.surfertoday.com/images/skateboard-brands/real-skateboards.jpg"
+  } ,
+  {
+    "name": "Polar Skate Co.",
+    "email": "polar@sponsor.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors": [],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": "Founded: 2011 | Headquarters: Malmo, Sweden | Products: Decks, Clothing",
+    "role": "Sponsor",
+    "image": "https://www.surfertoday.com/images/skateboard-brands/polar-skate-co.jpg"
+  },
+  {
+    "name": "HUF",
+    "email": "HUF@sponsor.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors": [],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": "Founded: 2002 | Headquarters: Los Angeles, California | Products: Clothing, Footwear",
+    "role": "Sponsor",
+    "image": "https://www.surfertoday.com/images/skateboard-brands/huf.jpg"
+  } ,
+  {
+    "name": "Welcome Skateboards",
+    "email": "welcome@sponsor.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors": [],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": "Founded: 2000 | Headquarters: Lake Forest, California | Products: Decks, Completes, Wheels",
+    "role": "Sponsor",
+    "image": "https://www.surfertoday.com/images/skateboard-brands/welcome-skateboards.jpg"
+  },
+  {
+    "name": "Quasi Skateboards",
+    "email": "quasi@sponsor.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors": [],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": "Founded: 2015 | Headquarters: Dayton, Ohio | Products: Decks, Clothing",
+    "role": "Sponsor",
+    "image": "https://www.surfertoday.com/images/skateboard-brands/quasi-skateboards.jpg"
+  } ,
+  {
+    "name": "Element",
+    "email": "Element@sponsor.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors": [],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": "Founded: 1992 | Headquarters: Irvine, California | Products: Decks, Completes, Wheels, Trucks, Griptape, Clothing",
+    "role": "Sponsor",
+    "image": "https://www.surfertoday.com/images/skateboard-brands/element-skateboards.jpg"
+  } ,
+  {
+    "name": "Alien Workshop",
+    "email": "alien@sponsor.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors": [],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": "Founded: 1990 | Headquarters: Dayton, Ohio | Products: Decks, Wheels, Trucks, Griptape, Bearings, Clothing",
+    "role": "Sponsor",
+    "image": "https://www.surfertoday.com/images/skateboard-brands/alien-workshop.jpg"
+  }
+  ,
+  {
+    "name": "Independent Trucks",
+    "email": "independent@sponsor.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors": [],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": "Founded: 1978 | Headquarters: Santa Cruz, California | Products: Trucks, Bearings, Clothing",
+    "role": "Sponsor",
+    "image": "https://www.surfertoday.com/images/skateboard-brands/independent-truck-company.jpg"
+  } ,
+  {
+    "name": "Bones Bearings",
+    "email": "bones@sponsor.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors": [],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": "Founded: 1983 | Headquarters: Santa Barbara, California | Products: Bearings, Clothing",
+    "role": "Sponsor",
+    "image": "https://www.surfertoday.com/images/skateboard-brands/bones-bearings.jpg"
+  } ,
+  {
+    "name": "Creature Skateboards",
+    "email": "creature@sponsor.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors": [],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": "Founded: 1994 | Headquarters: N.A. | Products: Decks, Clothing",
+    "role": "Sponsor",
+    "image": "https://www.surfertoday.com/images/skateboard-brands/creature-skateboards.jpg"
+  }  ,
+  {
+    "name": "DC Shoes",
+    "email": "dc@sponsor.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors": [],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": "Founded: 1994 | Headquarters: Huntington Beach, California | Products: Shoes, Clothing",
+    "role": "Sponsor",
+    "image": "https://www.surfertoday.com/images/skateboard-brands/dc-shoes.jpg"
+  },
+  {
+    "name": "Globe",
+    "email": "Globe@sponsor.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors": [],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": "Founded:  | Headquarters:  | Products: ",
+    "role": "Sponsor",
+    "image": "https://www.surfertoday.com/images/skateboard-brands/globe.jpg"
+  } ,
+  {
+    "name": "Skullcandy",
+    "email": "Skullcandy@sponsor.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors": [],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": "Founded: 2003 | Headquarters: Park City, Utah | Products: Audio",
+    "role": "Sponsor",
+    "image": "https://www.surfertoday.com/images/skateboard-brands/skullcandy.jpg"
+  }  ,
+  {
+    "name": "Sk8Mafia",
+    "email": "Sk8Mafia@sponsor.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors": [],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": "Founded: 2005 | Headquarters: San Diego, California | Products: Decks, Clothing",
+    "role": "Sponsor",
+    "image": "https://www.surfertoday.com/images/skateboard-brands/sk8mafia.jpg"
+  } ,
+  {
+    "name": "Vans",
+    "email": "Vans@sponsor.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors": [],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": "Founded: 1966 | Headquarters: Costa Mesa, California | Products: Shoes, Clothing",
+    "role": "Sponsor",
+    "image": "https://www.surfertoday.com/images/skateboard-brands/vans.jpg"
+  },
+  {
+    "name": "Braille Skateboarding",
+    "email": "braille@sponsor.com",
+    "password": "wordpass123",
+    "levels": "Professional",
+    "sponsors": [],
+    "goals": [],
+    "awards": [],
+    "friends": [],
+    "age": null,
+    "bio": "Founded: 2007 | Headquarters: San Francisco, California | Products: Videos, DVD, Decks, Completes, Griptape, Protective Wear, Clothing",
+    "role": "Sponsor",
+    "image": "https://www.surfertoday.com/images/skateboard-brands/braille-skateboarding.jpg"
   }
 ]
+  
+  
+ 

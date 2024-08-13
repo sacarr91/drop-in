@@ -46,6 +46,18 @@ function CreateSkater() {
           </center>
 
         </Card>
+        <h3>More information</h3>
+                <ul>
+                    <a href=''>Tips for Starting Out</a> - 
+                    <br></br>
+                    <a href=''>How to Skateboard: Step-by-Step</a> - TransWorld
+                    <br></br>
+                    <a href=''>A Beginners Guide</a> - Tactics
+                    <br></br>
+                    <a href=''>Learn to Skate Guide</a> - SkateboardGB
+                    <br></br>
+                    <a href=''>Basic Tips for Adults</a> - Ripped Laces
+                </ul>
       </Container>
     </>
   );

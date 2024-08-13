@@ -24,7 +24,7 @@ const randomizeDefaultImage = function () {
 const ProfileDisplay = ({ profile }) => {
   const defaultImage = randomizeDefaultImage();
   // handle profile images image url
-  const imageUrl = profile.image ? `/images/${profile.image}` : defaultImage;
+  const imageUrl = profile.image ? `${profile.image}` : defaultImage;
 
   // handle show payment modal
   const [showModal, setShowModal] = useState(false);
@@ -169,7 +169,7 @@ const ProfileDisplay = ({ profile }) => {
           <ul className="sponsors-card">
             {profile.ourSponsors && profile.ourSponsors.map(sponsor => (
               <li className='sponsor-li' key={sponsor._id}>
-                <img className='sponsor-img' src={sponsor.image ? `/images/${sponsor.image}` : randomizeDefaultImage()} alt={sponsor.name} />
+                <img className='sponsor-img' src={sponsor.image ? `${sponsor.image}` : randomizeDefaultImage()} alt={sponsor.name} />
                 <span className='sponsor-name'>{sponsor.name}</span>
               </li>
             ))}
@@ -180,7 +180,7 @@ const ProfileDisplay = ({ profile }) => {
           <ul className="followers-card">
             {profile.friends && profile.friends.map(friend => (
               <li className='follower-li' key={friend._id}>
-                <img className='follower-img' src={friend.image ? `/images/${friend.image}` : randomizeDefaultImage()} alt={friend.name} />
+                <img className='follower-img' src={friend.image ? `${friend.image}` : randomizeDefaultImage()} alt={friend.name} />
                 <span className='follower-name'>{friend.name}</span>
               </li>
             ))}
