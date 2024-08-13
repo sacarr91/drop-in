@@ -877,7 +877,8 @@
     "age": null,
     "bio": null,
     "role": "Sponsor",
-    "image": "venture.jpg"
+    "image": "https://www.impactskateshop.com/cdn/shop/collections/venture-trucks-impact-skate.jpg?v=1704501070"
+
   },
   {
     "name": "Darkstar Skateboards",
@@ -892,7 +893,8 @@
     "age": null,
     "bio": null,
     "role": "Sponsor",
-    "image": "darkstar.jpg"
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt2kbsD5sAArZCd7FQv-hs5eNPdaaseIA0rQ&s"
+
   },
   {
     "name": "Spitfire Wheels",

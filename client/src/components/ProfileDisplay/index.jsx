@@ -24,7 +24,7 @@ const randomizeDefaultImage = function () {
 const ProfileDisplay = ({ profile }) => {
   const defaultImage = randomizeDefaultImage();
   // handle profile images image url
-  const imageUrl = profile.image ? `/images/${profile.image}` : defaultImage;
+  const imageUrl = profile.image ? `${profile.image}` : defaultImage;
 
   // handle show payment modal
   const [showModal, setShowModal] = useState(false);

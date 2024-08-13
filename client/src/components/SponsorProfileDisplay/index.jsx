@@ -16,7 +16,7 @@ const randomizeDefaultImage = () => {
 
 const SponsorProfileDisplay = ({ profile }) => {
   const defaultImage = randomizeDefaultImage();
-  const imageUrl = profile.image ? `/images/${profile.image}` : defaultImage;
+  const imageUrl = profile.image ? `${profile.image}` : defaultImage;
 
   // Follow Me code block
   const { loading: loadingMe, data: myData } = useQuery(QUERY_ME);
