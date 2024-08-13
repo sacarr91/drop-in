@@ -100,11 +100,11 @@ const Signup = () => {
                 />
                 <label className="form-check-label">Role</label>
                 <div className="form-check">
-                  <input className="form-check-input" type="radio" name="role" value="skater" checked={formState.role === 'skater'} onChange={handleRadioChange} />
+                  <input className="form-check-input" type="radio" name="role" value="Skater" checked={formState.role === 'Skater'} onChange={handleRadioChange} />
                   <label className="form-check-label">Skater</label>
                 </div>
                 <div className="form-check">
-                  <input className="form-check-input" type="radio" name="role" value="sponsor" checked={formState.role === 'sponsor'} onChange={handleRadioChange} />
+                  <input className="form-check-input" type="radio" name="role" value="Sponsor" checked={formState.role === 'Sponsor'} onChange={handleRadioChange} />
                   <label className="form-check-label">Sponsor</label>
                 </div>
                 <button className="btn formbtn"

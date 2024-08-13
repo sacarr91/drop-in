@@ -775,6 +775,10 @@
     "goals": [],
     "awards": [],
     "friends": [],
+    "requests": [],
+    "ourSponsors":[],
+    "weSponsor":[],
+  
     "sponsors": [
       "Decks: Anti-hero, Trucks: Independent, Wheels: Spitfire, Shoes: Vans, Other: Fourstar, Jessie"
     ],
@@ -853,6 +857,7 @@
     "sponsors": [],
     "goals": [],
     "awards": [],
+    "requests": [],
     "friends": [],
     "age": null,
     "bio": null,
@@ -868,6 +873,7 @@
     "goals": [],
     "awards": [],
     "friends": [],
+    "requests": [],
     "age": null,
     "bio": null,
     "role": "Sponsor",
@@ -882,6 +888,7 @@
     "goals": [],
     "awards": [],
     "friends": [],
+    "requests": [],
     "age": null,
     "bio": null,
     "role": "Sponsor",

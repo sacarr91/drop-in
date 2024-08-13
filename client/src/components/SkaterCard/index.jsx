@@ -1,7 +1,20 @@
 import "../../utils/sponsorcard.css"
-import defaultImage from "/images/baker.jpg"
+import defaultImage1 from "/images/b-s-default-1.png"
+import defaultImage2 from "/images/b-s-default-2.png"
+import defaultImage3 from "/images/b-s-default-3.png"
+
+const randomizeDefaultImage = function() {
+  const imageArray = [ defaultImage1, defaultImage2, defaultImage3]
+  while(imageArray.length) {
+    const randomIndex = Math.floor(Math.random() * imageArray.length);
+    const defaultImage = imageArray[randomIndex];
+    return defaultImage  
+  }
+  
+}
 
 const SkaterCard = ({ skater }) => {
+  const defaultImage = randomizeDefaultImage(); 
   const imageUrl = skater.image ? `images/${skater.image}` : defaultImage;
 
   return (

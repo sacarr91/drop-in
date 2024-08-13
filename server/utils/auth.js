@@ -23,11 +23,6 @@ module.exports = {
 
     try {
       const { data } = jwt.verify(token, secret, { maxAge: expiration });
-      // Get token from localStorage
-      // verify method that will output user information in a object
-      // 
-      // data={id,name, email}
-      // const user_id = data.id
       req.user = data;
     } catch {
       console.log('Invalid token');

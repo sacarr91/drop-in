@@ -5,16 +5,16 @@ const typeDefs = `
     email: String
     password: String
     age: Int
-    levels: String!
-    goals: [String]!
-    role: String!
-    level: String
+    levels: String
+    goals: [String]
+    role: String
     bio: String
     image: String
-    awards: [Award]!
-    friends: [Profile]!
-    ourSponsors:[Profile]!
-    weSponsor:[Profile]!
+    awards: [Award]
+    requests: [Request]
+    friends: [Profile]
+    ourSponsors:[Profile]
+    weSponsor:[Profile]
   }
 
   type Auth {
@@ -27,6 +27,23 @@ const typeDefs = `
     title: String
     competition: String
     awardedDate: String
+  }
+  
+  type Request {
+    _id: ID
+    fromId: String
+    requestType: String,
+    accepted: Boolean,
+    message: String,
+    requestDate: String, 
+  }
+
+  input CreateRequestInput {
+    fromId: String
+    requestType: String,
+    accepted: Boolean,
+    message: String,
+    requestDate: String, 
   }
 
   input CreateAwardInput {
@@ -58,8 +75,9 @@ type Mutation {
   login(email: String!, password: String!): Auth
 
   addAward(profileId: ID!, awards: CreateAwardInput!): Profile
-  addFriend(profileId: ID!, friendId: ID!): Profile
+  addRequest(profileId: ID!, requests: CreateRequestInput!): Profile
 
+  addFriend(profileId: ID!, friendId: ID!): Profile
   addSponsor(profileId: ID!, friendId: ID!): Profile
 
   addGoal(profileId: ID!, goal: String!): Profile
