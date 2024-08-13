@@ -38,9 +38,9 @@ function NavLinks({ expand }) {
                 title="Sponsors"
                 id={`offcanvasNavbarDropdown-expand-${expand}`}
               >
-                <NavDropdown.Item href="/sponsor-levels">
+                {/* <NavDropdown.Item href="/sponsor-levels">
                   Sponsorship Levels
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
                 <NavDropdown.Item href="/new-sponsor">
                   Become a Sponsor
                 </NavDropdown.Item>
@@ -48,7 +48,7 @@ function NavLinks({ expand }) {
                   See All Sponsors
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="/connect">Connect</Nav.Link>
+              {/* <Nav.Link href="/connect">Connect</Nav.Link> */}
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>

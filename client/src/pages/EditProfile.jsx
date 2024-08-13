@@ -1,123 +1,162 @@
-import { useState } from 'react';
-import { useMutation } from '@apollo/client';
-import { Form, Col } from 'react-bootstrap';
+import { useState, useEffect } from 'react';
+import { useQuery, useMutation } from '@apollo/client';
+import { Form, Col, Button } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { EDIT_PROFILE } from '../utils/mutations';
-// import Auth to get profileId
+import { QUERY_ME } from '../utils/queries';
 import Auth from '../utils/auth';
 
 const EditProfile = () => {
-    const originLocation = window.location.origin;
-    // Declare profileId
-    let profileId = "";
-    // Get profileId using the Auth
-    if (Auth.loggedIn) {
-        profileId = Auth.getProfile().data._id;
-    }
-    // Define state to manage form inputs
+    const { loading: loadingMe, data: myData } = useQuery(QUERY_ME);
+    const me = myData?.me || {};
+
     const [formState, setFormState] = useState({
-        profileId: profileId,
+        profileId: '',
+        name: '',
         age: '',
-        levels: ''
+        levels: '',
+        goals: []
     });
-    // Define state to manage form goals
-    const [formGoals, setGoals] = useState([]);
-    
-    // Define state to set formInput
+
     const [inputValue, setInputValue] = useState('');
 
-    // Function to add goal
+    useEffect(() => {
+        if (me) {
+            setFormState({
+                profileId: me._id,  
+                name: me.name || '',
+                age: me.age || '',
+                levels: me.levels || '',
+                goals: me.goals || []
+            });
+        }
+    }, [me]);
+
+    const [editProfile, { error }] = useMutation(EDIT_PROFILE);
+
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        // Convert age to integer if it's being changed
+        if (name === 'age') {
+            setFormState({
+                ...formState,
+                [name]: parseInt(value, 10) || '' // Convert to integer
+            });
+        } else {
+            setFormState({
+                ...formState,
+                [name]: value
+            });
+        }
+    };
+
     const addGoal = (event) => {
         event.preventDefault();
         if (inputValue !== "") {
-            const updatedGoals = [...formGoals, inputValue];
-            setGoals(updatedGoals);
             setFormState({
                 ...formState,
-                goals: updatedGoals
+                goals: [...formState.goals, inputValue]
             });
             setInputValue('');
         }
-    }
-    // Define mutation to execute on form submit
-    const [editProfile, { error, data }] = useMutation(EDIT_PROFILE);
-    // Capture form input
-    const handleChange = (event) => {
-        let { name, value } = event.target;
-        if (name === "age") {
-            value = parseInt(value);
-        }
-        setFormState({
-            ...formState,
-            [name]: value,
-        });
     };
 
-    // Execute mutation on form submit
     const handleFormSubmit = async (event) => {
         event.preventDefault();
         try {
             const { data } = await editProfile({
-                variables: { ...formState },
+                variables: { 
+                    profileId: formState.profileId,  
+                    name: formState.name,
+                    age: formState.age,
+                    levels: formState.levels,
+                    goals: formState.goals
+                }
             });
-            // redirect to view the updated profile details
-            window.location.assign(`${originLocation}/profiles/${profileId}`);
+            // Redirect or show success message
+            window.location.href = `/profiles/${formState.profileId}`;
         } catch (e) {
             console.error(e);
         }
     };
+
+    if (loadingMe) {
+        return <p>Loading...</p>;
+    }
 
     return (
         <Card style={{ width: '50%' }}>
             <Card.Body>
                 <Card.Title>Edit Profile</Card.Title>
                 <Form onSubmit={handleFormSubmit}>
-                    <Form.Group className="mb-3" controlId="formBasicNumeric">
-                        <Form.Label>
-                            Age
-                        </Form.Label>
+                    <Form.Group className="mb-3">
+                        <Form.Label>Name</Form.Label>
                         <Col>
-                            <Form.Control type="numeric" name="age" value={formState.age} onChange={handleChange} />
+                            <Form.Control
+                                type="text"
+                                name="name"
+                                value={formState.name || ''}
+                                onChange={handleChange}
+                            />
                         </Col>
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicText">
-                        <Form.Label>
-                            Levels
-                        </Form.Label>
+                    <Form.Group className="mb-3">
+                        <Form.Label>Age</Form.Label>
                         <Col>
-                            <Form.Control type="text" name="levels" value={formState.levels} onChange={handleChange} />
+                            <Form.Control
+                                type="number"
+                                name="age"
+                                value={formState.age}
+                                onChange={handleChange}
+                            />
                         </Col>
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicText">
-                        <Form.Label>
-                            Goals
-                        </Form.Label>
+                    <Form.Group className="mb-3">
+                        <Form.Label>Level</Form.Label>
+                        <Col>
+                            <Form.Control
+                                type="text"
+                                name="levels"
+                                value={formState.levels}
+                                onChange={handleChange}
+                            />
+                        </Col>
+                    </Form.Group>
+                    <Form.Group className="mb-3">
+                        <Form.Label>Goals</Form.Label>
                         <InputGroup className="mb-3">
                             <Form.Control
                                 placeholder="Add Goals"
                                 aria-label="Add-Goals"
-                                aria-describedby="basic-addon2"
                                 value={inputValue}
-                                name="goals"
                                 onChange={(e) => setInputValue(e.target.value)}
                             />
-                            <button variant="outline-secondary" id="button-addon2" className="bg-primary" onClick={addGoal}>
+                            <Button
+                                variant="outline-secondary"
+                                id="button-addon2"
+                                onClick={addGoal}
+                            >
                                 Add Goal
-                            </button>
+                            </Button>
                         </InputGroup>
                     </Form.Group>
                     <ul>
-                        {formGoals.map((goal, index) => (
+                        {formState.goals.map((goal, index) => (
                             <li key={index}>{goal}</li>
                         ))}
                     </ul>
-                    <button
-                        className="button-link bg-primary">Submit</button>
+                    <Button
+                        type="submit"
+                        className="button-link bg-primary"
+                    >
+                        Submit
+                    </Button>
+                    {error && <p className="text-danger">An error occurred. Please try again.</p>}
                 </Form>
             </Card.Body>
         </Card>
-    )
+    );
 };
 
 export default EditProfile;
