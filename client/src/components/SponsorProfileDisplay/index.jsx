@@ -98,7 +98,7 @@ const SponsorProfileDisplay = ({ profile }) => {
           <ul className="sponsors-card">
             {profile.weSponsor && profile.weSponsor.map(sponsor => (
               <li className='sponsor-li' key={sponsor._id}>
-                <img className='sponsor-img' src={sponsor.image ? `/images/${sponsor.image}` : randomizeDefaultImage()} alt={sponsor.name} />
+                <img className='sponsor-img' src={sponsor.image ? `${sponsor.image}` : randomizeDefaultImage()} alt={sponsor.name} />
                 <span className='sponsor-name'>{sponsor.name}</span>
               </li>
             ))}
@@ -109,7 +109,7 @@ const SponsorProfileDisplay = ({ profile }) => {
           <ul className="followers-card">
             {profile.friends && profile.friends.map(friend => (
               <li className='follower-li' key={friend._id}>
-                <img className='follower-img' src={friend.image ? `/images/${friend.image}` : randomizeDefaultImage()} alt={friend.name} />
+                <img className='follower-img' src={friend.image ? `${friend.image}` : randomizeDefaultImage()} alt={friend.name} />
                 <span className='follower-name'>{friend.name}</span>
               </li>
             ))}
