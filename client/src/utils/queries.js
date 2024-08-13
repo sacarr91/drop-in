@@ -27,6 +27,11 @@ export const QUERY_SINGLE_PROFILE = gql`
       age
       levels
       email
+      friends {
+      _id
+      name
+      image
+      }
     }
   }
 `;

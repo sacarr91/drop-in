@@ -103,3 +103,44 @@ mark {
 .dark-color {
     color: rgb(101, 189, 71);
 }
+
+.friends-list {
+  margin-top: 20px;
+}
+
+.friends-list h4 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.followers-card {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to new lines if items exceed container width */
+  justify-content: space-between; /* Distributes items evenly with minimal space */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.follower-li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 120px; /* Adjust width to fit more or fewer items per row */
+  margin: 5px; /* Small margin to add a bit of separation */
+}
+
+.follower-img {
+  width: 80px; /* Adjust to preferred thumbnail size */
+  height: 80px; /* Adjust to preferred thumbnail size */
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image covers the area */
+}
+
+.follower-name {
+  margin-top: 5px; /* Adds a small space between the image and the name */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Handles overflow text gracefully */
+}
