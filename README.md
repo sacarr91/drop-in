@@ -100,6 +100,13 @@ Joseph Ruff
 
 Peter Smith
 
+My contributions include:
+> framework development implentation.
+> client and server side features
+> Backend development for the database
+> Server side schemas for data manipulation
+> Client side react components and UI/UX
+
 ## Team Contact
 
 <p align="right"><a href="#readme-top">back to top</a></p>
