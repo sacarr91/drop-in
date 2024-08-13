@@ -1,5 +1,5 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@200..700&family=Rock+Salt&display=swap');
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@200..700&family=Rock+Salt&display=swap");
 
 :root {
   --bs-btn-focus-shadow-rgb: #65bd47;
@@ -98,17 +98,19 @@ body {
 
 .formbtn {
   margin: 5px;
-  background-color: #7C737F;
+  background-color: #7c737f;
   width: 99%;
 }
 
 .bg-card {
-  background-color: #E7DCEB;
+  background-color: #e7dceb;
 }
 
+.bg-card2 {
+  background-color: #656465;
+}
 
 /* FONTS */
-
 
 .rock-salt {
   font-family: "Rock Salt", cursive;
@@ -167,9 +169,9 @@ body {
 .center-content {
   display: flex;
   justify-content: center;
-  align-items: center;    
-  flex-direction: column; 
-  height: 100%;           
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
 }
 
 #rswp-card-button {
@@ -187,7 +189,7 @@ body {
   box-shadow: 0 0 30px var(--box-shadow-color);
 }
 
-.confirmation-message button{
+.confirmation-message button {
   background-color: rgb(101, 189, 71);
   color: black;
   --bs-btn-hover-border-color: rgb(101, 189, 71);
