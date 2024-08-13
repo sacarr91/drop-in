@@ -103,3 +103,44 @@ mark {
 .dark-color {
     color: rgb(101, 189, 71);
 }
+
+.friends-list {
+  margin-top: 20px;
+}
+
+.friends-list h4 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.followers-card, .sponsors-card {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.follower-li, .sponsor-li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 120px; 
+  margin: 5px; 
+}
+
+.follower-img, .sponsor-img {
+  width: 80px; 
+  height: 80px; 
+  border-radius: 50%;
+  object-fit: cover; 
+}
+
+.follower-name, .sponsor-name {
+  margin-top: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

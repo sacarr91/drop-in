@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useQuery, useMutation } from '@apollo/client';
 import { QUERY_ME } from '../../utils/queries';
 import { FOLLOW_PROFILE, SPONSOR_PROFILE } from '../../utils/mutations';
+
 import defaultImage1 from "/images/b-s-default-1.png"
 import defaultImage2 from "/images/b-s-default-2.png"
 import defaultImage3 from "/images/b-s-default-3.png"
@@ -10,18 +11,18 @@ import Donate from "../../pages/Donate";
 import '../../utils/profile.css';
 import '../../utils/modal.css';
 
-const randomizeDefaultImage = function() {
-  const imageArray = [ defaultImage1, defaultImage2, defaultImage3]
-  while(imageArray.length) {
+const randomizeDefaultImage = function () {
+  const imageArray = [defaultImage1, defaultImage2, defaultImage3]
+  while (imageArray.length) {
     const randomIndex = Math.floor(Math.random() * imageArray.length);
     const defaultImage = imageArray[randomIndex];
-    return defaultImage  
+    return defaultImage
   }
-  
+
 }
 
 const ProfileDisplay = ({ profile }) => {
-  const defaultImage = randomizeDefaultImage(); 
+  const defaultImage = randomizeDefaultImage();
   // handle profile images image url
   const imageUrl = profile.image ? `/images/${profile.image}` : defaultImage;
 
@@ -162,6 +163,28 @@ const ProfileDisplay = ({ profile }) => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="sponsors-list">
+          <h4>Our Sponsors:</h4>
+          <ul className="sponsors-card">
+            {profile.ourSponsors && profile.ourSponsors.map(sponsor => (
+              <li className='sponsor-li' key={sponsor._id}>
+                <img className='sponsor-img' src={sponsor.image ? `/images/${sponsor.image}` : randomizeDefaultImage()} alt={sponsor.name} />
+                <span className='sponsor-name'>{sponsor.name}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="friends-list">
+          <h4>Followers:</h4>
+          <ul className="followers-card">
+            {profile.friends && profile.friends.map(friend => (
+              <li className='follower-li' key={friend._id}>
+                <img className='follower-img' src={friend.image ? `/images/${friend.image}` : randomizeDefaultImage()} alt={friend.name} />
+                <span className='follower-name'>{friend.name}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
       <Modal show={showModal} handleClose={handleCloseModal}>

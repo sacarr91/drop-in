@@ -23,7 +23,10 @@ const resolvers = {
     },
 
     profile: async (parent, { profileId }, context ) => {
-      return Profile.findOne({ _id: profileId }) 
+      return Profile.findOne({ _id: profileId })
+      .populate('friends') 
+      .populate('ourSponsors')
+      .populate('weSponsor')
     },
 
     me: async (parent, args, context) => {
