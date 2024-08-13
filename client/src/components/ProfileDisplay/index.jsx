@@ -165,7 +165,7 @@ const ProfileDisplay = ({ profile }) => {
           </div>
         </div>
         <div className="sponsors-list">
-          <h4>Sponsors:</h4>
+          <h4>Our Sponsors:</h4>
           <ul className="sponsors-card">
             {profile.ourSponsors && profile.ourSponsors.map(sponsor => (
               <li className='sponsor-li' key={sponsor._id}>

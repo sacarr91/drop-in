@@ -26,6 +26,7 @@ const resolvers = {
       return Profile.findOne({ _id: profileId })
       .populate('friends') 
       .populate('ourSponsors')
+      .populate('weSponsor')
     },
 
     me: async (parent, args, context) => {
