@@ -9,5 +9,3 @@ const awardsSchema = new Schema(
 );
 
 module.exports = awardsSchema;
-
-// Instead of awards we could do a competition model because with just awards it would be limited

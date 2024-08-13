@@ -1,7 +1,5 @@
-import { Link } from 'react-router-dom';
-import { Card, Button, Container, Row, Col } from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
 import SponsorCard from '../SponsorCard';
-import '../../utils/sponsorlist.css'
 
 const SponsorList = ({ profiles, title }) => {
   const sponsorProfiles = profiles.filter(profile => profile.role === 'Sponsor');

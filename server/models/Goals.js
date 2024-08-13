@@ -9,5 +9,4 @@ const goalSchema = new Schema({
 const Goals = model("goals", goalSchema);
 module.exports = Goals;
 
-// Funding goals - helps sponsors make a determination who they would sponsor
 

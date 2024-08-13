@@ -53,7 +53,6 @@ function App() {
           </main>
           </div>
           <Footer />
-        {/* </div> */}
       </ApolloProvider>
     </>
   )
