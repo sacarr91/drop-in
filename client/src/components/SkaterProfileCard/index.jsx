@@ -15,7 +15,7 @@ const randomizeDefaultImage = function() {
 
 const SkaterProfileCard = ({ skater }) => {
   const defaultImage = randomizeDefaultImage(); 
-  // const imageUrl = skater.image ? `images/${skater.image}` : defaultImage;
+  const imageUrl = skater.image ? `${skater.image}` : defaultImage;
 
   const limitText = (text, wordLimit) => {
     const words = text.split(' ');
@@ -30,8 +30,7 @@ const SkaterProfileCard = ({ skater }) => {
             <div className="d-flex">
               <div className="flex-shrink-0">
                 <img
-                  // src= {imageUrl}
-                  src = {skater.image}
+                  src= {imageUrl}
                   alt={skater.name}
                   className="img-fluid"
                   style={{ width: '180px', borderRadius: '10px' }}
