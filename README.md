@@ -106,12 +106,10 @@ Pranith Gunda
 ---
 
 David Rauf
-
 > - Worked on the main page and implemented the react carousel
 > - Handled the back end to implement payment functionality
 > - Created skater and sponsor cards
 > - Worked to improve UI on front end
-
 ---
 
 Joseph Ruff
