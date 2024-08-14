@@ -107,10 +107,10 @@ Pranith Gunda
 
 David Rauf
 
-> - Contributed to front end and backend development of the framwork
-> - Integrated backend features with UI 
-> - Completed client and serverside modifications for user features
-> - applied styling and UI/UX solutions
+> - Worked on the main page and implemented the react carousel
+> - Handled the back end to implement payment functionality
+> - Created skater and sponsor cards
+> - Worked to improve UI on front end
 
 ---
 
