@@ -75,18 +75,24 @@ Our app empowers skaters to showcase their talent and connect with sponsors worl
 - Sponsor Page: Users can follow sponsors with a "Follow Us" button.
 
 <!-- - ![Finished Product](link finished product gif) -->
-
+![](./client/public/images/dropin-demo.gif)
 <p align="right"><a href="#readme-top">back to top</a></p>
 
 ## Team Contributions
 
 <!-- <img src="github contributions link" alt="contributions" width="600" height="338"> -->
+![](./client/public/images/contributions-screenshot.png)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
 ### Tasks and Roles
 
 Stephanie Carr
+
+> - Contributed to framework development
+> - provided solutions for UI/UX
+> - developed general css framework
+> - client side feature development 
 
 ---
 
@@ -115,11 +121,11 @@ Joseph Ruff
 Peter Smith
 
 My contributions include:
-* framework development implentation.
-* client and server side features
-* backend development for the database
-* Server side schemas for data manipulation
-* Client side react components and UI/UX
+> - framework development implentation.
+> - client and server side features
+> - backend development for the database
+> - Server side schemas for data manipulation
+> - Client side react components and UI/UX
 
 ## Team Contact
 
