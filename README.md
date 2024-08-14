@@ -75,13 +75,13 @@ Our app empowers skaters to showcase their talent and connect with sponsors worl
 - Sponsor Page: Users can follow sponsors with a "Follow Us" button.
 
 <!-- - ![Finished Product](link finished product gif) -->
-![](.client/public/images/dropin-demo.gif)
+![](./client/public/images/dropin-demo.gif)
 <p align="right"><a href="#readme-top">back to top</a></p>
 
 ## Team Contributions
 
 <!-- <img src="github contributions link" alt="contributions" width="600" height="338"> -->
-![](.client/public/images/contributions-screenshot.png)
+![](./client/public/images/contributions-screenshot.png)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
