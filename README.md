@@ -120,7 +120,6 @@ Joseph Ruff
 
 Peter Smith
 
-My contributions include:
 > - framework development implentation.
 > - client and server side features
 > - backend development for the database
